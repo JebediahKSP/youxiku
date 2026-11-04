@@ -1,0 +1,45 @@
+.main-box { background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; margin-bottom: 20px; animation: fadeUp .5s ease; }
+
+/* 标签云样式 */
+.tag-cloud { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px dashed var(--border); }
+.tag-item { font-size: 12px; color: var(--text-dim); background: rgba(255,255,255,.03); border: 1px solid var(--border); padding: 4px 12px; border-radius: 20px; cursor: pointer; transition: all .2s; }
+.tag-item:hover { color: var(--brand); border-color: var(--brand); background: rgba(255,122,24,.1); }
+
+.filter-pills { display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap; }
+.pill { padding: 6px 16px; border-radius: 20px; background: transparent; border: 1px solid var(--border); color: var(--text-dim); font-size: 13px; cursor: pointer; transition: all .2s ease; }
+.pill:hover { border-color: var(--border-hover); color: var(--text); }
+.pill.active { background: var(--text); border-color: var(--text); color: var(--bg); font-weight: bold; }
+
+.game-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.game-card { position: relative; display: block; border-radius: 8px; overflow: hidden; text-decoration: none; color: inherit; background: var(--card-bg); border: 1px solid var(--border); transition: border-color .2s ease, transform .2s ease; }
+.game-card::before { content: ""; position: absolute; inset: 0; z-index: 0; background: radial-gradient(400px circle at var(--cx, 50%) var(--cy, 50%), rgba(255,255,255,.05), transparent 40%); opacity: 0; transition: opacity .2s ease; pointer-events: none; }
+html.light-theme .game-card::before { background: radial-gradient(400px circle at var(--cx, 50%) var(--cy, 50%), rgba(0,0,0,.03), transparent 40%); }
+.game-card:hover { border-color: var(--border-hover); transform: translateY(-2px); }
+.game-card:hover::before { opacity: 1; }
+.game-card img { width: 100%; height: 110px; object-fit: cover; display: block; border-bottom: 1px solid var(--border); transition: opacity .2s; }
+.game-card:hover img { opacity: .8; }
+.game-card-info { padding: 12px; position: relative; z-index: 1; }
+.game-card-info h4 { font-size: 13px; font-weight: 500; margin-bottom: 4px; color: var(--text); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.game-card-info p { font-size: 12px; color: var(--text-dim); }
+
+.card-fav-btn { position: absolute; top: 8px; right: 8px; z-index: 2; width: 28px; height: 28px; border-radius: 50%; border: 0; background: rgba(0,0,0,.5); color: #fff; font-size: 14px; display: flex; align-items: center; justify-content: center; cursor: pointer; backdrop-filter: blur(4px); transition: all .2s; }
+.card-fav-btn:hover { background: rgba(0,0,0,.7); transform: scale(1.1); }
+.card-fav-btn.active { color: #ff4d4f; background: rgba(255,255,255,.9); }
+
+.new-tag { position: absolute; top: 8px; left: 8px; z-index: 2; background: #ff4d4f; color: #fff; font-size: 10px; font-weight: bold; padding: 2px 6px; border-radius: 4px; box-shadow: 0 2px 8px rgba(255,77,79,.5); animation: pulseNew 2s infinite; }
+@keyframes pulseNew { 0% { transform: scale(1); } 50% { transform: scale(1.1); } 100% { transform: scale(1); } }
+
+.game-card.skeleton { height: 165px; background: linear-gradient(90deg, var(--card-bg) 25%, var(--border) 50%, var(--card-bg) 75%); background-size: 200% 100%; animation: shimmer 1.5s infinite; border-color: transparent; }
+.game-card.skeleton::before { display: none; }
+@keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+
+.empty-state { grid-column: 1 / -1; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 60px 0; color: var(--text-dim); }
+.empty-icon { font-size: 40px; margin-bottom: 16px; animation: float 3s ease-in-out infinite; }
+@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+.daily-quote { font-size: 13px; line-height: 1.8; color: var(--text-dim); font-style: italic; }
+
+#rankList li { display: flex; border-bottom: 1px dashed var(--border); padding: 0; }
+#rankList li:last-child { border-bottom: 0; }
+#rankList a:hover { color: var(--brand); }
+
+@media (max-width: 960px) { .game-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; } }

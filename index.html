@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>极速游戏库 - 单机游戏下载平台</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23ff7a18'/%3E%3Ctext x='32' y='45' font-family='Arial' font-size='36' font-weight='bold' fill='%23fff' text-anchor='middle'%3EJ%3C/text%3E%3C/svg%3E">
+<link rel="manifest" href="manifest.json">
+<link rel="preconnect" href="https://cdn.akamai.steamstatic.com" crossorigin>
+<link rel="dns-prefetch" href="https://cdn.akamai.steamstatic.com">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+<header>
+  <div class="top-bar">
+    <div class="header-left">
+      <div class="logo">极速游戏库</div>
+      <button class="theme-toggle" id="themeToggle" title="切换主题">🌙</button>
+    </div>
+    <div class="search-container">
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="搜索游戏名称 / 别名" autocomplete="off">
+        <button id="searchBtn" type="button">搜索</button>
+      </div>
+      <div class="search-suggestions" id="searchSuggestions"></div>
+    </div>
+  </div>
+</header>
+<div class="nav">
+  <div class="nav-inner" id="navBar">
+    <a href="index.html" class="active" data-category="首页">首页</a>
+    <a href="javascript:void(0)" data-category="单机游戏">单机游戏</a>
+    <a href="javascript:void(0)" data-category="热门大作">热门大作</a>
+    <a href="javascript:void(0)" data-category="角色扮演">角色扮演</a>
+    <a href="javascript:void(0)" data-category="动作射击">动作射击</a>
+    <a href="javascript:void(0)" data-category="策略模拟">策略模拟</a>
+    <a href="javascript:void(0)" data-category="休闲独立">休闲独立</a>
+    <a href="pages/mods.html">补丁MOD</a>
+  </div>
+</div>
+<div class="container">
+  <div class="main">
+    <div class="main-box">
+      <!-- 标签云容器 -->
+      <div class="tag-cloud" id="tagCloud"></div>
+
+      <div class="filter-pills" id="filterPills">
+        <button class="pill active" data-filter="首页">全部游戏</button>
+        <button class="pill" id="randomBtn" style="border-color: var(--brand); color: var(--brand);">🎲 命运盲盒</button>
+        <button class="pill" data-filter="我的收藏">❤️ 我的收藏</button>
+      </div>
+      <div class="section-title" id="latestTitle"><span>最新资源</span></div>
+      <div id="gameList" class="game-grid"></div>
+    </div>
+    <div class="main-box" id="hotSection">
+      <div class="section-title"><span>热门大作</span></div>
+      <div id="hotList" class="game-grid"></div>
+    </div>
+  </div>
+  <div class="sidebar">
+    <div class="side-box">
+      <div class="side-title">🕒 最近浏览</div>
+      <ul class="side-list" id="recentList"></ul>
+    </div>
+    <div class="side-box">
+      <div class="side-title">🔥 热门下载榜</div>
+      <ul class="side-list" id="rankList"></ul>
+    </div>
+    <div class="side-box">
+      <div class="side-title">📢 建站公告</div>
+      <div style="font-size:13px; color:var(--text-dim); line-height:1.8;">
+        1. 本站资源主打<strong>夸克网盘</strong>，无解压密码。<br>
+        2. 链接失效或文件被吞，请加群联系群主补档。<br>
+        3. 欢迎加入赛博精神病收容所一起摸鱼！
+      </div>
+    </div>
+    <div class="side-box ad-box">
+      <div class="side-title" style="color:var(--text-dim); border-color:var(--border);">广告位招租</div>
+      <div style="height: 120px; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.02); border: 1px dashed var(--border); border-radius: 8px; color: var(--text-dim); font-size: 13px;">
+        联系群主洽谈
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="footer-grid">
+    <div class="footer-col"><h4>关于极速游戏库</h4><p>一个纯粹、极简、无广告的单机游戏分享站。本站资源均来自网络，仅供学习交流，请于下载后24小时内删除。</p></div>
+    <div class="footer-col"><h4>快捷链接</h4><ul><li><a href="index.html">返回首页</a></li><li><a href="pages/mods.html">MOD专区</a></li><li><a href="javascript:void(0)" onclick="openModal('notice')">免责声明</a></li><li><a href="javascript:void(0)" onclick="openModal('support')">赞赏支持</a></li></ul></div>
+    <div class="footer-col"><h4>站点数据</h4>
+      <p>📅 稳定运行：约 365 天</p>
+      <p>🎮 已收录：11 款精选游戏</p>
+      <div style="margin-top: 10px; font-size: 13px; color: var(--text-dim);">
+        <span id="busuanzi_container_site_pv">总访问量 <span id="busuanzi_value_site_pv" style="color:var(--brand);font-weight:bold;">...</span> 次</span><br>
+        <span id="busuanzi_container_site_uv">今日访客 <span id="busuanzi_value_site_uv" style="color:var(--brand);font-weight:bold;">...</span> 人</span>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 极速游戏库 | 单机游戏资源下载平台</div>
+</footer>
+<script src="js/common.js"></script>
+<script src="js/home.js"></script>
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.6/busuanzi.pure.mini.js"></script>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => { navigator.serviceWorker.register('/sw.js').catch(err => console.log('PWA 注册失败:', err)); });
+  }
+</script>
+</body>
+</html>

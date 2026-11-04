@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>站长控制台 - 极速游戏库</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23ff7a18'/%3E%3Ctext x='32' y='45' font-family='Arial' font-size='36' font-weight='bold' fill='%23fff' text-anchor='middle'%3EJ%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/common.css">
+<style>
+  .admin-wrapper { max-width: 800px; margin: 40px auto; padding: 0 16px; }
+  .admin-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; }
+  .admin-header h1 { font-size: 24px; color: var(--text); }
+  .admin-header a { color: var(--brand); text-decoration: none; font-size: 14px; font-weight: 600; }
+  .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .form-group { margin-bottom: 16px; display: flex; flex-direction: column; }
+  .form-group.full { grid-column: 1 / -1; }
+  .form-group label { font-size: 13px; color: var(--text-dim); margin-bottom: 6px; font-weight: 500; }
+  .form-control { width: 100%; padding: 10px 12px; background: rgba(255,255,255,.03); border: 1px solid var(--border); color: var(--text); border-radius: 6px; font-size: 14px; outline: none; transition: border-color .2s; }
+  .form-control:focus { border-color: var(--brand); }
+  textarea.form-control { resize: vertical; min-height: 120px; font-family: monospace; }
+  .checkbox-group { display: flex; flex-wrap: wrap; gap: 10px; }
+  .checkbox-label { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; background: rgba(255,255,255,.03); border: 1px solid var(--border); padding: 6px 12px; border-radius: 20px; cursor: pointer; transition: all .2s; }
+  .checkbox-label input { accent-color: var(--brand); }
+  .btn-submit { width: 100%; padding: 14px; background: var(--brand); color: #fff; border: 0; border-radius: 8px; font-size: 16px; font-weight: bold; cursor: pointer; transition: opacity .2s; margin-top: 10px; }
+  .btn-submit:hover { opacity: 0.9; }
+  .result-box { margin-top: 24px; background: #000; border: 1px solid var(--border); border-radius: 8px; padding: 16px; display: none; }
+  .result-header { display: flex; justify-content: space-between; margin-bottom: 12px; }
+  .result-header span { font-size: 13px; color: var(--brand); font-weight: bold; }
+  .btn-copy { background: var(--text); color: var(--bg); border: 0; padding: 4px 12px; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: bold; }
+  .code-block { font-family: monospace; font-size: 13px; color: #00d4ff; white-space: pre-wrap; max-height: 300px; overflow-y: auto; line-height: 1.5; }
+  .validator-box { margin-top: 40px; border-top: 1px dashed var(--border); padding-top: 30px; }
+  .validator-status { margin-top: 10px; font-size: 14px; font-weight: bold; display: none; }
+  @media(max-width: 600px) { .form-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="admin-wrapper">
+  <div class="admin-header">
+    <h1>⚙️ 站长控制台</h1>
+    <a href="index.html">← 返回首页</a>
+  </div>
+  <div class="main-box" style="padding: 24px;">
+    <h2 style="font-size:18px; margin-bottom:20px; color:var(--brand);">🎮 快速生成游戏 JSON</h2>
+    <div class="form-grid">
+      <div class="form-group"><label>游戏 ID (纯小写)</label><input type="text" id="f_id" class="form-control" placeholder="ksp"></div>
+      <div class="form-group"><label>游戏类型</label><input type="text" id="f_type" class="form-control" placeholder="策略模拟"></div>
+      <div class="form-group"><label>中文名称</label><input type="text" id="f_name" class="form-control" placeholder="坎巴拉太空计划"></div>
+      <div class="form-group"><label>英文名称</label><input type="text" id="f_en_name" class="form-control" placeholder="Kerbal Space Program"></div>
+      <div class="form-group full"><label>包含的分类标签</label>
+        <div class="checkbox-group">
+          <label class="checkbox-label"><input type="checkbox" value="单机游戏" class="f_cat" checked> 单机游戏</label>
+          <label class="checkbox-label"><input type="checkbox" value="热门大作" class="f_cat"> 热门大作</label>
+          <label class="checkbox-label"><input type="checkbox" value="角色扮演" class="f_cat"> 角色扮演</label>
+          <label class="checkbox-label"><input type="checkbox" value="动作射击" class="f_cat"> 动作射击</label>
+          <label class="checkbox-label"><input type="checkbox" value="策略模拟" class="f_cat"> 策略模拟</label>
+          <label class="checkbox-label"><input type="checkbox" value="休闲独立" class="f_cat"> 休闲独立</label>
+        </div>
+      </div>
+      <div class="form-group full"><label>搜索别名 (逗号隔开)</label><input type="text" id="f_aliases" class="form-control" placeholder="ksp,坎巴拉"></div>
+      <div class="form-group full"><label>附加标签 (逗号隔开)</label><input type="text" id="f_tags" class="form-control" placeholder="开放世界,高画质"></div>
+      <div class="form-group full"><label>Steam AppID (选填，自动生成图片)</label>
+        <div style="display:flex; gap:10px;">
+          <input type="text" id="f_appid" class="form-control" placeholder="220200">
+          <button onclick="autoFillImages()" style="padding:0 16px; background:var(--border); color:var(--text); border:0; border-radius:6px; cursor:pointer;">自动生成图</button>
+        </div>
+      </div>
+      <div class="form-group full"><label>封面图 URL</label><input type="text" id="f_cover" class="form-control"></div>
+      <div class="form-group full"><label>游戏截图 (每行一个)</label><textarea id="f_screenshots" class="form-control"></textarea></div>
+      <div class="form-group full"><label>官网链接 (选填)</label><input type="text" id="f_official" class="form-control" placeholder="https://..."></div>
+      <div class="form-group full"><label>PC端夸克链接</label><input type="text" id="f_pc" class="form-control"></div>
+      <div class="form-group full"><label>手机端夸克链接 (无则留空)</label><input type="text" id="f_mobile" class="form-control"></div>
+      <div class="form-group"><label>文件大小</label><input type="text" id="f_size" class="form-control" placeholder="2.8 GB"></div>
+      <div class="form-group"><label>版本信息</label><input type="text" id="f_version" class="form-control" placeholder="v1.0"></div>
+      <div class="form-group full"><label>游戏介绍 (每行一段)</label><textarea id="f_desc" class="form-control"></textarea></div>
+      <div class="form-group full"><label>攻略/简评 (可选)</label><textarea id="f_guide" class="form-control"></textarea></div>
+      <div class="form-group full"><label>最低配置 (系统|CPU|内存|显卡|硬盘)</label><input type="text" id="f_min" class="form-control" placeholder="Win10|i5|8GB|GTX 960|2GB"></div>
+      <div class="form-group full"><label>推荐配置</label><input type="text" id="f_rec" class="form-control" placeholder="Win10|i7|16GB|GTX 1060|4GB"></div>
+    </div>
+    <button class="btn-submit" onclick="generateJSON()">生成数据并复制</button>
+    <div class="result-box" id="resultBox">
+      <div class="result-header"><span>✅ 数据已生成并复制！</span><button class="btn-copy" onclick="copyJSON()">重新复制</button></div>
+      <div class="code-block" id="codeBlock"></div>
+    </div>
+
+    <div class="validator-box">
+      <h2 style="font-size:18px; margin-bottom:20px; color:var(--brand);">🔍 JSON 格式化校验</h2>
+      <textarea id="validatorInput" class="form-control" placeholder="在此粘贴 games.json 内容..."></textarea>
+      <div style="display:flex; gap:10px; margin-top:10px;">
+        <button onclick="validateJSON()" class="btn-submit" style="flex:1;">校验并排版</button>
+        <button onclick="copyValidated()" class="btn-submit" style="flex:1; background:var(--border); color:var(--text);">复制结果</button>
+      </div>
+      <div class="validator-status" id="validatorStatus"></div>
+    </div>
+  </div>
+</div>
+<script src="js/common.js"></script>
+<script>
+  function autoFillImages() {
+    var appid = document.getElementById('f_appid').value.trim();
+    if(!appid) { toast('请输入 AppID'); return; }
+    document.getElementById('f_cover').value = `https://cdn.akamai.steamstatic.com/steam/apps/${appid}/header.jpg`;
+    var shots = [
+      `https://cdn.akamai.steamstatic.com/steam/apps/${appid}/library_hero.jpg`,
+      `https://cdn.akamai.steamstatic.com/steam/apps/${appid}/capsule_616x353.jpg`,
+      `https://cdn.akamai.steamstatic.com/steam/apps/${appid}/page_bg_generated_v6b.jpg`
+    ].join('\n');
+    document.getElementById('f_screenshots').value = shots;
+    toast('图片已自动生成');
+  }
+  
+  var generatedData = null;
+  function generateJSON() {
+    var id = document.getElementById('f_id').value.trim();
+    var name = document.getElementById('f_name').value.trim();
+    if(!id || !name) { alert("ID 和 名称 必填！"); return; }
+    
+    var cats = [];
+    document.querySelectorAll('.f_cat:checked').forEach(function(cb) { cats.push(cb.value); });
+    
+    var aliases = document.getElementById('f_aliases').value.split(',').map(s => s.trim()).filter(Boolean);
+    var tags = document.getElementById('f_tags').value.split(',').map(s => s.trim()).filter(Boolean);
+    var shots = document.getElementById('f_screenshots').value.split('\n').map(s => s.trim()).filter(Boolean);
+    var desc = document.getElementById('f_desc').value.split('\n').map(s => s.trim()).filter(Boolean);
+    var minArr = document.getElementById('f_min').value.split('|').map(s => s.trim());
+    var recArr = document.getElementById('f_rec').value.split('|').map(s => s.trim());
+    var steamId = document.getElementById('f_appid').value.trim();
+    
+    generatedData = {
+      id: id, name: name,
+      en_name: document.getElementById('f_en_name').value.trim() || id,
+      type: document.getElementById('f_type').value.trim() || "未知类型",
+      category: cats.length ? cats : ["单机游戏"],
+      tags: tags.length ? tags : undefined,
+      cover: document.getElementById('f_cover').value.trim(),
+      aliases: aliases, latest: true, hot: true,
+      official: document.getElementById('f_official').value.trim() || undefined,
+      steam_appid: steamId || undefined,
+      quark_pc: document.getElementById('f_pc').value.trim(),
+      quark_mobile: document.getElementById('f_mobile').value.trim(),
+      size: document.getElementById('f_size').value.trim() || "未知",
+      version: document.getElementById('f_version').value.trim() || "未知",
+      desc: desc, screenshots: shots,
+      guide: document.getElementById('f_guide').value.trim() || undefined,
+      date_added: new Date().toISOString().split('T')[0],
+      config: {
+        min: { os: minArr[0]||"-", cpu: minArr[1]||"-", ram: minArr[2]||"-", gpu: minArr[3]||"-", disk: minArr[4]||"-" },
+        rec: { os: recArr[0]||"-", cpu: recArr[1]||"-", ram: recArr[2]||"-", gpu: recArr[3]||"-", disk: recArr[4]||"-" }
+      }
+    };
+    
+    if(!generatedData.official) delete generatedData.official;
+    if(!generatedData.steam_appid) delete generatedData.steam_appid;
+    if(!generatedData.guide) delete generatedData.guide;
+    if(!generatedData.tags) delete generatedData.tags;
+
+    var jsonStr = JSON.stringify(generatedData, null, 2);
+    document.getElementById('resultBox').style.display = 'block';
+    document.getElementById('codeBlock').textContent = jsonStr;
+    copyJSON();
+  }
+  
+  function copyJSON() {
+    if(!generatedData) return;
+    navigator.clipboard.writeText(JSON.stringify(generatedData, null, 2)).then(function() { toast('JSON 已复制！'); });
+  }
+
+  var validatedString = "";
+  function validateJSON() {
+    var input = document.getElementById('validatorInput').value.trim();
+    var statusEl = document.getElementById('validatorStatus');
+    statusEl.style.display = 'block';
+    if(!input) { statusEl.style.color = 'var(--brand)'; statusEl.textContent = '请先粘贴内容！'; return; }
+    try {
+      var parsed = JSON.parse(input);
+      validatedString = JSON.stringify(parsed, null, 2);
+      document.getElementById('validatorInput').value = validatedString;
+      statusEl.style.color = '#00d4ff';
+      statusEl.textContent = '✅ 格式完全正确！已自动排版对齐。';
+    } catch(e) {
+      statusEl.style.color = '#ff4d4f';
+      statusEl.textContent = '❌ 格式错误：' + e.message;
+    }
+  }
+  
+  function copyValidated() {
+    if(!validatedString) { toast('请先校验通过后再复制'); return; }
+    navigator.clipboard.writeText(validatedString).then(function() { toast('已复制排版好的 JSON'); });
+  }
+</script>
+</body>
+</html>
