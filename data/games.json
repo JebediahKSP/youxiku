@@ -1313,4 +1313,166 @@
       "rec": { "os": "Windows 10 64-bit", "cpu": "Ryzen 5 3600 / Core i7-8700", "ram": "16 GB RAM", "gpu": "Radeon RX 5700 / GeForce RTX 2070", "disk": "50 GB 可用空间" }
     }
   }
+,
+  {
+  "id": "ksp",
+  "name": "坎巴拉太空计划",
+  "en_name": "Kerbal Space Program",
+  "type": "策略模拟",
+  "category": ["单机游戏", "策略模拟", "热门大作"],
+  "tags": ["航天", "沙盒", "物理"],
+  "cover": "https://cdn.akamai.steamstatic.com/steam/apps/220200/header.jpg",
+  "aliases": ["ksp", "坎巴拉"],
+  "latest": true, "hot": true,
+  "steam_appid": "220200",
+  "date_added": "2026-07-01",
+  "guide": "<strong>火箭发射技巧：</strong><br>1. 记得装降落伞，不然小绿人回不来。<br>2. 发射时保持“重力转向”，在 10km 高度开始慢慢向东倾斜。",
+  "quark_pc": "https://pan.quark.cn/s/8a14bcfd2f1f",
+  "size": "约 2870 MB",
+  "version": "v1.12.5 全DLC",
+  "desc": ["《坎巴拉太空计划》是一款航天沙盒模拟游戏，拥有真实的物理引擎。"],
+  "screenshots": ["https://cdn.akamai.steamstatic.com/steam/apps/220200/library_hero.jpg"],
+  "config": {
+    "min": { "os": "Windows 7", "cpu": "Core 2 Duo", "ram": "4 GB", "gpu": "DX10", "disk": "3 GB" },
+    "rec": { "os": "Windows 10", "cpu": "Core i5", "ram": "8 GB", "gpu": "DX10", "disk": "4 GB" }
+  }
+},
+{
+  "id": "us",
+  "name": "宇宙沙盒",
+  "en_name": "Universe Sandbox",
+  "type": "模拟沙盒",
+  "category": ["单机游戏", "策略模拟", "热门大作"],
+  "tags": ["宇宙", "物理", "科普"],
+  "cover": "https://cdn.akamai.steamstatic.com/steam/apps/230290/header.jpg",
+  "aliases": ["宇宙沙盘"],
+  "latest": true, "hot": true,
+  "steam_appid": "230290",
+  "date_added": "2026-07-01",
+  "guide": "<strong>玩法建议：</strong><br>1. 先玩“太阳系”预设场景。<br>2. 试试把月球推向地球，看看会发生什么。",
+  "quark_pc": "https://pan.quark.cn/s/4b0d3561f1b3",
+  "size": "约 2980 MB",
+  "version": "v36.3 官方中文版",
+  "desc": ["《宇宙沙盒》是一款基于真实物理定律的宇宙模拟沙盒游戏。"],
+  "screenshots": ["https://cdn.akamai.steamstatic.com/steam/apps/230290/library_hero.jpg"],
+  "config": {
+    "min": { "os": "Windows 7", "cpu": "1.6GHz 双核", "ram": "4 GB", "gpu": "512MB / DX11", "disk": "2 GB" },
+    "rec": { "os": "Windows 10", "cpu": "3.0GHz 四核", "ram": "8 GB", "gpu": "2GB / DX11", "disk": "2 GB" }
+  }
+},
+{
+  "id": "citiesskylines",
+  "name": "城市：天际线",
+  "en_name": "Cities: Skylines",
+  "type": "模拟经营",
+  "category": ["单机游戏", "策略模拟", "热门大作"],
+  "tags": ["城市建造", "模拟", "经营"],
+  "cover": "https://cdn.akamai.steamstatic.com/steam/apps/255710/header.jpg",
+  "aliases": ["城市天际线"],
+  "latest": true, "hot": true,
+  "steam_appid": "255710",
+  "date_added": "2026-07-01",
+  "guide": "<strong>市长手册：</strong><br>1. 一开始先建低密度住宅。<br>2. 注意排污口和抽水站的距离。",
+  "quark_pc": "https://pan.quark.cn/s/35af58e1182c",
+  "size": "约 9 GB",
+  "version": "v1.21.1-f5 全DLC",
+  "desc": ["《城市：天际线》是一款城市建造与模拟经营游戏。"],
+  "screenshots": ["https://cdn.akamai.steamstatic.com/steam/apps/255710/library_hero.jpg"],
+  "config": {
+    "min": { "os": "Windows 10", "cpu": "Intel Core i7-930", "ram": "8 GB", "gpu": "GTX 260", "disk": "4 GB" },
+    "rec": { "os": "Windows 10", "cpu": "Intel Core i5-3470", "ram": "16 GB", "gpu": "GTX 660", "disk": "4 GB" }
+  }
+},
+{
+  "id": "heartsofiron4",
+  "name": "钢铁雄心4",
+  "en_name": "Hearts of Iron IV",
+  "type": "大战略",
+  "category": ["单机游戏", "策略模拟"],
+  "tags": ["二战", "战略", "历史"],
+  "cover": "https://cdn.akamai.steamstatic.com/steam/apps/394360/header.jpg",
+  "aliases": ["hoi4"],
+  "latest": true, "hot": true,
+  "steam_appid": "394360",
+  "date_added": "2026-07-01",
+  "guide": "<strong>填线宝宝忠告：</strong><br>1. 画好前线，记得留预备队。<br>2. 优先发展工业和科研。",
+  "quark_pc": "https://pan.quark.cn/s/744da24d5a37",
+  "size": "约 5 GB",
+  "version": "v1.16.1 全DLC",
+  "desc": ["《钢铁雄心4》是一款以二战为背景的大战略游戏。"],
+  "screenshots": ["https://cdn.akamai.steamstatic.com/steam/apps/394360/library_hero.jpg"],
+  "config": {
+    "min": { "os": "Windows 10", "cpu": "Intel Core i5-750", "ram": "4 GB", "gpu": "GTX 470", "disk": "2 GB" },
+    "rec": { "os": "Windows 10", "cpu": "Intel Core i5-2500K", "ram": "8 GB", "gpu": "GTX 660", "disk": "2 GB" }
+  }
+},
+{
+  "id": "changed",
+  "name": "兽化实验室",
+  "en_name": "Changed",
+  "type": "解谜RPG",
+  "category": ["单机游戏", "休闲独立"],
+  "tags": ["解谜", "Furry", "剧情"],
+  "cover": "https://cdn.akamai.steamstatic.com/steam/apps/814540/header.jpg",
+  "aliases": ["changed", "兽化"],
+  "latest": true, "hot": false,
+  "steam_appid": "814540",
+  "date_added": "2026-07-01",
+  "guide": "<strong>逃生提示：</strong><br>1. 被追逐时不要慌。<br>2. 多存档，因为有多种结局。",
+  "quark_pc": "https://pan.quark.cn/s/你的兽化实验室PC链接",
+  "quark_mobile": "https://pan.quark.cn/s/你的兽化实验室手机链接",
+  "size": "约 220 MB",
+  "version": "Build.24728890",
+  "desc": ["你在一座陌生的研究所中苏醒，这里充满了通过基因实验创造出的“胶兽”生物。"],
+  "screenshots": ["https://cdn.akamai.steamstatic.com/steam/apps/814540/library_hero.jpg"],
+  "config": {
+    "min": { "os": "Windows 7", "cpu": "Intel Core i5-6400", "ram": "8 GB", "gpu": "GTX 960", "disk": "2 GB" },
+    "rec": { "os": "Windows 10", "cpu": "Intel Core i7-7700", "ram": "16 GB", "gpu": "GTX 1060", "disk": "4 GB" }
+  }
+},
+{
+  "id": "warthunder",
+  "name": "战争雷霆",
+  "en_name": "War Thunder",
+  "type": "载具射击",
+  "category": ["网络游戏", "动作射击", "热门大作"],
+  "tags": ["载具", "军事", "免费"],
+  "cover": "https://cdn.akamai.steamstatic.com/steam/apps/236390/header.jpg",
+  "aliases": ["wt", "战争雷霆"],
+  "latest": true, "hot": true,
+  "steam_appid": "236390",
+  "official": "https://warthunder.com/zh",
+  "date_added": "2026-11-03",
+  "guide": "<strong>萌新避坑：</strong><br>1. 别急着买高级金币车。<br>2. 历史模式收益高。",
+  "size": "约 95 GB",
+  "version": "官方最新版",
+  "desc": ["《战争雷霆》是一款以二战和冷战为背景的大型多人在线载具射击游戏。"],
+  "screenshots": ["https://cdn.akamai.steamstatic.com/steam/apps/236390/library_hero.jpg"],
+  "config": {
+    "min": { "os": "Windows 7/8/10", "cpu": "Dual-Core", "ram": "4 GB", "gpu": "Intel HD 4000", "disk": "95 GB" },
+    "rec": { "os": "Windows 10", "cpu": "Intel Core i5", "ram": "16 GB", "gpu": "GTX 1060", "disk": "95 GB" }
+  }
+},
+{
+  "id": "minecraft",
+  "name": "我的世界",
+  "en_name": "Minecraft",
+  "type": "沙盒生存",
+  "category": ["单机游戏", "休闲独立", "热门大作"],
+  "tags": ["沙盒", "像素", "创造"],
+  "cover": "https://images.unsplash.com/photo-1607513746994-51f730a44832?q=80&w=800&auto=format&fit=crop",
+  "aliases": ["mc"],
+  "latest": true, "hot": true,
+  "official": "https://www.minecraft.net/zh-hans",
+  "date_added": "2026-07-01",
+  "guide": "<strong>MC 生存第一天：</strong><br>1. 徒手撸树，做工作台。<br>2. 天黑前一定要挖个洞把自己埋起来。",
+  "size": "约 1 GB",
+  "version": "官方最新版",
+  "desc": ["《我的世界》是一款风靡全球的沙盒建造游戏。"],
+  "screenshots": ["https://images.unsplash.com/photo-1607513746994-51f730a44832?q=80&w=1200&auto=format&fit=crop"],
+  "config": {
+    "min": { "os": "Windows 10", "cpu": "Intel Core i3", "ram": "4 GB", "gpu": "Intel HD 4000", "disk": "1 GB" },
+    "rec": { "os": "Windows 10", "cpu": "Intel Core i5", "ram": "8 GB", "gpu": "GTX 700 series", "disk": "4 GB" }
+  }
+}
 ]
