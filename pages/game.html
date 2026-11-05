@@ -22,6 +22,19 @@
   </div>
 </header>
 <div class="nav">
+  <!-- 手机端下拉框 -->
+  <select class="mobile-nav-select" id="mobileNavSelect">
+    <option value="../index.html">🏠 首页</option>
+    <option value="../index.html?cat=单机游戏">单机游戏</option>
+    <option value="../index.html?cat=热门大作">热门大作</option>
+    <option value="../index.html?cat=角色扮演">角色扮演</option>
+    <option value="../index.html?cat=动作射击">动作射击</option>
+    <option value="../index.html?cat=策略模拟">策略模拟</option>
+    <option value="../index.html?cat=休闲独立">休闲独立</option>
+    <option value="mods.html">补丁MOD</option>
+  </select>
+
+  <!-- 电脑端导航 -->
   <div class="nav-inner" id="navBar">
     <a href="../index.html">首页</a>
     <a href="javascript:void(0)" data-category="单机游戏">单机游戏</a>
@@ -39,7 +52,6 @@
       <div class="breadcrumb" id="breadcrumb"></div>
       <h1 class="game-title" id="gameTitle">加载中...</h1>
       
-      <!-- 评分与标签区 -->
       <div class="game-meta">
         <div class="rating-box" id="ratingBox">
           <div class="stars" id="starsContainer">
@@ -102,7 +114,7 @@
     <div class="footer-col"><h4>快捷链接</h4><ul><li><a href="../index.html">返回首页</a></li><li><a href="mods.html">MOD专区</a></li><li><a href="javascript:void(0)" onclick="openModal('notice')">免责声明</a></li><li><a href="javascript:void(0)" onclick="openModal('support')">赞赏支持</a></li></ul></div>
     <div class="footer-col"><h4>站点数据</h4>
       <p>📅 稳定运行：约 365 天</p>
-      <p>🎮 已收录：11 款精选游戏</p>
+      <p>🎮 已收录：61 款精选游戏</p>
       <div style="margin-top: 10px; font-size: 13px; color: var(--text-dim);">
         <span id="busuanzi_container_site_pv">总访问量 <span id="busuanzi_value_site_pv" style="color:var(--brand);font-weight:bold;">...</span> 次</span><br>
         <span id="busuanzi_container_site_uv">今日访客 <span id="busuanzi_value_site_uv" style="color:var(--brand);font-weight:bold;">...</span> 人</span>
