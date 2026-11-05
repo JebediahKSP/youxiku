@@ -21,7 +21,6 @@
     el._timer = setTimeout(function () { el.classList.remove('show'); }, duration);
   };
 
-  // 全局图片加载失败兜底（防破图）
   var fallbackImg = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 100'%3E%3Crect width='200' height='100' fill='%23141417'/%3E%3Ctext x='100' y='55' font-family='Arial' font-size='14' fill='%23666' text-anchor='middle'%3E极速游戏库%3C/text%3E%3C/svg%3E";
   document.addEventListener('error', function(e) {
     if (e.target.tagName.toLowerCase() === 'img') {
@@ -34,7 +33,6 @@
     }
   }, true);
 
-  // 全局热度排行榜渲染引擎
   window.renderRanking = function(data) {
     var container = document.getElementById('rankList');
     if (!container || !Array.isArray(data)) return;
@@ -68,6 +66,17 @@
   document.addEventListener('DOMContentLoaded', function () {
     var isPage = location.pathname.includes('/pages/');
     var basePath = isPage ? '../' : '';
+
+    // 移动端下拉框跳转逻辑
+    var mobileSelect = document.getElementById('mobileNavSelect');
+    if (mobileSelect) {
+      mobileSelect.addEventListener('change', function() {
+        var val = this.value;
+        if(val !== "") {
+          location.href = val;
+        }
+      });
+    }
 
     if (!localStorage.getItem('announcement_hide')) {
       var ann = document.createElement('div');
@@ -123,7 +132,7 @@
           <h3 style="text-align:center;margin-bottom:8px;">☕ 请作者喝杯咖啡</h3>
           <p style="text-align:center;font-size:13px;color:var(--text-dim);margin-bottom:16px;">您的支持是本站持续更新的最大动力！</p>
           <div style="text-align:center;">
-            <img src="${basePath}images/support.png" alt="赞赏码" style="width:100%;max-width:240px;border-radius:12px;border:1px solid var(--border);margin:0 auto;display:block;">
+            <img src="${basePath}images/support.jpg" alt="赞赏码" style="width:100%;max-width:240px;border-radius:12px;border:1px solid var(--border);margin:0 auto;display:block;">
           </div>
         `;
       } else if (type === 'notice') {
@@ -238,57 +247,5 @@
       });
     };
     window.observeReveal(document);
-
-    var searchContainer = document.querySelector('.search-container');
-    var searchInput = document.getElementById('searchInput');
-    var suggestBox = document.getElementById('searchSuggestions');
-
-    if (searchContainer && searchInput && suggestBox) {
-      var groupBtn = document.createElement('button');
-      groupBtn.innerHTML = '💬';
-      groupBtn.title = "加入交流群";
-      groupBtn.onclick = function() { openModal('group'); };
-      
-      if (window.innerWidth < 768) {
-        groupBtn.style.cssText = 'margin-left:8px; width:36px; height:36px; flex-shrink:0; border-radius:8px; border:1px solid var(--border); background:var(--card-bg); color:var(--text); cursor:pointer; font-size:16px; display:flex; align-items:center; justify-content:center;';
-        var searchBox = searchContainer.querySelector('.search-box');
-        var wrap = document.createElement('div');
-        wrap.style.display = 'flex';
-        wrap.style.alignItems = 'center';
-        searchContainer.insertBefore(wrap, searchBox);
-        wrap.appendChild(searchBox);
-        wrap.appendChild(groupBtn);
-        searchBox.style.flex = '1';
-      } else {
-        groupBtn.style.cssText = 'position:absolute; right:-45px; top:50%; transform:translateY(-50%); width:34px; height:34px; border-radius:8px; border:1px solid var(--border); background:var(--card-bg); color:var(--text); cursor:pointer; font-size:16px; display:flex; align-items:center; justify-content:center; transition:all .2s;';
-        searchContainer.appendChild(groupBtn);
-        searchContainer.style.marginRight = '50px'; 
-      }
-
-      function saveSearchHistory(kw) {
-        if (!kw) return;
-        var history = JSON.parse(localStorage.getItem('search_history') || '[]');
-        history = history.filter(item => item !== kw);
-        history.unshift(kw);
-        if (history.length > 5) history.pop();
-        localStorage.setItem('search_history', JSON.stringify(history));
-      }
-      window.saveSearchHistory = saveSearchHistory;
-
-      searchInput.addEventListener('focus', function() {
-        var val = this.value.trim();
-        if (!val) {
-          var history = JSON.parse(localStorage.getItem('search_history') || '[]');
-          if (history.length > 0) {
-            suggestBox.innerHTML = history.map(kw => 
-              `<div class="suggestion-item" onclick="location.href='${basePath}index.html?kw=${encodeURIComponent(kw)}'">
-                 <span style="color:var(--text-dim); margin-right:8px;">🕒</span>${kw}
-               </div>`
-            ).join('');
-            suggestBox.classList.add('show');
-          }
-        }
-      });
-    }
   });
 })();
