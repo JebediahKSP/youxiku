@@ -1,4 +1,4 @@
-const CACHE_NAME = 'game-hub-v26';
+const CACHE_NAME = 'game-hub-v27';
 const ASSETS = [
   '/', '/index.html', '/404.html', '/manifest.json',
   '/pages/mods.html', '/pages/game.html', '/admin.html',
