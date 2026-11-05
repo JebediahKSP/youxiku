@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>游戏详情 - 极速游戏库</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23ff7a18'/%3E%3Ctext x='32' y='45' font-family='Arial' font-size='36' font-weight='bold' fill='%23fff' text-anchor='middle'%3EJ%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23ff6600'/%3E%3Ctext x='32' y='45' font-family='Arial' font-size='36' font-weight='bold' fill='%23fff' text-anchor='middle'%3EJ%3C/text%3E%3C/svg%3E">
 <link rel="manifest" href="../manifest.json">
 <link rel="preconnect" href="https://cdn.akamai.steamstatic.com" crossorigin>
 <link rel="dns-prefetch" href="https://cdn.akamai.steamstatic.com">
@@ -14,27 +14,35 @@
 <body>
 <header>
   <div class="top-bar">
-    <div class="header-left"><div class="logo"><a href="../index.html">极速游戏库</a></div><button class="theme-toggle" id="themeToggle" title="切换主题">🌙</button></div>
+    <div class="header-left">
+      <div class="logo"><a href="../index.html">极速游戏库</a></div>
+    </div>
     <div class="search-container">
-      <div class="search-box"><input type="text" id="searchInput" placeholder="搜索游戏名称 / 别名" autocomplete="off"><button id="searchBtn" type="button">搜索</button></div>
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="搜索游戏名称 / 别名" autocomplete="off">
+        <button id="searchBtn" type="button">搜索</button>
+      </div>
       <div class="search-suggestions" id="searchSuggestions"></div>
     </div>
   </div>
 </header>
-<div class="nav">
-  <!-- 手机端下拉框 -->
-  <select class="mobile-nav-select" id="mobileNavSelect">
-    <option value="../index.html">🏠 首页</option>
-    <option value="../index.html?cat=单机游戏">单机游戏</option>
-    <option value="../index.html?cat=热门大作">热门大作</option>
-    <option value="../index.html?cat=角色扮演">角色扮演</option>
-    <option value="../index.html?cat=动作射击">动作射击</option>
-    <option value="../index.html?cat=策略模拟">策略模拟</option>
-    <option value="../index.html?cat=休闲独立">休闲独立</option>
-    <option value="mods.html">补丁MOD</option>
-  </select>
 
-  <!-- 电脑端导航 -->
+<div class="nav">
+  <!-- 手机端下拉菜单 -->
+  <div class="mobile-nav-wrapper">
+    <select class="mobile-nav-select" id="mobileNavSelect">
+      <option value="../index.html">🏠 首页</option>
+      <option value="../index.html?cat=单机游戏">单机游戏</option>
+      <option value="../index.html?cat=热门大作">热门大作</option>
+      <option value="../index.html?cat=角色扮演">角色扮演</option>
+      <option value="../index.html?cat=动作射击">动作射击</option>
+      <option value="../index.html?cat=策略模拟">策略模拟</option>
+      <option value="../index.html?cat=休闲独立">休闲独立</option>
+      <option value="mods.html">补丁MOD</option>
+    </select>
+  </div>
+
+  <!-- 电脑端横排导航 -->
   <div class="nav-inner" id="navBar">
     <a href="../index.html">首页</a>
     <a href="javascript:void(0)" data-category="单机游戏">单机游戏</a>
@@ -46,6 +54,7 @@
     <a href="mods.html">补丁MOD</a>
   </div>
 </div>
+
 <div class="container">
   <div class="main">
     <div class="main-box">
@@ -65,32 +74,38 @@
       <img class="game-cover" id="gameCover" alt="封面" referrerpolicy="no-referrer">
       
       <div id="gameGuideBox" style="display:none;">
-        <div class="section-title"><span>📖 游戏简评 & 攻略</span></div>
+        <div class="section-title">📖 游戏简评 & 攻略</div>
         <div id="gameGuide" class="guide-content"></div>
       </div>
 
-      <div class="section-title"><span>游戏介绍</span></div>
+      <div class="section-title">游戏介绍</div>
       <div id="gameDesc"></div>
-      <div class="section-title"><span>游戏截图</span></div>
+      
+      <div class="section-title">游戏截图</div>
       <div class="screenshot-slider" id="screenshotSlider"></div>
-      <div class="section-title"><span>配置要求</span></div>
+      
+      <div class="section-title">配置要求</div>
       <div class="config-wrap">
         <div class="config-box" id="configMin"></div>
         <div class="config-box" id="configRec"></div>
       </div>
-      <div class="section-title"><span>下载地址</span></div>
+      
+      <div class="section-title">下载地址</div>
       <div class="download-main"></div>
+      
       <div class="download-tip">
         <p>• <strong>注意：</strong>本站资源均上传至夸克网盘，无解压密码，请点击按钮前往转存。</p>
-        <p>• 觉得本站不错？<button class="share-btn" id="shareBtn">🔗 分享本页</button> <button class="share-btn" id="shareTextBtn" style="border-color:var(--brand);color:var(--brand)">📝 复制分享文案</button></p>
+        <p>• 觉得本站不错？<button class="share-btn" id="shareBtn">🔗 分享本页</button> <button class="share-btn" id="shareTextBtn">📝 复制分享文案</button></p>
         <div class="moyu-tip" id="moyuTip"></div>
       </div>
     </div>
+    
     <div class="main-box" style="margin-top: 20px;">
-      <div class="section-title"><span>💬 玩家交流与反馈</span></div>
+      <div class="section-title">💬 玩家交流与反馈</div>
       <div class="giscus"></div>
     </div>
   </div>
+  
   <div class="sidebar">
     <div class="side-box">
       <div class="side-title">🔥 热门下载榜</div>
@@ -100,14 +115,17 @@
       <div class="side-title">相关推荐</div>
       <ul class="side-list" id="relatedList"></ul>
     </div>
-    <div class="side-box ad-box">
-      <div class="side-title" style="color:var(--text-dim); border-color:var(--border);">广告位招租</div>
-      <div style="height: 120px; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.02); border: 1px dashed var(--border); border-radius: 8px; color: var(--text-dim); font-size: 13px;">
-        联系群主洽谈
+    <div class="side-box">
+      <div class="side-title">📢 建站公告</div>
+      <div style="font-size:14px; color:var(--text-dim); line-height:1.8;">
+        1. 本站资源主打<strong>夸克网盘</strong>，无解压密码。<br>
+        2. 链接失效或文件被吞，请加群联系群主补档。<br>
+        3. 欢迎加入赛博精神病收容所一起摸鱼！
       </div>
     </div>
   </div>
 </div>
+
 <footer>
   <div class="footer-grid">
     <div class="footer-col"><h4>关于极速游戏库</h4><p>一个纯粹、极简、无广告的单机游戏分享站。本站资源均来自网络，仅供学习交流，请于下载后24小时内删除。</p></div>
@@ -115,7 +133,7 @@
     <div class="footer-col"><h4>站点数据</h4>
       <p>📅 稳定运行：约 365 天</p>
       <p>🎮 已收录：61 款精选游戏</p>
-      <div style="margin-top: 10px; font-size: 13px; color: var(--text-dim);">
+      <div style="margin-top: 10px; font-size: 14px; color: var(--text-dim);">
         <span id="busuanzi_container_site_pv">总访问量 <span id="busuanzi_value_site_pv" style="color:var(--brand);font-weight:bold;">...</span> 次</span><br>
         <span id="busuanzi_container_site_uv">今日访客 <span id="busuanzi_value_site_uv" style="color:var(--brand);font-weight:bold;">...</span> 人</span>
       </div>
