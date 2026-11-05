@@ -89,12 +89,10 @@
       if(g.tags) g.tags.forEach(t => allTags.add(t));
     });
     
-    // 生成标签按钮，并绑定点击事件
     tagCloud.innerHTML = Array.from(allTags).map(t => 
       `<span class="tag-item ${selectedTags.includes(t) ? 'active' : ''}" onclick="toggleTag('${t}')"># ${t}</span>`
     ).join('');
 
-    // 如果有选中的标签，显示“清除”按钮
     if(selectedTags.length > 0) {
       clearBtn.style.display = 'block';
     } else {
@@ -102,19 +100,17 @@
     }
   }
 
-  // 切换标签选中状态
   window.toggleTag = function(tag) {
     var index = selectedTags.indexOf(tag);
     if (index > -1) {
-      selectedTags.splice(index, 1); // 已选中，则取消
+      selectedTags.splice(index, 1); 
     } else {
-      selectedTags.push(tag); // 未选中，则添加
+      selectedTags.push(tag); 
     }
-    renderTags(); // 重新渲染标签样式
-    render(); // 重新渲染游戏列表
+    renderTags(); 
+    render(); 
   };
 
-  // 清除所有标签
   window.clearAllTags = function() {
     selectedTags = [];
     renderTags();
@@ -142,7 +138,6 @@
     var latestTitle = document.getElementById('latestTitle');
     var topFeaturedBox = document.getElementById('topFeaturedBox');
 
-    // 如果搜索、选分类、或者选了标签，隐藏顶部的轮播
     if (topFeaturedBox) {
       if (kw || currentCategory !== '首页' || selectedTags.length > 0) topFeaturedBox.style.display = 'none';
       else topFeaturedBox.style.display = 'block';
@@ -150,42 +145,41 @@
 
     var filteredData = [...gameData];
 
-    // 1. 如果有搜索词
+    // 1. 搜索
     if (kw) {
       filteredData = filteredData.filter(g => matchGame(g, kw));
       latestTitle.innerHTML = `搜索结果（${filteredData.length}）`;
     } 
-    // 2. 如果在看收藏
+    // 2. 收藏
     else if (currentCategory === '我的收藏') {
       var favs = getFavs();
       filteredData = filteredData.filter(g => favs.includes(g.id));
       latestTitle.innerHTML = `我的收藏（${filteredData.length}）`;
     } 
-    // 3. 如果在看特定分类
+    // 3. 分类
     else if (currentCategory !== '首页') {
       filteredData = filteredData.filter(g => g.category && g.category.includes(currentCategory));
       latestTitle.innerHTML = `${currentCategory}（${filteredData.length}）`;
     } 
-    // 4. 默认首页
+    // 4. 默认
     else {
       latestTitle.innerHTML = '✨ 发现好游戏';
-      filteredData.sort(() => 0.5 - Math.random()); // 随机打乱
+      filteredData.sort(() => 0.5 - Math.random()); 
     }
 
-    // 5. 处理标签多选过滤 (只要包含选中的任意一个标签即可)
+    // 5. 标签多选过滤（【修改为 AND 逻辑】必须同时包含所有选中的标签）
     if (selectedTags.length > 0) {
       filteredData = filteredData.filter(g => {
         if (!g.tags) return false;
-        // 使用 some 判断，只要游戏包含 selectedTags 中的某一个标签就保留
-        return selectedTags.some(t => g.tags.includes(t));
+        // 使用 every 判断，必须拥有 selectedTags 里的所有标签
+        return selectedTags.every(t => g.tags.includes(t));
       });
       latestTitle.innerHTML = `标签筛选（${filteredData.length}）`;
     }
 
     if (filteredData.length === 0) {
-      latestList.innerHTML = '<div class="empty-state"><div class="empty-icon">🔍</div><p>没有找到相关游戏。</p></div>';
+      latestList.innerHTML = '<div class="empty-state"><div class="empty-icon">🔍</div><p>没有找到同时满足这些标签的游戏。</p></div>';
     } else {
-      // 首页限制显示 16 个
       if (currentCategory === '首页' && !kw && selectedTags.length === 0) {
         filteredData = filteredData.slice(0, 16);
       }
@@ -232,7 +226,7 @@
 
   window.searchGame = function () {
     switchCategory('首页');
-    clearAllTags(); // 搜索时清空标签
+    clearAllTags(); 
     render(document.getElementById('searchInput').value);
   };
 
@@ -293,7 +287,7 @@
         if (cat === '首页' || !cat) return;
         e.preventDefault();
         if(input) input.value = '';
-        clearAllTags(); // 切换分类时清空标签
+        clearAllTags(); 
         switchCategory(cat);
         render('');
       });
@@ -304,7 +298,7 @@
         var btn = e.target.closest('.pill');
         if (!btn) return;
         if(input) input.value = '';
-        clearAllTags(); // 切换胶囊时清空标签
+        clearAllTags(); 
         switchCategory(btn.getAttribute('data-filter'));
         render('');
       });
@@ -343,7 +337,6 @@
           switchCategory(catParam);
           render('');
         } else if (tagParam) {
-          // 兼容从详情页点击标签跳转过来的逻辑
           switchCategory('首页');
           selectedTags = [tagParam];
           renderTags();
