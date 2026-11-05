@@ -3,45 +3,46 @@
     "id": "blackmythwukong",
     "name": "黑神话：悟空",
     "en_name": "Black Myth: Wukong",
-    "type": "动作角色扮演",
+    "type": "动作射击",
     "category": ["单机游戏", "动作射击", "热门大作"],
-    "tags": ["开放世界", "高画质", "魂类", "国产之光"],
+    "tags": ["开放世界", "高画质", "魂类", "国产之光", "动作", "神话", "高难度", "剧情神作", "奇幻"],
     "cover": "https://cdn.akamai.steamstatic.com/steam/apps/2358720/header.jpg",
-    "aliases": ["黑神话", "悟空", "Wukong"],
-    "latest": true, "hot": true,
+    "aliases": ["黑神话", "悟空"],
+    "latest": true,
+    "hot": true,
     "steam_appid": "2358720",
     "date_added": "2026-11-04",
-    "guide": "<strong>新手必看指南：</strong><br>1. <strong>不要死磕大头</strong>：前期遇到幽魂（大头）如果打不过，可以先绕过去，探索隐藏土地庙，升级葫芦和属性后再来。<br>2. <strong>善用化身与法术</strong>：定身术、聚形散气是神技，打 Boss 前记得蓄力重棍。<br>3. <strong>多跑图多探索</strong>：本作隐藏要素极多，很多 Boss 和法宝藏在支线里，比如隐藏的定风珠、避火罩。<br>4. <strong>拍照模式</strong>：游戏风景极佳，记得随时用截图记录震撼瞬间！",
+    "guide": "<strong>新手必看：</strong><br>1. 前期不要死磕大头。<br>2. 遇到打不过的Boss多去探索隐藏土地庙。<br>3. 善用定身术和变身。<br>4. 记得随时拍照，风景极佳！",
     "quark_pc": "https://pan.quark.cn/s/a2fbbc320803",
     "size": "约 130 GB",
     "version": "v1.0.8 官方中文版",
     "desc": [
       "《黑神话：悟空》是一款以中国神话为背景的动作角色扮演游戏。故事取材于中国古典小说“四大名著”之一的《西游记》。",
-      "你将扮演一位“天命人”，为了探寻昔日传说的真相，踏上一条充满危险与惊奇的西游之路。游戏不仅拥有极其顶级的画面表现力，更以极具深度的棍法战斗系统、丰富的变身法术以及极具东方美学的场景建筑，震撼了全球玩家。",
-      "从黑风山到黄风岭，从小西天到盘丝洞，每一处场景都充满了细节与挑战。击败强敌，寻回大圣的六根，这不仅仅是一场战斗，更是一次对中国传统文化的深度朝圣。"
+      "你将扮演一位“天命人”，为了探寻昔日传说的真相，踏上一条充满危险与惊奇的西游之路。游戏不仅拥有极其顶级的画面表现力，更以极具深度的棍法战斗系统、丰富的变身法术以及极具东方美学的场景建筑，震撼了全球玩家。"
     ],
     "screenshots": [
       "https://cdn.akamai.steamstatic.com/steam/apps/2358720/library_hero.jpg",
       "https://cdn.akamai.steamstatic.com/steam/apps/2358720/capsule_616x353.jpg"
     ],
     "config": {
-      "min": { "os": "Windows 10 64-bit", "cpu": "Intel Core i5-8400 / AMD Ryzen 5 1600", "ram": "16 GB RAM", "gpu": "NVIDIA GeForce GTX 1060 (6GB) / AMD Radeon RX 580 (8GB)", "disk": "130 GB 可用空间 (推荐SSD)" },
-      "rec": { "os": "Windows 10/11 64-bit", "cpu": "Intel Core i7-9700 / AMD Ryzen 5 5500", "ram": "16 GB RAM", "gpu": "NVIDIA GeForce RTX 2060 / AMD Radeon RX 5700 XT", "disk": "130 GB SSD" }
+      "min": { "os": "Windows 10 64-bit", "cpu": "Intel Core i5-8400 / AMD Ryzen 5 1600", "ram": "16 GB RAM", "gpu": "NVIDIA GeForce GTX 1060 (6GB)", "disk": "130 GB 可用空间 (推荐SSD)" },
+      "rec": { "os": "Windows 10/11 64-bit", "cpu": "Intel Core i7-9700 / AMD Ryzen 5 5500", "ram": "16 GB RAM", "gpu": "NVIDIA GeForce RTX 2060", "disk": "130 GB SSD" }
     }
   },
   {
     "id": "eldenring",
     "name": "艾尔登法环",
     "en_name": "Elden Ring",
-    "type": "动作角色扮演",
+    "type": "角色扮演",
     "category": ["单机游戏", "角色扮演", "热门大作"],
-    "tags": ["开放世界", "魂类", "高画质", "黑暗奇幻"],
+    "tags": ["开放世界", "高画质", "魂类", "黑暗奇幻", "高难度", "动作", "单机", "剧情神作", "魔法"],
     "cover": "https://cdn.akamai.steamstatic.com/steam/apps/1245620/header.jpg",
     "aliases": ["老头环", "Elden Ring", "法环"],
-    "latest": true, "hot": true,
+    "latest": true,
+    "hot": true,
     "steam_appid": "1245620",
     "date_added": "2026-10-28",
-    "guide": "<strong>褪色者生存指南：</strong><br>1. <strong>打不过就绕路</strong>：这是开放世界！开局的大树守卫、恶兆妖鬼如果打不过，去探索周边墓地、洞窟，升级骨灰和武器。<br>2. <strong>骨灰系统</strong>：这是官方给你的合法外挂，拿到离群野狼、仿身泪滴后，难度直线下降。<br>3. <strong>武器强化大于等级</strong>：前期石头有限，优先把一把顺手的武器强化到+3或+4，收益极高。",
+    "guide": "<strong>褪色者生存指南：</strong><br>1. 打不过就绕路，这是开放世界。<br>2. 骨灰系统是官方给你的合法外挂，拿到仿身泪滴难度直线下降。<br>3. 优先强化武器，收益高于升级。",
     "quark_pc": "https://pan.quark.cn/s/4a84a443f16d",
     "size": "约 60 GB",
     "version": "v1.17.2 全DLC 豪华版",
@@ -55,23 +56,24 @@
       "https://cdn.akamai.steamstatic.com/steam/apps/1245620/capsule_616x353.jpg"
     ],
     "config": {
-      "min": { "os": "Windows 10", "cpu": "INTEL CORE I5-8400 或 AMD RYZEN 3 3300X", "ram": "12 GB RAM", "gpu": "NVIDIA GEFORCE GTX 1060 3 GB 或 AMD RADEON RX 580 4 GB", "disk": "60 GB 可用空间" },
-      "rec": { "os": "Windows 10/11", "cpu": "INTEL CORE I7-8700K 或 AMD RYZEN 5 3600X", "ram": "16 GB RAM", "gpu": "NVIDIA GEFORCE GTX 1070 8 GB 或 AMD RADEON RX VEGA 56 8 GB", "disk": "60 GB 可用空间" }
+      "min": { "os": "Windows 10", "cpu": "INTEL CORE I5-8400", "ram": "12 GB RAM", "gpu": "NVIDIA GEFORCE GTX 1060 3 GB", "disk": "60 GB 可用空间" },
+      "rec": { "os": "Windows 10/11", "cpu": "INTEL CORE I7-8700K", "ram": "16 GB RAM", "gpu": "NVIDIA GEFORCE GTX 1070 8 GB", "disk": "60 GB 可用空间" }
     }
   },
   {
     "id": "cyberpunk2077",
     "name": "赛博朋克2077",
     "en_name": "Cyberpunk 2077",
-    "type": "动作角色扮演",
+    "type": "角色扮演",
     "category": ["单机游戏", "角色扮演", "热门大作"],
-    "tags": ["开放世界", "高画质", "科幻", "剧情神作"],
+    "tags": ["开放世界", "高画质", "科幻", "剧情神作", "第一人称", "射击", "未来", "打mod", "单机"],
     "cover": "https://cdn.akamai.steamstatic.com/steam/apps/1091500/header.jpg",
     "aliases": ["赛博朋克", "2077", "Cyberpunk"],
-    "latest": true, "hot": true,
+    "latest": true,
+    "hot": true,
     "steam_appid": "1091500",
     "date_added": "2026-10-25",
-    "guide": "<strong>夜之城生存法则：</strong><br>1. <strong>属性加点</strong>：肉体（Body）点到 9 可以强行开很多门；技术能力（Technical Ability）点到 9 可以解锁很多捷径。<br>2. <strong>义体改造</strong>：去义体医生那里安装“螳螂刀”或“单分子线”，近战非常爽。<br>3. <strong>不要忽略剧情</strong>：支线任务（尤其是和强尼·银手相关的）质量极高，会直接影响最终结局。<br>4. <strong>车辆驾驶</strong>：夜之城路况复杂，摩托车其实比汽车更好开、更不容易堵车。",
+    "guide": "<strong>夜之城生存法则：</strong><br>1. 肉体点到 9 强行开门，技术能力点到 9 解锁捷径。<br>2. 去义体医生安装螳螂刀，近战非常爽。<br>3. 支线任务质量极高，直接影响最终结局。",
     "quark_pc": "https://pan.quark.cn/s/97a997a17c30",
     "size": "约 70 GB",
     "version": "v2.31 全DLC (往日之影)",
@@ -85,8 +87,8 @@
       "https://cdn.akamai.steamstatic.com/steam/apps/1091500/capsule_616x353.jpg"
     ],
     "config": {
-      "min": { "os": "Windows 10 64-bit", "cpu": "Core i7-6700 或 Ryzen 5 1600", "ram": "12 GB RAM", "gpu": "GeForce GTX 1060 6GB 或 Radeon RX 580 8GB", "disk": "70 GB 可用空间 (必须SSD)" },
-      "rec": { "os": "Windows 10/11 64-bit", "cpu": "Core i7-12700 或 Ryzen 7 7800X3D", "ram": "16 GB RAM", "gpu": "GeForce RTX 2060 SUPER 或 Radeon RX 5700 XT", "disk": "70 GB SSD" }
+      "min": { "os": "Windows 10 64-bit", "cpu": "Core i7-6700", "ram": "12 GB RAM", "gpu": "GeForce GTX 1060 6GB", "disk": "70 GB 可用空间 (必须SSD)" },
+      "rec": { "os": "Windows 10/11 64-bit", "cpu": "Core i7-12700", "ram": "16 GB RAM", "gpu": "GeForce RTX 2060 SUPER", "disk": "70 GB SSD" }
     }
   },
   {
@@ -95,19 +97,20 @@
     "en_name": "Red Dead Redemption 2",
     "type": "动作冒险",
     "category": ["单机游戏", "动作射击", "热门大作"],
-    "tags": ["开放世界", "高画质", "剧情神作", "西部"],
+    "tags": ["开放世界", "高画质", "剧情神作", "西部", "射击", "写实风", "经典", "慢节奏", "单机"],
     "cover": "https://cdn.akamai.steamstatic.com/steam/apps/1174180/header.jpg",
     "aliases": ["大表哥2", "荒野大镖客", "RDR2"],
-    "latest": true, "hot": true,
+    "latest": true,
+    "hot": true,
     "steam_appid": "1174180",
     "date_added": "2026-11-02",
-    "guide": "<strong>西部生存指南：</strong><br>1. <strong>慢节奏体验</strong>：不要急着推主线。第二章营地解锁后，去钓鱼、打猎、做挑战，这游戏的细节都在野外。<br>2. <strong>马匹系统</strong>：经常给马喂食、刷毛、安抚，好感度满了马匹不会在枪战中把你甩下来。好马（如阿拉伯马）可以在野外驯服。<br>3. <strong>荣誉值系统</strong>：多做好事（帮助路人、不滥杀），商店会给你打折；如果你喜欢当恶人，会有另一套剧情和体验。",
+    "guide": "<strong>西部生存指南：</strong><br>1. 第二章解锁营地后，去打猎、钓鱼，体验慢节奏生活。<br>2. 经常给马匹喂食和刷毛，好感度满了马不会把你甩下来。<br>3. 多做好事，荣誉值高了商店打折。",
     "quark_pc": "https://pan.quark.cn/s/19d481f524da",
     "size": "约 115 GB",
     "version": "v1491.50 终极版",
     "desc": [
       "美国，1899 年。亚瑟·摩根和范德林德帮众是一群逃亡在外的亡命之徒。联邦侦探和全国顶尖的赏金猎人在他们的身后穷追不舍，帮派内部冲突不断。",
-      "《荒野大镖客：救赎2》是 Rockstar Games 打造的史诗级巨作。它拥有目前游戏界最顶级的画面表现和最极致的细节打磨。从雪山的暴风雪到沼泽的鳄鱼，从马匹的睾丸热胀冷缩到 NPC 的独立作息，它不仅是一个游戏，更是一个活生生的西部世界。",
+      "《荒野大镖客：救赎2》是 Rockstar Games 打造的史诗级巨作。它拥有目前游戏界最顶级的画面表现和最极致的细节打磨。从雪山的暴风雪到沼泽的鳄鱼，从马匹的生理细节到 NPC 的独立作息，它不仅是一个游戏，更是一个活生生的西部世界。",
       "你将在这个世界里打猎、钓鱼、抢劫、露营。Arthur Morgan（亚瑟·摩根）的救赎之路，绝对会让你在通关后久久不能平静。"
     ],
     "screenshots": [
@@ -115,8 +118,8 @@
       "https://cdn.akamai.steamstatic.com/steam/apps/1174180/capsule_616x353.jpg"
     ],
     "config": {
-      "min": { "os": "Windows 7 - Service Pack 1 (6.1.7601)", "cpu": "Intel Core i5-2500K / AMD FX-6300", "ram": "8 GB RAM", "gpu": "Nvidia GeForce GTX 770 2GB / AMD Radeon R9 280 3GB", "disk": "115 GB 可用空间" },
-      "rec": { "os": "Windows 10 - April 2018 Update (v1803)", "cpu": "Intel Core i7-4770K / AMD Ryzen 5 1500X", "ram": "12 GB RAM", "gpu": "Nvidia GeForce GTX 1060 6GB / AMD Radeon RX 480 4GB", "disk": "115 GB 可用空间" }
+      "min": { "os": "Windows 7 - Service Pack 1", "cpu": "Intel Core i5-2500K", "ram": "8 GB RAM", "gpu": "Nvidia GeForce GTX 770 2GB", "disk": "115 GB 可用空间" },
+      "rec": { "os": "Windows 10 - April 2018 Update", "cpu": "Intel Core i7-4770K", "ram": "12 GB RAM", "gpu": "Nvidia GeForce GTX 1060 6GB", "disk": "115 GB 可用空间" }
     }
   },
   {
@@ -125,13 +128,14 @@
     "en_name": "Grand Theft Auto V",
     "type": "动作冒险",
     "category": ["单机游戏", "动作射击", "热门大作"],
-    "tags": ["开放世界", "经典", "犯罪", "联机"],
+    "tags": ["开放世界", "高画质", "犯罪", "经典", "射击", "联机", "现代", "沙盒", "载具", "单机"],
     "cover": "https://cdn.akamai.steamstatic.com/steam/apps/271590/header.jpg",
     "aliases": ["GTA5", "GTA", "侠盗猎车", "给她爱5"],
-    "latest": true, "hot": true,
+    "latest": true,
+    "hot": true,
     "steam_appid": "271590",
     "date_added": "2026-10-30",
-    "guide": "<strong>洛圣都指南：</strong><br>1. <strong>先玩线下模式</strong>：熟悉三个主角的技能（富兰克林的驾驶、麦克的子弹时间、崔佛的狂暴）。<br>2. <strong>线上模式(GTA Online)</strong>：现在线上模式内容极多。建议先买“新手包”，然后跟着地图上的黄色字母任务走，攒钱买虎鲸潜艇（开启佩里科岛抢劫，单人最赚钱）。<br>3. <strong>不要乱惹警察</strong>：如果通缉星级太高，开车进隧道或改车王可以躲避。",
+    "guide": "<strong>洛圣都指南：</strong><br>1. 先玩线下模式熟悉三个主角的技能。<br>2. 线上模式内容极多，建议先买虎鲸潜艇（单人最赚钱）。<br>3. 通缉星级高时，开车进隧道或改车王可以躲避。",
     "quark_pc": "https://pan.quark.cn/s/fc48f66f3f59",
     "size": "约 120 GB",
     "version": "v1.0.3095 增强版",
@@ -145,23 +149,24 @@
       "https://cdn.akamai.steamstatic.com/steam/apps/271590/capsule_616x353.jpg"
     ],
     "config": {
-      "min": { "os": "Windows 10 64 位", "cpu": "Intel Core i5 3470 / AMD X8 FX-8350", "ram": "8 GB RAM", "gpu": "NVIDIA GTX 660 2GB / AMD HD 7870 2GB", "disk": "120 GB 可用空间" },
-      "rec": { "os": "Windows 10 64 位", "cpu": "Intel Core i5 3470 / AMD X8 FX-8350", "ram": "16 GB RAM", "gpu": "NVIDIA GTX 1060 6GB / AMD RX 480 4GB", "disk": "120 GB 可用空间" }
+      "min": { "os": "Windows 10 64 位", "cpu": "Intel Core i5 3470", "ram": "8 GB RAM", "gpu": "NVIDIA GTX 660 2GB", "disk": "120 GB 可用空间" },
+      "rec": { "os": "Windows 10 64 位", "cpu": "Intel Core i5 3470", "ram": "16 GB RAM", "gpu": "NVIDIA GTX 1060 6GB", "disk": "120 GB 可用空间" }
     }
   },
   {
     "id": "witcher3",
     "name": "巫师3：狂猎",
     "en_name": "The Witcher 3: Wild Hunt",
-    "type": "动作角色扮演",
+    "type": "角色扮演",
     "category": ["单机游戏", "角色扮演", "热门大作"],
-    "tags": ["开放世界", "剧情神作", "高画质", "奇幻"],
+    "tags": ["开放世界", "高画质", "剧情神作", "奇幻", "魔法", "打mod", "经典", "史诗", "单机"],
     "cover": "https://cdn.akamai.steamstatic.com/steam/apps/292030/header.jpg",
     "aliases": ["巫师3", "狂猎", "The Witcher 3"],
-    "latest": true, "hot": true,
+    "latest": true,
+    "hot": true,
     "steam_appid": "292030",
     "date_added": "2026-10-20",
-    "guide": "<strong>猎魔人指南：</strong><br>1. <strong>不要越级打怪</strong>：骷髅头标志的怪物比你高很多级，先做主线或清理问号升级。<br>2. <strong>学会涂剑油和喝药</strong>：打怪物前先涂对应的剑油，喝下“燕子”回血药。<br>3. <strong>昆特牌</strong>：这是本体游戏（笑），见到 NPC 第一句话：来局昆特牌吗？收集全套昆特牌有成就哦。",
+    "guide": "<strong>猎魔人指南：</strong><br>1. 不要越级打骷髅头标志的怪物。<br>2. 打怪物前先涂对应的剑油。<br>3. 见到 NPC 第一句话：来局昆特牌吗？",
     "quark_pc": "https://pan.quark.cn/s/9725868a79f9",
     "size": "约 50 GB",
     "version": "v4.04 次世代版 全DLC",
@@ -174,52 +179,54 @@
       "https://cdn.akamai.steamstatic.com/steam/apps/292030/library_hero.jpg"
     ],
     "config": {
-      "min": { "os": "Windows 7/8/10 64-bit", "cpu": "Intel CPU Core i5-2500K 3.3GHz / AMD CPU Phenom II X4 940", "ram": "6 GB RAM", "gpu": "Nvidia GPU GeForce GTX 660 / AMD GPU Radeon HD 7870", "disk": "50 GB 可用空间" },
-      "rec": { "os": "Windows 10 64-bit", "cpu": "Intel CPU Core i7 3770 3.4 GHz / AMD CPU AMD FX-8350 4 GHz", "ram": "8 GB RAM", "gpu": "Nvidia GPU GeForce GTX 1070 / AMD GPU Radeon RX 580", "disk": "50 GB 可用空间" }
+      "min": { "os": "Windows 7/8/10 64-bit", "cpu": "Intel Core i5-2500K", "ram": "6 GB RAM", "gpu": "Nvidia GTX 660", "disk": "50 GB 可用空间" },
+      "rec": { "os": "Windows 10 64-bit", "cpu": "Intel Core i7 3770", "ram": "8 GB RAM", "gpu": "Nvidia GTX 1070", "disk": "50 GB 可用空间" }
     }
   },
   {
     "id": "skyrim",
     "name": "上古卷轴5：天际",
     "en_name": "The Elder Scrolls V: Skyrim",
-    "type": "动作角色扮演",
+    "type": "角色扮演",
     "category": ["单机游戏", "角色扮演", "热门大作"],
-    "tags": ["开放世界", "MOD神作", "奇幻", "高画质"],
+    "tags": ["开放世界", "MOD神作", "奇幻", "高画质", "魔法", "冒险", "经典", "打mod", "单机"],
     "cover": "https://cdn.akamai.steamstatic.com/steam/apps/489830/header.jpg",
     "aliases": ["上古卷轴5", "天际", "老滚5"],
-    "latest": true, "hot": true,
+    "latest": true,
+    "hot": true,
     "steam_appid": "489830",
     "date_added": "2026-10-15",
-    "guide": "<strong>龙裔必读：</strong><br>1. <strong>不要杀鸡！不要杀鸡！不要杀鸡！</strong>（重要的事情说三遍，否则全村追杀你）。<br>2. <strong>潜行弓箭手</strong>：这是游戏里最安逸的流派，蹲下射箭，敌人找不到你。<br>3. <strong>MOD安装</strong>：玩透了原版后，去 3DM 或 N网 找 MOD。这游戏能火到今天，全靠 MOD 续命（画质、随从、新剧情）。",
+    "guide": "<strong>龙裔必读：</strong><br>1. 不要杀鸡！否则全村追杀你。<br>2. 潜行弓箭手是最安逸的流派。<br>3. 去 N网 或 3DM 找 MOD，这游戏全靠 MOD 续命。",
     "quark_pc": "https://pan.quark.cn/s/f0b3a0f8110d",
     "size": "约 20 GB",
     "version": "v1.6.1170 周年纪念版",
     "desc": [
       "《上古卷轴5：天际》是 Bethesda 开发的一款史诗级奇幻 RPG。玩家扮演传说中的“龙裔”，在天际省对抗巨龙奥杜因。",
       "游戏自由度极高，你可以加入盗贼公会、法师学院、兄弟会，或者只是满世界游荡，看极光、爬山、看瀑布。",
-      "周年版整合了官方所有的 CC 内容（Creation Club），包含了钓鱼、生存模式、多种新装备和法术，是目前最完整的体验版本。"
+      "周年版整合了官方所有的 CC 内容，包含了钓鱼、生存模式、多种新装备和法术，是目前最完整的体验版本。"
     ],
     "screenshots": [
       "https://cdn.akamai.steamstatic.com/steam/apps/489830/library_hero.jpg"
     ],
     "config": {
-      "min": { "os": "Windows 7/8.1/10 (64-bit)", "cpu": "Intel i5-750/AMD Phenom II X4-945", "ram": "8 GB RAM", "gpu": "NVIDIA GTX 470 1GB /AMD HD 7870 2GB", "disk": "20 GB 可用空间" },
-      "rec": { "os": "Windows 10 (64-bit)", "cpu": "Intel i5-2400/AMD FX-8320", "ram": "8 GB RAM", "gpu": "NVIDIA GTX 780 3GB /AMD R9 290 4GB", "disk": "20 GB 可用空间" }
+      "min": { "os": "Windows 7/8.1/10", "cpu": "Intel i5-750", "ram": "8 GB RAM", "gpu": "NVIDIA GTX 470", "disk": "20 GB 可用空间" },
+      "rec": { "os": "Windows 10", "cpu": "Intel i5-2400", "ram": "8 GB RAM", "gpu": "NVIDIA GTX 780", "disk": "20 GB 可用空间" }
     }
   },
   {
     "id": "fallout4",
     "name": "辐射4",
     "en_name": "Fallout 4",
-    "type": "动作角色扮演",
+    "type": "角色扮演",
     "category": ["单机游戏", "角色扮演", "热门大作"],
-    "tags": ["开放世界", "废土", "射击", "建造"],
+    "tags": ["开放世界", "废土", "射击", "建造", "第一人称", "打mod", "科幻", "单机"],
     "cover": "https://cdn.akamai.steamstatic.com/steam/apps/377160/header.jpg",
     "aliases": ["辐射4", "捡垃圾4", "Fallout 4"],
-    "latest": true, "hot": true,
+    "latest": true,
+    "hot": true,
     "steam_appid": "377160",
     "date_added": "2026-10-10",
-    "guide": "<strong>废土生存法则：</strong><br>1. <strong>捡垃圾是第一生产力</strong>：看到胶水、螺丝刀、风扇就捡，这些都是建造和改枪的材料。<br>2. <strong>动力装甲</strong>：遇到打不过的死爪，穿上动力装甲。但记得带“核融合核心”，不然走到一半没电就尴尬了。<br>3. <strong>据点建设</strong>：在庇护山丘建水井和床，吸引居民，你可以当个废土包工头。",
+    "guide": "<strong>废土生存法则：</strong><br>1. 看到胶水、螺丝刀、风扇就捡，这是材料。<br>2. 遇到死爪，穿上动力装甲，带好核心。<br>3. 在庇护山丘建水井和床。",
     "quark_pc": "https://pan.quark.cn/s/493b2f515188",
     "size": "约 40 GB",
     "version": "v1.11.221 次世代版",
@@ -232,124 +239,876 @@
       "https://cdn.akamai.steamstatic.com/steam/apps/377160/library_hero.jpg"
     ],
     "config": {
-      "min": { "os": "Windows 7/8/10 (64-bit OS required)", "cpu": "Intel Core i5-2300 2.8 GHz/AMD Phenom II X4 945 3.0 GHz", "ram": "8 GB RAM", "gpu": "NVIDIA GTX 550 Ti 2GB/AMD Radeon HD 7870 2GB", "disk": "40 GB 可用空间" },
-      "rec": { "os": "Windows 10 (64-bit OS required)", "cpu": "Intel Core i7 4790 3.6 GHz/AMD FX-9590 4.7 GHz", "ram": "8 GB RAM", "gpu": "NVIDIA GTX 780 3GB/AMD Radeon R9 290X 4GB", "disk": "40 GB 可用空间" }
+      "min": { "os": "Windows 7/8/10", "cpu": "Intel Core i5-2300", "ram": "8 GB RAM", "gpu": "NVIDIA GTX 550 Ti", "disk": "40 GB 可用空间" },
+      "rec": { "os": "Windows 10", "cpu": "Intel Core i7 4790", "ram": "8 GB RAM", "gpu": "NVIDIA GTX 780", "disk": "40 GB 可用空间" }
     }
   },
   {
-    "id": "assassinscreedvalhalla",
-    "name": "刺客信条：英灵殿",
-    "en_name": "Assassin's Creed Valhalla",
+    "id": "sekiro",
+    "name": "只狼：影逝二度",
+    "en_name": "Sekiro: Shadows Die Twice",
+    "type": "动作角色扮演",
+    "category": ["单机游戏", "动作射击", "热门大作"],
+    "tags": ["魂类", "高难度", "动作", "单机", "忍者", "剧情神作", "年度游戏", "高画质", "历史"],
+    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/814380/header.jpg",
+    "aliases": ["只狼", "Sekiro", "打铁模拟器"],
+    "latest": true,
+    "hot": true,
+    "steam_appid": "814380",
+    "date_added": "2026-09-01",
+    "guide": "<strong>忍者生存法则：</strong><br>1. 这是音游，核心是“弹反（打铁）”。<br>2. 敌人出现“危”字时，如果是突刺，按前进+闪避可以踩刀（识破）。<br>3. 别贪刀，砍两刀就准备防守。",
+    "quark_pc": "https://pan.quark.cn/s/73240e1d9d5d",
+    "size": "约 15 GB",
+    "version": "v1.06 年度版",
+    "desc": [
+      "《只狼：影逝二度》是由 FromSoftware 开发、动视发行的动作冒险游戏。背景设定在 16 世纪的日本战国时代。",
+      "玩家扮演一名被称为“狼”的独臂忍者，为了救回被掳走的皇子，踏上复仇之路。游戏最大的特色是引入了“架势条”系统和忍义手（假肢）改造系统。",
+      "这是一款极其硬核的游戏，曾获得 TGA 年度最佳游戏。当你终于掌握了完美弹反，听着清脆的“铛铛”声击败强敌时，成就感无与伦比。"
+    ],
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/814380/library_hero.jpg"
+    ],
+    "config": {
+      "min": { "os": "Windows 7/8.1/10", "cpu": "Intel Core i3-2100", "ram": "4 GB RAM", "gpu": "NVIDIA GeForce GTX 760", "disk": "25 GB 可用空间" },
+      "rec": { "os": "Windows 10", "cpu": "Intel Core i5-2500K", "ram": "8 GB RAM", "gpu": "NVIDIA GeForce GTX 970", "disk": "25 GB 可用空间" }
+    }
+  },
+  {
+    "id": "dark_souls_3",
+    "name": "黑暗之魂3",
+    "en_name": "DARK SOULS III",
+    "type": "动作角色扮演",
+    "category": ["单机游戏", "角色扮演", "热门大作"],
+    "tags": ["魂类", "高难度", "黑暗奇幻", "联机", "动作", "单机", "剧情神作", "魔法"],
+    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/374320/header.jpg",
+    "aliases": ["黑魂3", "黑暗之魂3"],
+    "latest": true,
+    "hot": true,
+    "steam_appid": "374320",
+    "date_added": "2026-08-30",
+    "guide": "<strong>不死人指南：</strong><br>1. 不要迷信盾牌，看准时机翻滚才是王道。<br>2. 捏余火可以增加血量上限，但会被玩家入侵。<br>3. 打不过 Boss 就召唤好哥哥。",
+    "quark_pc": "https://pan.quark.cn/s/351592b59b39",
+    "size": "约 25 GB",
+    "version": "v1.15.2 豪华版 (含全DLC)",
+    "desc": [
+      "《黑暗之魂3》是 FromSoftware 开发的魂系动作 RPG，也是黑魂三部曲的终章。",
+      "游戏拥有极高的难度和极其精妙的地图设计（立体互通）。玩家扮演灰烬，踏上寻找初火，传火的艰难旅程。",
+      "BOSS 战设计堪称业界顶流，无名王者、修女芙莉德、奴隶骑士盖尔等战斗，每一场都让人热血沸腾。"
+    ],
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/374320/library_hero.jpg"
+    ],
+    "config": {
+      "min": { "os": "Windows 7/8.1/10", "cpu": "Intel Core i3-2100", "ram": "4 GB RAM", "gpu": "NVIDIA GeForce GTX 750 Ti", "disk": "25 GB 可用空间" },
+      "rec": { "os": "Windows 10", "cpu": "Intel Core i7-3770", "ram": "8 GB RAM", "gpu": "NVIDIA GeForce GTX 970", "disk": "25 GB 可用空间" }
+    }
+  },
+  {
+    "id": "ittakestwo",
+    "name": "双人成行",
+    "en_name": "It Takes Two",
+    "type": "合作冒险",
+    "category": ["单机游戏", "休闲独立", "热门大作"],
+    "tags": ["双人", "合作", "解谜", "休闲", "冒险", "治愈", "年度游戏", "高画质", "动作"],
+    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/1426210/header.jpg",
+    "aliases": ["双人成行", "It Takes Two"],
+    "latest": true,
+    "hot": true,
+    "steam_appid": "1426210",
+    "date_added": "2026-08-28",
+    "guide": "<strong>合作指南：</strong><br>1. 这是一个强制双人合作的游戏，一个人买，另一个可以下载好友通行证免费玩。<br>2. 多沟通，很多关卡需要两人配合。<br>3. 地图各处隐藏着很多双人小游戏，千万别错过。",
+    "quark_pc": "https://pan.quark.cn/s/02d3b79d875e",
+    "size": "约 50 GB",
+    "version": "v1.0 官方中文版",
+    "desc": [
+      "《双人成行》是由 Hazelight Studios 开发的平台冒险游戏。",
+      "科迪和小梅是一对感情破裂的夫妻，他们被魔法变成了布娃娃。为了恢复原貌，他们必须在一个奇幻的世界中携手合作。",
+      "每一关都有全新的玩法机制，从飞行、射击到魔法。获得 TGA 年度游戏是实至名归，这是近年来最好的双人游戏。"
+    ],
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/1426210/library_hero.jpg"
+    ],
+    "config": {
+      "min": { "os": "Windows 8.1/10", "cpu": "Intel Core i3-2100T", "ram": "8 GB RAM", "gpu": "NVIDIA GeForce GTX 660", "disk": "50 GB 可用空间" },
+      "rec": { "os": "Windows 10", "cpu": "Intel Core i5 3570K", "ram": "16 GB RAM", "gpu": "NVIDIA GeForce GTX 980", "disk": "50 GB 可用空间" }
+    }
+  },
+  {
+    "id": "forzahorizon5",
+    "name": "极限竞速：地平线5",
+    "en_name": "Forza Horizon 5",
+    "type": "竞速",
+    "category": ["单机游戏", "休闲独立", "热门大作"],
+    "tags": ["赛车", "开放世界", "高画质", "墨西哥", "休闲", "联机", "写实风", "载具", "风景"],
+    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/1551360/header.jpg",
+    "aliases": ["地平线5", "FH5", "Forza"],
+    "latest": true,
+    "hot": true,
+    "steam_appid": "1551360",
+    "date_added": "2026-08-25",
+    "guide": "<strong>车手指南：</strong><br>1. 错过检查点或撞车了，按倒转键（默认是 Y）可以时光倒流。<br>2. 去调校大厅下载别人的 S2 或 X 级调校。<br>3. 撞碎地图上的经验广告牌。",
+    "quark_pc": "https://pan.quark.cn/s/f01c6e68016b",
+    "size": "约 110 GB",
+    "version": "v1.688.044 顶级版",
+    "desc": [
+      "《极限竞速：地平线5》是 Playground Games 开发的高评价赛车游戏。",
+      "本作的舞台来到了充满生机的墨西哥。游戏拥有极其出色的光影表现和极其丰富的车辆库，超过 500 辆名车等你收集。",
+      "这是一款对新手极其友好的赛车游戏，哪怕是手残党也能体验到驾驶超跑在火山口狂飙的乐趣。"
+    ],
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/1551360/library_hero.jpg"
+    ],
+    "config": {
+      "min": { "os": "Windows 10", "cpu": "Intel i5-4460", "ram": "8 GB RAM", "gpu": "NVidia GTX 970", "disk": "110 GB 可用空间" },
+      "rec": { "os": "Windows 10", "cpu": "Intel i5-8400", "ram": "16 GB RAM", "gpu": "Nvidia RTX 1070", "disk": "110 GB 可用空间 (SSD)" }
+    }
+  },
+  {
+    "id": "warthunder",
+    "name": "战争雷霆",
+    "en_name": "War Thunder",
+    "type": "载具射击",
+    "category": ["网络游戏", "动作射击", "热门大作"],
+    "tags": ["载具", "军事", "免费", "射击", "联机", "写实风", "高画质"],
+    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/236390/header.jpg",
+    "aliases": ["wt", "战争雷霆", "war thunder"],
+    "latest": true,
+    "hot": true,
+    "steam_appid": "236390",
+    "official": "https://warthunder.com/zh",
+    "date_added": "2026-11-03",
+    "guide": "<strong>萌新避坑：</strong><br>1. 别急着买高级金币车，先熟悉低级房的走位。<br>2. 历史模式收益高，但需要练眼力；街机模式适合快速上手。",
+    "size": "约 95 GB",
+    "version": "官方最新版",
+    "desc": [
+      "《战争雷霆》是一款以二战和冷战为背景的大型多人在线载具射击游戏。玩家可以驾驶飞机、坦克、战舰进行极其硬核的拟真战斗。",
+      "游戏拥有庞大的载具树，从螺旋桨飞机到现代喷气式战机，从轻型坦克到主战坦克，应有尽有。游戏免费下载，采用内购模式。"
+    ],
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/236390/library_hero.jpg",
+      "https://cdn.akamai.steamstatic.com/steam/apps/236390/capsule_616x353.jpg"
+    ],
+    "config": {
+      "min": { "os": "Windows 7/8/10 64位", "cpu": "Dual-Core 2.4 GHz", "ram": "4 GB RAM", "gpu": "Intel HD 4000", "disk": "95 GB 可用空间" },
+      "rec": { "os": "Windows 10 64位", "cpu": "Intel Core i5", "ram": "16 GB RAM", "gpu": "NVIDIA GTX 1060", "disk": "95 GB 可用空间" }
+    }
+  },
+  {
+    "id": "minecraft",
+    "name": "我的世界",
+    "en_name": "Minecraft",
+    "type": "沙盒生存",
+    "category": ["单机游戏", "休闲独立", "热门大作"],
+    "tags": ["沙盒", "像素", "创造", "生存", "联机", "打mod", "杀时间", "经典"],
+    "cover": "https://images.unsplash.com/photo-1607513746994-51f730a44832?q=80&w=800&auto=format&fit=crop",
+    "aliases": ["mc", "我的世界", "minecraft", "麦块"],
+    "latest": true,
+    "hot": true,
+    "official": "https://www.minecraft.net/zh-hans",
+    "date_added": "2026-07-01",
+    "guide": "<strong>MC 生存第一天：</strong><br>1. 徒手撸树，做工作台。<br>2. 天黑前一定要挖个洞把自己埋起来，防止僵尸小白偷袭。",
+    "size": "约 1 GB",
+    "version": "官方最新版",
+    "desc": [
+      "《我的世界》是一款风靡全球的沙盒建造游戏。在这个由方块组成的世界里，你可以尽情探索、采集资源、建造宏伟的建筑，或者深入地下与怪物战斗。",
+      "游戏拥有极高的自由度，支持单人和多人联机，更有无数的 MOD 和材质包等待你去探索。"
+    ],
+    "screenshots": [
+      "https://images.unsplash.com/photo-1607513746994-51f730a44832?q=80&w=1200&auto=format&fit=crop"
+    ],
+    "config": {
+      "min": { "os": "Windows 10", "cpu": "Intel Core i3-3210", "ram": "4 GB RAM", "gpu": "Intel HD 4000", "disk": "1 GB 可用空间" },
+      "rec": { "os": "Windows 10/11", "cpu": "Intel Core i5-4690", "ram": "8 GB RAM", "gpu": "GTX 700 series", "disk": "4 GB 可用空间" }
+    }
+  },
+  {
+    "id": "daysgone",
+    "name": "往日不再",
+    "en_name": "Days Gone",
     "type": "动作冒险",
     "category": ["单机游戏", "动作射击", "热门大作"],
-    "tags": ["开放世界", "刺客", "维京", "高画质"],
-    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/2208920/header.jpg",
-    "aliases": ["刺客信条英灵殿", "英灵殿", "ACV"],
-    "latest": true, "hot": true,
-    "steam_appid": "2208920",
-    "date_added": "2026-10-05",
-    "guide": "<strong>维京战士指南：</strong><br>1. <strong>双持武器</strong>：本作引入了双持系统，双持盾牌或双持重斧非常猛。<br>2. <strong>劫掠修道院</strong>：这是获取补给和升级营地的主要途径，带上你的维京兄弟一起去抢。<br>3. <strong>神秘传说</strong>：地图上有许多光点（神秘传说），去挑战它们可以提升你的能力。",
-    "quark_pc": "https://pan.quark.cn/s/f28e38e34441",
+    "tags": ["开放世界", "丧尸", "摩托", "剧情", "射击", "废土", "高画质", "单机"],
+    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/1259420/header.jpg",
+    "aliases": ["往日不再", "Days Gone"],
+    "latest": true,
+    "hot": true,
+    "steam_appid": "1259420",
+    "date_added": "2026-08-22",
+    "guide": "<strong>末日骑士指南：</strong><br>1. 你的摩托车需要经常加油，去加油站搜刮油桶。<br>2. 遇到成百上千的丧尸（暴走潮），千万别硬刚，利用地形和炸药。<br>3. 多做营地任务，信任度高了可以买更好的武器。",
+    "quark_pc": "https://pan.quark.cn/s/46eda1852d52",
+    "size": "约 70 GB",
+    "version": "v1.36.187",
+    "desc": [
+      "《往日不再》是 Bend Studio 开发的一款第三人称丧尸生存游戏。",
+      "主角迪肯是一名飞车党成员，在末日后的美国荒野中求生，同时寻找失踪的妻子。",
+      "虽然刚发售时评价一般，但经过多次优化和更新后，现在的《往日不再》是一款被严重低估的佳作，尤其是成群丧尸涌来的压迫感极强。"
+    ],
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/1259420/library_hero.jpg"
+    ],
+    "config": {
+      "min": { "os": "Windows 10 64-bits", "cpu": "Intel Core i5-2500K", "ram": "8 GB RAM", "gpu": "Nvidia GeForce GTX 780", "disk": "70 GB 可用空间" },
+      "rec": { "os": "Windows 10 64-bits", "cpu": "Intel Core i7-4770K", "ram": "16 GB RAM", "gpu": "Nvidia GeForce GTX 1060", "disk": "70 GB 可用空间" }
+    }
+  },
+  {
+    "id": "deadspace_remake",
+    "name": "死亡空间：重制版",
+    "en_name": "Dead Space",
+    "type": "生存恐怖",
+    "category": ["单机游戏", "动作射击", "热门大作"],
+    "tags": ["恐怖", "科幻", "重制", "太空", "射击", "高画质", "血腥", "单机"],
+    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/1693980/header.jpg",
+    "aliases": ["死亡空间", "Dead Space"],
+    "latest": true,
+    "hot": true,
+    "steam_appid": "1693980",
+    "date_added": "2026-08-20",
+    "guide": "<strong>太空生存指南：</strong><br>1. 打头没用！必须打怪物的四肢（切断腿让它爬，切断手让它不能攻击）。<br>2. 遇到速度快的怪物，先用静态能力定住它。<br>3. 这游戏极度缺弹药，踩碎所有尸体，打开所有箱子。",
+    "quark_pc": "https://pan.quark.cn/s/e88cf26b2959",
+    "size": "约 50 GB",
+    "version": "v1.0.3.0 官方中文版",
+    "desc": [
+      "《死亡空间：重制版》是 Motive 工作室使用寒霜引擎完全重制的科幻生存恐怖神作。",
+      "玩家扮演工程师艾萨克，登上一艘死寂的采矿飞船“石村号”，面对由尸体变异而成的恐怖外星生物。",
+      "重制版不仅大幅升级了画面，还加入了无缝的飞船探索、全新的剧情对话以及更有压迫感的音效设计。"
+    ],
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/1693980/library_hero.jpg"
+    ],
+    "config": {
+      "min": { "os": "Window 10 64-bit +", "cpu": "Ryzen 5 2600x, Core i5 8600", "ram": "16 GB RAM", "gpu": "AMD RX 5700, GTX 1070", "disk": "50 GB 可用空间" },
+      "rec": { "os": "Window 10 64-bit +", "cpu": "Ryzen 5 5600X, Core i5 11600K", "ram": "16 GB RAM", "gpu": "Radeon RX 6700 XT, RTX 2070", "disk": "50 GB 可用空间" }
+    }
+  },
+  {
+    "id": "re_village",
+    "name": "生化危机8：村庄",
+    "en_name": "Resident Evil Village",
+    "type": "生存恐怖",
+    "category": ["单机游戏", "动作射击", "热门大作"],
+    "tags": ["恐怖", "第一人称", "吸血鬼", "高画质", "射击", "解谜", "剧情神作", "单机"],
+    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/1196590/header.jpg",
+    "aliases": ["生化危机8", "RE8", "生化8"],
+    "latest": true,
+    "hot": true,
+    "steam_appid": "1196590",
+    "date_added": "2026-08-18",
+    "guide": "<strong>村庄生存指南：</strong><br>1. 在城堡里被吸血鬼夫人追击时，不要回头，疯狂跑就行。<br>2. 多收集肉类，在公爵那里烹饪可以永久提升属性。<br>3. 马格南左轮是 Boss 杀手，留着打大怪。",
+    "quark_pc": "https://pan.quark.cn/s/b62b9e5cb4f6",
+    "size": "约 35 GB",
+    "version": "v1.0.0",
+    "desc": [
+      "《生化危机8：村庄》是 Capcom 开发的生存恐怖游戏，是《生化危机7》的直接续作。",
+      "伊森·温特斯为了找回被夺走的女儿，来到了一个充满狼人、吸血鬼和邪教的阴森村庄。",
+      "游戏完美结合了 7 代的第一人称恐怖感和 4 代的动作射击元素。吸血鬼夫人（八尺大人）更是火出圈，游戏体验极为丰富。"
+    ],
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/1196590/library_hero.jpg"
+    ],
+    "config": {
+      "min": { "os": "Windows 10", "cpu": "AMD Ryzen 3 1200 ／ Intel Core i5-7500", "ram": "8 GB RAM", "gpu": "AMD Radeon RX 560", "disk": "35 GB 可用空间" },
+      "rec": { "os": "Windows 10", "cpu": "AMD Ryzen 5 3600 ／ Intel Core i7 8700", "ram": "16 GB RAM", "gpu": "AMD Radeon RX 5700", "disk": "35 GB 可用空间" }
+    }
+  },
+  {
+    "id": "re2_remake",
+    "name": "生化危机2：重制版",
+    "en_name": "Resident Evil 2 Remake",
+    "type": "生存恐怖",
+    "category": ["单机游戏", "动作射击", "热门大作"],
+    "tags": ["恐怖", "丧尸", "重制", "解谜", "射击", "高画质", "经典", "单机"],
+    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/883710/header.jpg",
+    "aliases": ["生化危机2", "RE2"],
+    "latest": true,
+    "hot": true,
+    "steam_appid": "883710",
+    "date_added": "2026-08-15",
+    "guide": "<strong>浣熊市生存指南：</strong><br>1. 听到沉重的脚步声说明暴君来了，赶紧跑。<br>2. 火药最好合成散弹枪子弹或马格南子弹。<br>3. 打字机房间是安全区，暴君进不来。",
+    "quark_pc": "https://pan.quark.cn/s/30d3f01377ac",
+    "size": "约 26 GB",
+    "version": "v1.05 豪华版",
+    "desc": [
+      "《生化危机2：重制版》是 Capcom 用 RE 引擎彻底重制的经典。",
+      "新人警察里昂和克莱尔在浣熊市遭遇了丧尸危机。游戏分为表关和里关，两名主角的剧情互相交织。",
+      "本作回归了纯粹的生存恐怖，资源极度匮乏，暴君的无情追击更是给玩家带来了极大的心理压力。"
+    ],
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/883710/library_hero.jpg"
+    ],
+    "config": {
+      "min": { "os": "Windows 7/8.1/10", "cpu": "Intel Core i5-4460", "ram": "8 GB RAM", "gpu": "NVIDIA GeForce GTX 760", "disk": "26 GB 可用空间" },
+      "rec": { "os": "Windows 10", "cpu": "Intel Core i7-3770", "ram": "8 GB RAM", "gpu": "NVIDIA GeForce GTX 1060", "disk": "26 GB 可用空间" }
+    }
+  },
+  {
+    "id": "ac_odyssey",
+    "name": "刺客信条：奥德赛",
+    "en_name": "Assassin's Creed Odyssey",
+    "type": "动作角色扮演",
+    "category": ["单机游戏", "角色扮演", "热门大作"],
+    "tags": ["开放世界", "古希腊", "斯巴达", "海战", "动作", "高画质", "历史", "冒险", "单机"],
+    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/812140/header.jpg",
+    "aliases": ["刺客信条奥德赛", "奥德赛", "ACO"],
+    "latest": true,
+    "hot": true,
+    "steam_appid": "812140",
+    "date_added": "2026-08-12",
+    "guide": "<strong>斯巴达雇佣兵指南：</strong><br>1. 斯巴达踢是神技！把敌人踹下悬崖可以直接秒杀。<br>2. 升级你的船，海战很好玩。<br>3. 如果你悬赏太高，会有佣兵来追杀你，记得交罚金。",
+    "quark_pc": "https://pan.quark.cn/s/2577de2b5f50",
     "size": "约 60 GB",
-    "version": "v1.7.0 全DLC 完整版",
+    "version": "v1.5.3 终极版",
     "desc": [
-      "《刺客信条：英灵殿》是育碧开发的一款动作冒险游戏。玩家扮演维京战士艾沃尔，带领族人离开冰天雪地的挪威，前往英格兰寻找新的家园。",
-      "游戏融合了刺杀、狂战士战斗、劫掠和定居点建造系统。你不仅要对抗英格兰的各个领主，还要在神话中与诸神交锋。",
-      "本作包含所有 DLC（德鲁伊之怒、巴黎围攻等），提供了长达上百小时的游戏体验，是神话三部曲的集大成之作。"
+      "《刺客信条：奥德赛》是育碧开发的一款动作 RPG。背景设定在古希腊，正值伯罗奔尼撒战争时期。",
+      "玩家扮演斯巴达血统的雇佣兵，在广阔的希腊世界探索、海战、暗杀，并寻找自己身世的秘密。",
+      "本作是神话三部曲中口碑最好的一作，内容量极其庞大（超过 100 小时），选择系统也影响结局。"
     ],
     "screenshots": [
-      "https://cdn.akamai.steamstatic.com/steam/apps/2208920/library_hero.jpg"
+      "https://cdn.akamai.steamstatic.com/steam/apps/812140/library_hero.jpg"
     ],
     "config": {
-      "min": { "os": "Windows 10 (64-bit only)", "cpu": "AMD Ryzen 3 1200 / Intel Core i5-4460", "ram": "8 GB RAM ( Dual-channel)", "gpu": "AMD Radeon R9 380 / NVIDIA GeForce GTX 960", "disk": "60 GB 可用空间" },
-      "rec": { "os": "Windows 10 (64-bit only)", "cpu": "AMD Ryzen 5 1600 / Intel Core i7-4790", "ram": "8 GB RAM (Dual-channel)", "gpu": "AMD Radeon RX 570 / NVIDIA GeForce GTX 1060", "disk": "60 GB 可用空间" }
+      "min": { "os": "Windows 7/8.1/10", "cpu": "AMD FX 6300", "ram": "8 GB RAM", "gpu": "AMD Radeon R9 285", "disk": "60 GB 可用空间" },
+      "rec": { "os": "Windows 10", "cpu": "AMD Ryzen 5 1600", "ram": "8 GB RAM", "gpu": "AMD Radeon RX 570", "disk": "60 GB 可用空间" }
     }
   },
   {
-    "id": "watchdogs2",
-    "name": "看门狗2",
-    "en_name": "Watch Dogs 2",
-    "type": "动作冒险",
+    "id": "far_cry_5",
+    "name": "孤岛惊魂5",
+    "en_name": "Far Cry 5",
+    "type": "第一人称射击",
     "category": ["单机游戏", "动作射击", "热门大作"],
-    "tags": ["开放世界", "黑客", "现代", "科技"],
-    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/447040/header.jpg",
-    "aliases": ["看门狗2", "Watch Dogs 2"],
-    "latest": true, "hot": true,
-    "steam_appid": "447040",
-    "date_added": "2026-09-28",
-    "guide": "<strong>黑客入门：</strong><br>1. <strong>无人机与遥控车</strong>：这是你的两件神器。用无人机侦查，用遥控车潜入禁区黑入服务器，全程不露脸。<br>2. <strong>非致命潜行</strong>：本作鼓励非致命手段，用电击枪和麻痹果。<br>3. <strong>交通黑客</strong>：黑入红绿灯制造车祸，或者控制升降机，逃命神技。",
-    "quark_pc": "https://pan.quark.cn/s/78fb5a898eea",
-    "size": "约 45 GB",
-    "version": "v1.17 黄金版",
+    "tags": ["开放世界", "射击", "邪教", "美国", "第一人称", "高画质", "联机", "单机"],
+    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/552520/header.jpg",
+    "aliases": ["孤岛惊魂5", "远哭5", "Far Cry 5"],
+    "latest": true,
+    "hot": true,
+    "steam_appid": "552520",
+    "date_added": "2026-08-10",
+    "guide": "<strong>希望郡指南：</strong><br>1. 带一个好用的雇佣兵（比如狗熊或者狙击手），他们能救你命。<br>2. 多用望远镜标记敌人，用消音武器潜行暗杀。<br>3. 这游戏还能钓鱼，放松一下。",
+    "quark_pc": "https://pan.quark.cn/s/c0fcf6dbf6d6",
+    "size": "约 40 GB",
+    "version": "v1.0.11 黄金版",
     "desc": [
-      "《看门狗2》是一款由育碧开发的开放世界黑客动作冒险游戏。背景设定在充满活力的旧金山湾区。",
-      "玩家扮演年轻的街头黑客马可仕，加入传奇黑客组织 DedSec，对抗腐败的 ctOS 2.0 系统和滥用大数据的科技公司。",
-      "游戏充满了年轻人的街头文化、滑板和无人机。黑客系统比一代更加自由，你可以黑入城市里任何联网的设备，制造混乱或暗杀目标。"
+      "《孤岛惊魂5》是育碧开发的一款开放世界第一人称射击游戏。背景设定在美国蒙大拿州的希望郡。",
+      "玩家扮演一名菜鸟警长，卷入了一个名为“伊甸之门”的末日邪教组织的叛乱。你需要组织反抗军，推翻邪教领袖约瑟夫的统治。",
+      "游戏拥有极高的射击手感和自由度，可以开飞机、开车、甚至召唤动物帮战。"
     ],
     "screenshots": [
-      "https://cdn.akamai.steamstatic.com/steam/apps/447040/library_hero.jpg"
+      "https://cdn.akamai.steamstatic.com/steam/apps/552520/library_hero.jpg"
     ],
     "config": {
-      "min": { "os": "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit versions only)", "cpu": "Intel Core i5 2400S @ 2.5 GHz / AMD FX 6120 @ 3.5 GHz", "ram": "6 GB RAM", "gpu": "NVIDIA GeForce GTX 660 (2GB) / AMD Radeon HD 7870 (2GB)", "disk": "45 GB 可用空间" },
-      "rec": { "os": "Windows 10 (64-bit versions only)", "cpu": "Intel Core i5 3470 @ 3.2 GHz / AMD FX 8120 @ 3.9 GHz", "ram": "8 GB RAM", "gpu": "NVIDIA GeForce GTX 970 (4GB) / AMD Radeon R9 290 (4GB)", "disk": "45 GB 可用空间" }
+      "min": { "os": "Windows 7/8.1/10", "cpu": "Intel Core i5-2400", "ram": "8 GB RAM", "gpu": "NVIDIA GTX 660", "disk": "40 GB 可用空间" },
+      "rec": { "os": "Windows 10", "cpu": "Intel Core i7-4770", "ram": "8 GB RAM", "gpu": "NVIDIA GTX 970", "disk": "40 GB 可用空间" }
     }
   },
   {
-    "id": "civilization6",
-    "name": "文明6",
-    "en_name": "Sid Meier's Civilization VI",
-    "type": "策略战棋",
-    "category": ["单机游戏", "策略模拟", "热门大作"],
-    "tags": ["回合制", "策略", "历史", "杀时间"],
-    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/289070/header.jpg",
-    "aliases": ["文明6", "文明", "Civ6"],
-    "latest": true, "hot": true,
-    "steam_appid": "289070",
-    "date_added": "2026-09-25",
-    "guide": "<strong>文明领袖指南：</strong><br>1. <strong>再打一回合</strong>：这游戏被称为“时间黑洞”，注意休息。<br>2. <strong>开局探路</strong>：出侦察兵（狗）探索地图，找村庄（蘑菇）踩。<br>3. <strong>爆铺</strong>：前期疯狂建城（移民），后面再慢慢发展。<br>4. <strong>区域规划</strong>：不要把区域乱放，比如工业区要靠近矿山，学院要靠山。",
-    "quark_pc": "https://pan.quark.cn/s/b277ba644f46",
-    "size": "约 27 GB",
-    "version": "v1.0.12.68 全DLC 典藏版",
+    "id": "monster_hunter_world",
+    "name": "怪物猎人：世界",
+    "en_name": "Monster Hunter: World",
+    "type": "动作角色扮演",
+    "category": ["单机游戏", "角色扮演", "热门大作"],
+    "tags": ["共斗", "狩猎", "联机", "高画质", "动作", "奇幻", "杀时间", "单机"],
+    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/582010/header.jpg",
+    "aliases": ["怪物猎人", "怪猎世界", "MHW"],
+    "latest": true,
+    "hot": true,
+    "steam_appid": "582010",
+    "date_added": "2026-08-08",
+    "guide": "<strong>苍蓝星指南：</strong><br>1. 14 种武器，总有一款适合你。新手推荐大剑、太刀或双刀。<br>2. 出去打猎前，记得在营地里吃饭，可以加血上限和攻击力。<br>3. 防卫队装备非常强力，适合新手直通冰原。",
+    "quark_pc": "https://pan.quark.cn/s/d2952ffa2feb",
+    "size": "约 90 GB",
+    "version": "v15.21.00 冰原全DLC",
     "desc": [
-      "《文明6》是由 Firaxis Games 开发的一款经典回合制策略游戏。你将建立起一个帝国，并带领它经历数个时代，成为世界的统治者。",
-      "游戏拥有 40 多位历史领袖供你选择，从秦始皇到罗斯福，每个文明都有独特的技能和单位。",
-      "本作引入了“城市区域”系统，城市不再只是建在一格上，而是需要规划各个功能区。全新的“尤里卡”系统让科技研发更加具有策略性。"
+      "《怪物猎人：世界》是 Capcom 开发的硬核动作狩猎游戏。这是该系列首次走向全球的重磅作品。",
+      "玩家扮演一名猎人，加入新大陆调查团，探索充满未知的生态系统，狩猎各种巨大的古龙。",
+      "游戏打击感无敌，每个怪物都有独特的行为模式。冰原 DLC 加入的“飞翔爪”更是让战斗立体化，是共斗游戏的巅峰。"
     ],
     "screenshots": [
-      "https://cdn.akamai.steamstatic.com/steam/apps/289070/library_hero.jpg"
+      "https://cdn.akamai.steamstatic.com/steam/apps/582010/library_hero.jpg"
     ],
     "config": {
-      "min": { "os": "Windows 7x64 / Windows 8.1x64 / Windows 10x64", "cpu": "Intel Core i3 2.5 Ghz or AMD Phenom II 2.6 Ghz or greater", "ram": "4 GB RAM", "gpu": "1 GB & AMD 5570 or nVidia 450", "disk": "27 GB 可用空间" },
-      "rec": { "os": "Windows 7x64 / Windows 8.1x64 / Windows 10x64", "cpu": "Fourth Generation Intel Core i5 2.5 Ghz or AMD FX8350 4.0 Ghz or greater", "ram": "8 GB RAM", "gpu": "2GB & AMD 7970 or nVidia 770 or greater", "disk": "27 GB 可用空间" }
+      "min": { "os": "Windows 7/8/10", "cpu": "Intel Core i5-4460", "ram": "8 GB RAM", "gpu": "NVIDIA GeForce GTX 760", "disk": "90 GB 可用空间" },
+      "rec": { "os": "Windows 10", "cpu": "Intel Core i7 3770", "ram": "8 GB RAM", "gpu": "NVIDIA GeForce GTX 1060", "disk": "90 GB 可用空间" }
     }
   },
   {
-    "id": "totalwarthreekingdoms",
-    "name": "全面战争：三国",
-    "en_name": "Total War: THREE KINGDOMS",
-    "type": "策略战棋",
-    "category": ["单机游戏", "策略模拟", "热门大作"],
-    "tags": ["策略", "三国", "即时战略", "历史"],
-    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/779340/header.jpg",
-    "aliases": ["全战三国", "三国", "Total War"],
-    "latest": true, "hot": true,
-    "steam_appid": "779340",
-    "date_added": "2026-09-22",
-    "guide": "<strong>诸侯指南：</strong><br>1. <strong>武将与满意度</strong>：注意武将的满意度，如果不满意他们会带着兵马独立。<br>2. <strong>外交与联盟</strong>：不要四面树敌，远交近攻。<br>3. <strong>阵型与兵种相克</strong>：骑兵绕后冲锋，长枪兵克骑兵，弓兵在后面输出。",
-    "quark_pc": "https://pan.quark.cn/s/9f9e9e0481e3",
-    "size": "约 34 GB",
-    "version": "v1.7.8 全DLC",
+    "id": "dmc5",
+    "name": "鬼泣5",
+    "en_name": "Devil May Cry 5",
+    "type": "动作",
+    "category": ["单机游戏", "动作射击", "热门大作"],
+    "tags": ["动作", "炫酷", "连招", "恶魔", "高画质", "剧情神作", "奇幻", "单机"],
+    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/601150/header.jpg",
+    "aliases": ["鬼泣5", "DMC5", "恶魔五月哭"],
+    "latest": true,
+    "hot": true,
+    "steam_appid": "601150",
+    "date_added": "2026-08-05",
+    "guide": "<strong>恶魔猎人指南：</strong><br>1. 不要在地上打，把敌人挑飞到空中，在空中连招。<br>2. 不要一直重复同一招，会掉评价。<br>3. 尼禄的机械臂不要舍不得用。",
+    "quark_pc": "https://pan.quark.cn/s/b78b5bdbd69c",
+    "size": "约 35 GB",
+    "version": "v1.0 全DLC 维吉尔版",
     "desc": [
-      "《全面战争：三国》是 Creative Assembly 开发的一款历史策略游戏。以中国东汉末年为背景，完美还原了那个群雄割据的时代。",
-      "你可以在回合制的战役地图上管理内政、外交和军队，在实时的战场上调兵遣将。经典的《三国演义》和《三国志》中的武将悉数登场。",
-      "游戏独特的“演义模式”赋予了武将单挑的能力，关羽斩颜良、张飞喝断当阳桥等名场面都可以在游戏中复现。"
+      "《鬼泣5》是 Capcom 开发的经典动作游戏。距离上一代已经过去了 11 年。",
+      "尼禄、但丁以及神秘的新角色 V，三人将共同对抗魔王尤里曾。",
+      "游戏的战斗系统极其深奥，动作极其帅气。只要你愿意练，就能打出像电影一样的华丽连段。"
     ],
     "screenshots": [
-      "https://cdn.akamai.steamstatic.com/steam/apps/779340/library_hero.jpg"
+      "https://cdn.akamai.steamstatic.com/steam/apps/601150/library_hero.jpg"
     ],
     "config": {
-      "min": { "os": "Windows 7 64 Bit", "cpu": "Intel Core 2 Duo 3.00Ghz", "ram": "4 GB RAM", "gpu": "GTX 650 Ti 1GB / Radeon HD 7750 1GB", "disk": "34 GB 可用空间" },
-      "rec": { "os": "Windows 10 64 Bit", "cpu": "Intel i5-6600 / Ryzen 5 2600X", "ram": "8 GB RAM", "gpu": "GTX 970 4GB / AMD Radeon RX 480 4GB", "disk": "34 GB 可用空间" }
+      "min": { "os": "Windows 7/8.1/10", "cpu": "Intel Core i5-4460", "ram": "8 GB RAM", "gpu": "NVIDIA GeForce GTX 760", "disk": "35 GB 可用空间" },
+      "rec": { "os": "Windows 10", "cpu": "Intel Core i7-3770", "ram": "8 GB RAM", "gpu": "NVIDIA GeForce GTX 1060", "disk": "35 GB 可用空间" }
+    }
+  },
+  {
+    "id": "nier_automata",
+    "name": "尼尔：机械纪元",
+    "en_name": "NieR:Automata",
+    "type": "动作角色扮演",
+    "category": ["单机游戏", "角色扮演", "热门大作"],
+    "tags": ["剧情神作", "2B", "哲学", "动作", "高画质", "科幻", "致郁", "二次元"],
+    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/524220/header.jpg",
+    "aliases": ["尼尔机械纪元", "2B", "NieR"],
+    "latest": true,
+    "hot": true,
+    "steam_appid": "524220",
+    "date_added": "2026-08-02",
+    "guide": "<strong>人造人指南：</strong><br>1. 不要乱卖芯片，合理搭配。<br>2. 通关一周目只是开始，二周目和三周目才是剧情的核心。<br>3. 务必打到 E 结局。",
+    "quark_pc": "https://pan.quark.cn/s/5733e92c75ad",
+    "size": "约 50 GB",
+    "version": "v1.0.6 年度版 (含DLC)",
+    "desc": [
+      "《尼尔：机械纪元》是由白金工作室开发，Square Enix 发行的动作 RPG。",
+      "在遥远的未来，地球被外星机械生物占领，人类逃往月球。玩家扮演 2B、9S 和 A2 三名仿生人，为了夺回地球而战。",
+      "游戏通过多周目叙事，探讨了生命、存在和情感的意义。2B 的绝美身姿和凄美的剧情，让这款游戏成为神作。"
+    ],
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/524220/library_hero.jpg"
+    ],
+    "config": {
+      "min": { "os": "Windows 7/8.1/10", "cpu": "Intel Core i3 2100", "ram": "4 GB RAM", "gpu": "NVIDIA GeForce GTX 770", "disk": "50 GB 可用空间" },
+      "rec": { "os": "Windows 10", "cpu": "Intel Core i5 4670", "ram": "8 GB RAM", "gpu": "NVIDIA GeForce GTX 980", "disk": "50 GB 可用空间" }
+    }
+  },
+  {
+    "id": "ff7_remake",
+    "name": "最终幻想7：重制版",
+    "en_name": "FINAL FANTASY VII REMAKE INTERGRADE",
+    "type": "动作角色扮演",
+    "category": ["单机游戏", "角色扮演", "热门大作"],
+    "tags": ["JRPG", "重制", "蒂法", "剧情", "高画质", "动作", "二次元", "科幻"],
+    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/1462040/header.jpg",
+    "aliases": ["最终幻想7", "FF7", "FFVII"],
+    "latest": true,
+    "hot": true,
+    "steam_appid": "1462040",
+    "date_added": "2026-07-30",
+    "guide": "<strong>神罗战士指南：</strong><br>1. 普通攻击积攒 ATB 槽，然后释放技能。<br>2. 多用弱点魔法打怪。<br>3. 间章（尤菲篇）非常有意思，千万别错过。",
+    "quark_pc": "https://pan.quark.cn/s/892f79f745b4",
+    "size": "约 100 GB",
+    "version": "v1.0 尤菲篇 (Intergrade)",
+    "desc": [
+      "《最终幻想7：重制版》是 Square Enix 经典神作 FF7 的完全重制。",
+      "故事发生在魔晄都市米德加，前神罗战士克劳德加入雪崩组织，对抗压榨星球生命的神罗公司。",
+      "战斗系统完美融合了动作与回合制。画面表现极佳，蒂法、爱丽丝等经典角色的建模更是美轮美奂。"
+    ],
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/1462040/library_hero.jpg"
+    ],
+    "config": {
+      "min": { "os": "Windows 10", "cpu": "Intel Core i5-3330", "ram": "8 GB RAM", "gpu": "GeForce GTX 780", "disk": "100 GB 可用空间" },
+      "rec": { "os": "Windows 10", "cpu": "Intel Core i7-3770", "ram": "12 GB RAM", "gpu": "GeForce GTX 1080", "disk": "100 GB 可用空间" }
+    }
+  },
+  {
+    "id": "detroit_become_human",
+    "name": "底特律：变人",
+    "en_name": "Detroit: Become Human",
+    "type": "交互式电影",
+    "category": ["单机游戏", "角色扮演", "热门大作"],
+    "tags": ["剧情神作", "仿生人", "选择", "高画质", "科幻", "互动电影", "未来", "单机"],
+    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/1222140/header.jpg",
+    "aliases": ["底特律变人", "底特律", "Detroit"],
+    "latest": true,
+    "hot": true,
+    "steam_appid": "1222140",
+    "date_added": "2026-07-28",
+    "guide": "<strong>仿生人指南：</strong><br>1. 这游戏有无数个分支和结局，你的每一个选择都很重要。<br>2. 主角如果死了，剧情就真的死了，不会复活。<br>3. 想看不同结局可以多存档。",
+    "quark_pc": "https://pan.quark.cn/s/54c98f23b573",
+    "size": "约 60 GB",
+    "version": "v20230928 官方中文版",
+    "desc": [
+      "《底特律：变人》是由 Quantic Dream 开发的一款电影级互动游戏。",
+      "在未来的底特律，仿生人已经成为人类社会的日常。玩家扮演三名不同的仿生人（卡拉、康纳、马库斯），通过他们的视角见证一场关于觉醒和自由的革命。",
+      "画面极其逼真，演员的动捕表演堪称完美。剧情的张力极大，经常让玩家陷入两难的人性抉择。"
+    ],
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/1222140/library_hero.jpg"
+    ],
+    "config": {
+      "min": { "os": "Windows 10", "cpu": "Intel Core i5-2400", "ram": "8 GB RAM", "gpu": "Nvidia GeForce GTX 660", "disk": "60 GB 可用空间" },
+      "rec": { "os": "Windows 10", "cpu": "Intel Core i7-3770", "ram": "12 GB RAM", "gpu": "Nvidia GeForce GTX 1060", "disk": "60 GB 可用空间" }
+    }
+  },
+  {
+    "id": "metro_exodus",
+    "name": "地铁：离去",
+    "en_name": "Metro Exodus",
+    "type": "第一人称射击",
+    "category": ["单机游戏", "动作射击", "热门大作"],
+    "tags": ["末日", "废土", "剧情", "高画质", "射击", "第一人称", "恐怖", "单机"],
+    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/412020/header.jpg",
+    "aliases": ["地铁离去", "地铁", "Metro Exodus"],
+    "latest": true,
+    "hot": true,
+    "steam_appid": "412020",
+    "date_added": "2026-07-25",
+    "guide": "<strong>游骑兵指南：</strong><br>1. 在废土中，武器容易卡壳，记得经常清理。<br>2. 尽量避开变异兽，节省弹药。<br>3. 不杀投降的敌人，可以增加道德点，影响好结局。",
+    "quark_pc": "https://pan.quark.cn/s/b87fc6b8b632",
+    "size": "约 70 GB",
+    "version": "v1.0.0.7 增强版 (支持光追)",
+    "desc": [
+      "《地铁：离去》是 4A Games 开发的一款第一人称射击游戏。",
+      "玩家扮演游骑兵阿尔乔姆，乘坐火车“曙光号”穿越末日后的俄罗斯，寻找新的家园。",
+      "游戏采用了半开放世界设计，结合了极佳的光影效果和压抑的末日氛围。增强版更是加入了全光追，画面至今依然是天花板级别。"
+    ],
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/412020/library_hero.jpg"
+    ],
+    "config": {
+      "min": { "os": "Windows 7/8/10", "cpu": "Intel Core i5-4440", "ram": "8 GB RAM", "gpu": "GeForce GTX 670", "disk": "70 GB 可用空间" },
+      "rec": { "os": "Windows 10", "cpu": "Intel Core i7-4770K", "ram": "8 GB RAM", "gpu": "GeForce GTX 1070", "disk": "70 GB 可用空间" }
+    }
+  },
+  {
+    "id": "hitman_3",
+    "name": "杀手3",
+    "en_name": "HITMAN 3",
+    "type": "潜行动作",
+    "category": ["单机游戏", "动作射击", "热门大作"],
+    "tags": ["暗杀", "潜行", "沙盒", "光头", "高画质", "现代", "策略", "单机"],
+    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/1659040/header.jpg",
+    "aliases": ["杀手3", "刺客47", "Hitman 3"],
+    "latest": true,
+    "hot": true,
+    "steam_appid": "1659040",
+    "date_added": "2026-07-22",
+    "guide": "<strong>杀手47指南：</strong><br>1. 击杀守卫换上他们的衣服，可以进入限制区域。<br>2. 制造意外不会引起怀疑。<br>3. 每张地图都有无数种暗杀方式，多探索。",
+    "quark_pc": "https://pan.quark.cn/s/e62b6c54536d",
+    "size": "约 65 GB",
+    "version": "v3.150 豪华版",
+    "desc": [
+      "《杀手3》是 IO Interactive 开发的潜行动作游戏，“暗杀世界”三部曲的最终章。",
+      "杀手47将继续在全球各地执行暗杀任务，从迪拜的摩天大楼到重庆的阴雨街头。",
+      "游戏的沙盒设计达到了巅峰，你可以用各种脑洞大开的方式完成任务，重玩价值极高。"
+    ],
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/1659040/library_hero.jpg"
+    ],
+    "config": {
+      "min": { "os": "Windows 10", "cpu": "Intel CPU Core i5-2500K", "ram": "8 GB RAM", "gpu": "NVIDIA GeForce GTX 660", "disk": "65 GB 可用空间" },
+      "rec": { "os": "Windows 10", "cpu": "Intel CPU Core i7 4790", "ram": "16 GB RAM", "gpu": "Nvidia GPU GeForce GTX 1080", "disk": "65 GB 可用空间" }
+    }
+  },
+  {
+    "id": "dead_cells",
+    "name": "死亡细胞",
+    "en_name": "Dead Cells",
+    "type": "动作Roguelike",
+    "category": ["单机游戏", "休闲独立", "热门大作"],
+    "tags": ["肉鸽", "像素风", "横版", "高难度", "动作", "杀时间", "独立", "单机"],
+    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/588650/header.jpg",
+    "aliases": ["死亡细胞", "重生细胞", "Dead Cells"],
+    "latest": true,
+    "hot": true,
+    "steam_appid": "588650",
+    "date_added": "2026-07-20",
+    "guide": "<strong>细胞指南：</strong><br>1. 击杀怪物有几率掉落图纸，千万别漏了。<br>2. 主武器和副武器要搭配好。<br>3. 打不过 Boss 就去刷细胞，升级永久属性。",
+    "quark_pc": "https://pan.quark.cn/s/0174138fde41",
+    "size": "约 2 GB",
+    "version": "v3.4 全DLC 纯净版",
+    "desc": [
+      "《死亡细胞》是由 Motion Twin 开发的一款将 Roguelike 与银河恶魔城元素结合的横版动作游戏。",
+      "玩家扮演一个可以寄宿在尸体上的细胞，在随机生成的小岛上战斗、死亡、重生。",
+      "动作极其流畅，打击感极强。每一次死亡都会让你变得更强（通过永久解锁武器和技能）。"
+    ],
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/588650/library_hero.jpg"
+    ],
+    "config": {
+      "min": { "os": "Windows 7+", "cpu": "Intel i5+", "ram": "2 GB RAM", "gpu": "Nvidia 450 GTS", "disk": "2 GB 可用空间" },
+      "rec": { "os": "Windows 10", "cpu": "Intel i5+", "ram": "4 GB RAM", "gpu": "Nvidia GTX 460", "disk": "2 GB 可用空间" }
+    }
+  },
+  {
+    "id": "hades",
+    "name": "哈迪斯",
+    "en_name": "Hades",
+    "type": "动作Roguelike",
+    "category": ["单机游戏", "休闲独立", "热门大作"],
+    "tags": ["肉鸽", "神话", "独立神作", "爽快", "动作", "杀时间", "剧情神作", "高画质"],
+    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/1145360/header.jpg",
+    "aliases": ["哈迪斯", "Hades", "黑帝斯"],
+    "latest": true,
+    "hot": true,
+    "steam_appid": "1145360",
+    "date_added": "2026-07-18",
+    "guide": "<strong>冥界王子指南：</strong><br>1. 奥林匹斯众神的祝福决定了你的流派。<br>2. 每次死亡后，用黑暗水晶在镜子前升级永久属性。<br>3. 给 NPC 送蜜露，可以解锁好感剧情和强力饰品。",
+    "quark_pc": "https://pan.quark.cn/s/e8d7cdacc52d",
+    "size": "约 15 GB",
+    "version": "v1.38290 官方中文版",
+    "desc": [
+      "《哈迪斯》是由 Supergiant Games 开发的一款 Roguelike 动作游戏。",
+      "玩家扮演冥王哈迪斯的儿子扎格列欧斯，试图逃离冥界，前往奥林匹斯山寻找母亲。",
+      "游戏将快节奏的战斗与丰富的叙事完美结合。每次死亡后回到冥府，都能与各位神明和 NPC 解锁新的对话和剧情。"
+    ],
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/1145360/library_hero.jpg"
+    ],
+    "config": {
+      "min": { "os": "Windows 7 SP1", "cpu": "Dual Core 2.4 GHz", "ram": "4 GB RAM", "gpu": "1GB VRAM", "disk": "15 GB 可用空间" },
+      "rec": { "os": "Windows 10", "cpu": "Quad Core 3.0 GHz+", "ram": "8 GB RAM", "gpu": "2GB VRAM", "disk": "15 GB 可用空间" }
+    }
+  },
+  {
+    "id": "hollow_knight",
+    "name": "空洞骑士",
+    "en_name": "Hollow Knight",
+    "type": "动作冒险",
+    "category": ["单机游戏", "休闲独立", "热门大作"],
+    "tags": ["银河恶魔城", "高难度", "手绘", "独立神作", "动作", "剧情神作", "像素风", "治愈"],
+    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/367520/header.jpg",
+    "aliases": ["空洞骑士", "Hollow Knight"],
+    "latest": true,
+    "hot": true,
+    "steam_appid": "367520",
+    "date_added": "2026-07-15",
+    "guide": "<strong>圣巢指南：</strong><br>1. 一定要买地图和羽毛笔，否则迷路会很痛苦。<br>2. 不同的护符有不同效果，搭配好。<br>3. 学会下劈（向下攻击）可以跳过很多陷阱。",
+    "quark_pc": "https://pan.quark.cn/s/32a402f78909",
+    "size": "约 9 GB",
+    "version": "v1.5.78.11833 全DLC",
+    "desc": [
+      "《空洞骑士》是 Team Cherry 开发的一款银河恶魔城类动作冒险游戏。",
+      "玩家扮演一名无名的小骑士，在一个名为“圣巢”的地下昆虫王国中探索，揭开王国衰落的真相。",
+      "游戏拥有精美的 2D 手绘风格，庞大且互相连通的地图，以及极具挑战性的 Boss 战。DLC 也是免费更新，良心至极。"
+    ],
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/367520/library_hero.jpg"
+    ],
+    "config": {
+      "min": { "os": "Windows 7", "cpu": "Intel Core i3", "ram": "4 GB RAM", "gpu": "GeForce GTX 560", "disk": "9 GB 可用空间" },
+      "rec": { "os": "Windows 10", "cpu": "Intel Core i5", "ram": "8 GB RAM", "gpu": "GeForce GTX 960", "disk": "9 GB 可用空间" }
+    }
+  },
+  {
+    "id": "stardew_valley",
+    "name": "星露谷物语",
+    "en_name": "Stardew Valley",
+    "type": "模拟经营",
+    "category": ["单机游戏", "休闲独立", "热门大作"],
+    "tags": ["种田", "像素", "休闲", "联机", "治愈", "模拟", "杀时间", "独立"],
+    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/413150/header.jpg",
+    "aliases": ["星露谷物语", "星露谷", "SDV"],
+    "latest": true,
+    "hot": true,
+    "steam_appid": "413150",
+    "date_added": "2026-07-12",
+    "guide": "<strong>农场主指南：</strong><br>1. 第一年多种防风草和土豆，先攒钱升级工具。<br>2. 每天和村民聊天、送他们喜欢的东西，可以结婚。<br>3. 下雨天不用浇水，可以去钓鱼或者下矿洞。",
+    "quark_pc": "https://pan.quark.cn/s/dd291c5dbd96",
+    "size": "约 1 GB",
+    "version": "v1.6.8.2 官方中文版",
+    "desc": [
+      "《星露谷物语》是由 ConcernedApe 独立开发的一款像素风农场模拟游戏。",
+      "玩家继承了爷爷在星露谷的旧农场，带着破旧的工具和几枚硬币，开始了新的生活。",
+      "游戏内容极其丰富，包含了种田、养畜、钓鱼、采矿、战斗、烹饪、甚至谈恋爱结婚。这是一款能让你放松身心，沉浸在田园生活中的神作。"
+    ],
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/413150/library_hero.jpg"
+    ],
+    "config": {
+      "min": { "os": "Windows Vista or greater", "cpu": "2 Ghz", "ram": "2 GB RAM", "gpu": "256 mb video memory", "disk": "1 GB 可用空间" },
+      "rec": { "os": "Windows 10", "cpu": "3 Ghz", "ram": "4 GB RAM", "gpu": "512 mb video memory", "disk": "1 GB 可用空间" }
+    }
+  },
+  {
+    "id": "terraria",
+    "name": "泰拉瑞亚",
+    "en_name": "Terraria",
+    "type": "沙盒生存",
+    "category": ["单机游戏", "休闲独立", "热门大作"],
+    "tags": ["沙盒", "像素", "建造", "冒险", "联机", "独立", "杀时间", "生存"],
+    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/105600/header.jpg",
+    "aliases": ["泰拉瑞亚", "Terraria"],
+    "latest": true,
+    "hot": true,
+    "steam_appid": "105600",
+    "date_added": "2026-07-10",
+    "guide": "<strong>泰拉瑞亚指南：</strong><br>1. 第一天先用木头建房子，让 NPC 住进去。<br>2. 往下挖，寻找宝箱和矿石。<br>3. 用召唤物召唤 Boss，打败他们可以掉落好装备。",
+    "quark_pc": "https://pan.quark.cn/s/b08e2e914a91",
+    "size": "约 500 MB",
+    "version": "v1.4.4.9 官方中文版",
+    "desc": [
+      "《泰拉瑞亚》是由 Re-Logic 开发的一款 2D 沙盒冒险游戏。",
+      "在这个随机生成的像素世界里，你可以探索地下洞穴、建造宏伟的城堡、收集各种奇特的武器和装备。",
+      "游戏内容量极其恐怖，拥有几十个 Boss、上百种怪物和数千种物品。被誉为 2D 版的《我的世界》，但战斗和探索元素更丰富。"
+    ],
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/105600/library_hero.jpg"
+    ],
+    "config": {
+      "min": { "os": "Windows Xp+", "cpu": "2.0 Ghz", "ram": "2.5 GB RAM", "gpu": "128mb Video Memory", "disk": "500 MB 可用空间" },
+      "rec": { "os": "Windows 10", "cpu": "Dual Core 3.0 Ghz", "ram": "4 GB RAM", "gpu": "256mb Video Memory", "disk": "500 MB 可用空间" }
+    }
+  },
+  {
+    "id": "l4d2",
+    "name": "求生之路2",
+    "en_name": "Left 4 Dead 2",
+    "type": "第一人称射击",
+    "category": ["单机游戏", "动作射击", "热门大作"],
+    "tags": ["丧尸", "联机", "经典", "合作", "射击", "打mod", "第一人称", "单机"],
+    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/550/header.jpg",
+    "aliases": ["求生之路2", "L4D2", "生存之旅"],
+    "latest": true,
+    "hot": true,
+    "steam_appid": "550",
+    "date_added": "2026-07-08",
+    "guide": "<strong>幸存者指南：</strong><br>1. 不要一个人乱跑，跟紧队友。<br>2. 听到特殊感染者的声音，立刻准备应对。<br>3. 误伤队友是很不礼貌的。",
+    "quark_pc": "https://pan.quark.cn/s/42430e2e1e9e",
+    "size": "约 20 GB",
+    "version": "v2.2.3.2 官方中文版",
+    "desc": [
+      "《求生之路2》是由 Valve 开发的一款丧尸合作射击游戏，是同类游戏中的绝对标杆。",
+      "玩家将扮演四名幸存者，在美国南部的城市、沼泽、嘉年华等场景中，杀出一条血路。",
+      "游戏拥有极高的 AI 导演系统，会根据玩家的状态动态调整丧尸的数量和物资。它支持海量创意工坊 MOD，至今依然有极高的在线人数。"
+    ],
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/550/library_hero.jpg"
+    ],
+    "config": {
+      "min": { "os": "Windows 7", "cpu": "Pentium 4 3.0GHz", "ram": "2 GB RAM", "gpu": "128 MB", "disk": "20 GB 可用空间" },
+      "rec": { "os": "Windows 7", "cpu": "Intel core 2 duo 2.4GHz", "ram": "4 GB RAM", "gpu": "Shader model 3.0", "disk": "20 GB 可用空间" }
+    }
+  },
+  {
+    "id": "the_forest",
+    "name": "森林",
+    "en_name": "The Forest",
+    "type": "生存恐怖",
+    "category": ["单机游戏", "动作射击", "热门大作"],
+    "tags": ["生存", "建造", "食人族", "恐怖", "沙盒", "第一人称", "联机", "单机"],
+    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/242760/header.jpg",
+    "aliases": ["森林", "迷失森林", "The Forest"],
+    "latest": true,
+    "hot": true,
+    "steam_appid": "242760",
+    "date_added": "2026-07-05",
+    "guide": "<strong>荒岛生存指南：</strong><br>1. 第一天赶紧砍树，建一个庇护所。<br>2. 吃了野人会掉理智值。<br>3. 去洞穴探索一定要带火把和武器。",
+    "quark_pc": "https://pan.quark.cn/s/69869a9f8eb5",
+    "size": "约 5 GB",
+    "version": "v1.12 官方中文版",
+    "desc": [
+      "《森林》是由 Endnight Games 开发的一款第一人称恐怖生存游戏。",
+      "玩家乘坐的客机坠毁在一座孤岛上，儿子被食人族抓走。为了生存并找回儿子，你需要砍树建房子、打猎、制作武器，并深入地下洞穴。",
+      "游戏的建造系统非常自由，你可以建树屋、陷阱，而食人族的 AI 也极其聪明，会观察你的行为并做出反应。"
+    ],
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/242760/library_hero.jpg"
+    ],
+    "config": {
+      "min": { "os": "Windows 7", "cpu": "Intel Dual-Core 2.4 GHz", "ram": "4 GB RAM", "gpu": "NVIDIA GeForce 8800GT", "disk": "5 GB 可用空间" },
+      "rec": { "os": "Windows 7", "cpu": "Quad Core Processor", "ram": "4 GB RAM", "gpu": "NVIDIA GeForce GTX 560", "disk": "5 GB 可用空间" }
+    }
+  },
+  {
+    "id": "no_mans_sky",
+    "name": "无人深空",
+    "en_name": "No Man's Sky",
+    "type": "太空探索",
+    "category": ["单机游戏", "休闲独立", "热门大作"],
+    "tags": ["宇宙", "探索", "沙盒", "建造", "联机", "科幻", "风景", "单机"],
+    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/275850/header.jpg",
+    "aliases": ["无人深空", "No Man's Sky", "NMS"],
+    "latest": true,
+    "hot": true,
+    "steam_appid": "275850",
+    "date_added": "2026-07-02",
+    "guide": "<strong>星际旅行者指南：</strong><br>1. 开局先收集碳和铁，修好飞船起飞。<br>2. 找个风景好的星球，建一个自己的基地。<br>3. 这个游戏有 18 亿亿颗星球，永远探索不完。",
+    "quark_pc": "https://pan.quark.cn/s/c5b0c1e1e88e",
+    "size": "约 15 GB",
+    "version": "v4.5 星际远征版",
+    "desc": [
+      "《无人深空》是由 Hello Games 开发的一款太空探索沙盒游戏。",
+      "玩家可以自由穿梭在广袤的宇宙中，探索未知的星球，采集资源，建造基地，甚至与其他玩家联机。",
+      "游戏经历了口碑逆转，如今内容极其丰富，拥有舰队、生物捕捉、机甲等多种玩法，是太空迷的必玩之作。"
+    ],
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/275850/library_hero.jpg"
+    ],
+    "config": {
+      "min": { "os": "Windows 10", "cpu": "Intel Core i3-2120", "ram": "8 GB RAM", "gpu": "NVIDIA GTX 660", "disk": "15 GB 可用空间" },
+      "rec": { "os": "Windows 10", "cpu": "Intel Core i5-2500K", "ram": "8 GB RAM", "gpu": "NVIDIA GTX 1060", "disk": "15 GB 可用空间" }
+    }
+  },
+  {
+    "id": "riders_republic",
+    "name": "极限国度",
+    "en_name": "Riders Republic",
+    "type": "极限运动",
+    "category": ["单机游戏", "休闲独立", "热门大作"],
+    "tags": ["极限运动", "开放世界", "联机", "滑雪", "休闲", "高画质", "载具", "单机"],
+    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/2290180/header.jpg",
+    "aliases": ["极限国度", "Riders Republic"],
+    "latest": true,
+    "hot": true,
+    "steam_appid": "2290180",
+    "date_added": "2026-06-28",
+    "guide": "<strong>极限运动员指南：</strong><br>1. 你可以随时切换自行车、滑雪板、飞鼠装等职业。<br>2. 多在空中做特技动作。<br>3. 50 名玩家同时在赛道上狂飙，非常刺激。",
+    "quark_pc": "https://pan.quark.cn/s/90c1f8e0e8da",
+    "size": "约 40 GB",
+    "version": "v1.0.2 终极版",
+    "desc": [
+      "《极限国度》是育碧开发的一款大型多人极限运动游戏。",
+      "在美国标志性的国家公园里，你可以骑着自行车、滑雪板、甚至穿着飞鼠装，进行各种疯狂的极限挑战。",
+      "游戏氛围非常轻松欢乐，支持 50 人同场竞技，是放松解压的好选择。"
+    ],
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/2290180/library_hero.jpg"
+    ],
+    "config": {
+      "min": { "os": "Windows 10", "cpu": "AMD Ryzen 3 1200", "ram": "8 GB RAM", "gpu": "AMD Radeon RX 470", "disk": "40 GB 可用空间" },
+      "rec": { "os": "Windows 10", "cpu": "AMD Ryzen 5 2600X", "ram": "8 GB RAM", "gpu": "AMD Radeon RX 5700 XT", "disk": "40 GB 可用空间" }
+    }
+  },
+  {
+    "id": "nfs_unbound",
+    "name": "极品飞车：不羁",
+    "en_name": "Need for Speed Unbound",
+    "type": "竞速",
+    "category": ["单机游戏", "休闲独立", "热门大作"],
+    "tags": ["赛车", "街头", "涂鸦", "联机", "高画质", "载具", "现代", "单机"],
+    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/1846380/header.jpg",
+    "aliases": ["极品飞车", "NFS", "不羁"],
+    "latest": true,
+    "hot": true,
+    "steam_appid": "1846380",
+    "date_added": "2026-06-25",
+    "guide": "<strong>街头车手指南：</strong><br>1. 多参加比赛赢取奖金，去车行买新车。<br>2. 改装系统非常丰富，不仅能改性能，还能改外观。<br>3. 被警察追捕时，利用小巷和跳跃点甩掉他们。",
+    "quark_pc": "https://pan.quark.cn/s/4a4f6b5c8a5a",
+    "size": "约 50 GB",
+    "version": "v1.1.3 Palace版",
+    "desc": [
+      "《极品飞车：不羁》是 Criterion Games 开发的一款街头赛车游戏。",
+      "游戏采用了独特的涂鸦视觉风格，将写实的车辆与动漫风格的特效结合在一起。",
+      "玩家需要在比赛中赚取足够的钱，参加最终的 Grand 赛事。同时还要躲避警察的追捕。"
+    ],
+    "screenshots": [
+      "https://cdn.akamai.steamstatic.com/steam/apps/1846380/library_hero.jpg"
+    ],
+    "config": {
+      "min": { "os": "Windows 10", "cpu": "Ryzen 5 2600", "ram": "8 GB RAM", "gpu": "Radeon RX 570", "disk": "50 GB 可用空间" },
+      "rec": { "os": "Windows 10", "cpu": "Ryzen 5 3600", "ram": "16 GB RAM", "gpu": "Radeon RX 5700", "disk": "50 GB 可用空间" }
     }
   },
   {
@@ -358,16 +1117,17 @@
     "en_name": "Hogwarts Legacy",
     "type": "动作角色扮演",
     "category": ["单机游戏", "角色扮演", "热门大作"],
-    "tags": ["开放世界", "魔法", "高画质", "哈利波特"],
+    "tags": ["开放世界", "魔法", "高画质", "哈利波特", "奇幻", "单机", "冒险"],
     "cover": "https://cdn.akamai.steamstatic.com/steam/apps/990080/header.jpg",
-    "aliases": ["霍格沃茨", "哈利波特", "Hogwarts"],
-    "latest": true, "hot": true,
+    "aliases": ["霍格沃茨", "哈利波特"],
+    "latest": true,
+    "hot": true,
     "steam_appid": "990080",
     "date_added": "2026-09-20",
-    "guide": "<strong>巫师指南：</strong><br>1. <strong>有求必应屋</strong>：尽早解锁，里面可以种植物、熬魔药，是后期战斗的重要补给站。<br>2. <strong>收集隐形兽</strong>：地图上的隐形兽雕像可以升级装备。<br>3. <strong>战斗连招</strong>：多用各种颜色的魔法破盾（红克红、紫克紫），然后接普通攻击。",
+    "guide": "<strong>巫师指南：</strong><br>1. 尽早解锁有求必应屋，里面可以种植物和制药。<br>2. 多收集隐形兽和宝箱。<br>3. 多用各种颜色的魔法破盾。",
     "quark_pc": "https://pan.quark.cn/s/b77e2bd2e901",
     "size": "约 85 GB",
-    "version": "v1117238 全DLC 豪华版",
+    "version": "v1117238 全DLC",
     "desc": [
       "《霍格沃茨之遗》是一款由 Avalanche Software 开发的开放世界动作 RPG。背景设定在 19 世纪的魔法世界。",
       "你将扮演一名霍格沃茨的学生，掌握各种强大的魔法，探索禁林、霍格莫德村，并揭开古代魔法的秘密。",
@@ -377,8 +1137,8 @@
       "https://cdn.akamai.steamstatic.com/steam/apps/990080/library_hero.jpg"
     ],
     "config": {
-      "min": { "os": "Windows 10 64-bit", "cpu": "Intel Core i5-6600 (3.30 GHz) or AMD Ryzen 5 1400 (3.20 GHz)", "ram": "16 GB RAM", "gpu": "NVIDIA GeForce GTX 960 4GB or AMD Radeon RX 470 4GB", "disk": "85 GB 可用空间 (SSD required)" },
-      "rec": { "os": "Windows 10 64-bit", "cpu": "Intel Core i7-8700 (3.20 GHz) or AMD Ryzen 5 3600 (3.60 GHz)", "ram": "16 GB RAM", "gpu": "NVIDIA GeForce 1080 Ti or AMD Radeon RX 5700 XT", "disk": "85 GB SSD" }
+      "min": { "os": "Windows 10 64-bit", "cpu": "Intel Core i5-6600", "ram": "16 GB RAM", "gpu": "NVIDIA GeForce GTX 960", "disk": "85 GB 可用空间 (SSD required)" },
+      "rec": { "os": "Windows 10 64-bit", "cpu": "Intel Core i7-8700", "ram": "16 GB RAM", "gpu": "NVIDIA GeForce 1080 Ti", "disk": "85 GB SSD" }
     }
   },
   {
@@ -387,27 +1147,28 @@
     "en_name": "Baldur's Gate 3",
     "type": "角色扮演",
     "category": ["单机游戏", "角色扮演", "热门大作"],
-    "tags": ["CRPG", "回合制", "龙与地下城", "剧情神作"],
+    "tags": ["CRPG", "回合制", "龙与地下城", "高画质", "剧情神作", "单机", "奇幻"],
     "cover": "https://cdn.akamai.steamstatic.com/steam/apps/1086940/header.jpg",
     "aliases": ["博德之门3", "BG3", "博德3"],
-    "latest": true, "hot": true,
+    "latest": true,
+    "hot": true,
     "steam_appid": "1086940",
     "date_added": "2026-09-18",
-    "guide": "<strong>冒险者指南：</strong><br>1. <strong>万物皆可扔</strong>：打不过敌人？把箱子、油桶扔过去砸他！<br>2. <strong>长休与短休</strong>：不要舍不得睡觉，长休可以恢复法术位，还能推进队友的感情线。<br>3. <strong>推人入崖</strong>：把 Boss 推到悬崖下是最高效的击杀方式，哪怕他有 10000 点血。",
+    "guide": "<strong>冒险者指南：</strong><br>1. 万物皆可扔，把箱子扔过去砸敌人。<br>2. 长休可以恢复法术位，还能推进队友的感情线。<br>3. 把 Boss 推到悬崖下是最高效的击杀方式。",
     "quark_pc": "https://pan.quark.cn/s/c2baa49e515c",
     "size": "约 122 GB",
     "version": "v4.1.1.6072089",
     "desc": [
-      "《博德之门3》是由拉瑞安工作室开发的次世代 CRPG（电脑角色扮演游戏）。基于《龙与地下城》第五版规则。",
+      "《博德之门3》是由拉瑞安工作室开发的次世代 CRPG。基于《龙与地下城》第五版规则。",
       "游戏提供了令人难以置信的自由度。你可以选择与任何人结盟或背叛，你的每一个对话选项、每一个骰子点数都可能改变历史。",
-      "它与《王国之泪》等大作共同角逐年度游戏。无论是丰富的职业搭配，还是极致的演出表现，都证明了它是近年来最伟大的 RPG 之一。"
+      "无论是丰富的职业搭配，还是极致的演出表现，都证明了它是近年来最伟大的 RPG 之一。"
     ],
     "screenshots": [
       "https://cdn.akamai.steamstatic.com/steam/apps/1086940/library_hero.jpg"
     ],
     "config": {
-      "min": { "os": "Windows 10 64-bit", "cpu": "Intel I5 4690 / AMD FX 8350", "ram": "8 GB RAM", "gpu": "Nvidia GTX 970 / RX 480 (4GB+ of VRAM)", "disk": "150 GB 可用空间" },
-      "rec": { "os": "Windows 10 64-bit", "cpu": "Intel i7 8700K / AMD r5 3600", "ram": "16 GB RAM", "gpu": "Nvidia 2060 Super / RX 5700 XT (8GB+ of VRAM)", "disk": "150 GB SSD" }
+      "min": { "os": "Windows 10 64-bit", "cpu": "Intel I5 4690", "ram": "8 GB RAM", "gpu": "Nvidia GTX 970", "disk": "150 GB 可用空间" },
+      "rec": { "os": "Windows 10 64-bit", "cpu": "Intel i7 8700K", "ram": "16 GB RAM", "gpu": "Nvidia 2060 Super", "disk": "150 GB SSD" }
     }
   },
   {
@@ -416,13 +1177,14 @@
     "en_name": "Resident Evil 4 Remake",
     "type": "动作射击",
     "category": ["单机游戏", "动作射击", "热门大作"],
-    "tags": ["恐怖", "射击", "重制", "丧尸"],
+    "tags": ["恐怖", "射击", "重制", "丧尸", "高画质", "单机", "解谜"],
     "cover": "https://cdn.akamai.steamstatic.com/steam/apps/2050650/header.jpg",
     "aliases": ["生化危机4", "RE4"],
-    "latest": true, "hot": true,
+    "latest": true,
+    "hot": true,
     "steam_appid": "2050650",
     "date_added": "2026-09-15",
-    "guide": "<strong>生存指南：</strong><br>1. <strong>打腿然后体术</strong>：不要一直无脑开枪。打敌人的膝盖让他跪下，冲上去踢一脚，可以节省大量子弹。<br>2. <strong>刀是神器</strong>：弹反电锯、处决倒地的敌人、挣脱怀抱，但注意刀的耐久度。<br>3. <strong>手提箱挂件</strong>：收集挂件（比如增加火药掉落的），对资源管理有巨大帮助。",
+    "guide": "<strong>生存指南：</strong><br>1. 打敌人的膝盖让他跪下，冲上去踢一脚，节省子弹。<br>2. 刀可以弹反电锯，但注意耐久度。<br>3. 收集挂件，对资源管理有巨大帮助。",
     "quark_pc": "https://pan.quark.cn/s/82f6903959ed",
     "size": "约 58 GB",
     "version": "v1.5.9 黄金版",
@@ -435,8 +1197,8 @@
       "https://cdn.akamai.steamstatic.com/steam/apps/2050650/library_hero.jpg"
     ],
     "config": {
-      "min": { "os": "Windows 10 (64 bit)", "cpu": "AMD Ryzen 3 1200 / Intel Core i5-7500", "ram": "8 GB RAM", "gpu": "AMD Radeon RX 560 with 4GB / NVIDIA GeForce GTX 1050 Ti with 4GB", "disk": "60 GB 可用空间" },
-      "rec": { "os": "Windows 10 (64 bit) / Windows 11", "cpu": "AMD Ryzen 5 3600 / Intel Core i7 8700", "ram": "16 GB RAM", "gpu": "AMD Radeon RX 5700 / NVIDIA GeForce GTX 1070", "disk": "60 GB 可用空间" }
+      "min": { "os": "Windows 10", "cpu": "AMD Ryzen 3 1200", "ram": "8 GB RAM", "gpu": "AMD Radeon RX 560", "disk": "60 GB 可用空间" },
+      "rec": { "os": "Windows 10", "cpu": "AMD Ryzen 5 3600", "ram": "16 GB RAM", "gpu": "AMD Radeon RX 5700", "disk": "60 GB 可用空间" }
     }
   },
   {
@@ -445,13 +1207,14 @@
     "en_name": "Death Stranding",
     "type": "动作冒险",
     "category": ["单机游戏", "动作射击", "热门大作"],
-    "tags": ["开放世界", "剧情神作", "小岛秀夫", "高画质"],
+    "tags": ["开放世界", "剧情神作", "小岛秀夫", "高画质", "科幻", "单机"],
     "cover": "https://cdn.akamai.steamstatic.com/steam/apps/1190460/header.jpg",
     "aliases": ["死亡搁浅", "DS", "送快递模拟器"],
-    "latest": true, "hot": true,
+    "latest": true,
+    "hot": true,
     "steam_appid": "1190460",
     "date_added": "2026-09-12",
-    "guide": "<strong>送货指南：</strong><br>1. <strong>保持平衡</strong>：鼠标左右键或手柄扳机键控制平衡。走过崎岖地形时，可以按住以保持平衡。<br>2. <strong>基建狂魔</strong>：修路、建滑索、搭桥，这不仅为了自己，也能帮到其他玩家（异步联机）。<br>3. <strong>准备靴子</strong>：多带几双鞋，鞋底磨损会严重影响行走。",
+    "guide": "<strong>送货指南：</strong><br>1. 鼠标左右键或手柄扳机键控制平衡，走过崎岖地形时按住保持平衡。<br>2. 修路、建滑索，不仅为了自己，也能帮到其他玩家。<br>3. 多带几双鞋，鞋底磨损会严重影响行走。",
     "quark_pc": "https://pan.quark.cn/s/b0e34d037214",
     "size": "约 74 GB",
     "version": "v1.004 导演剪辑版",
@@ -464,8 +1227,8 @@
       "https://cdn.akamai.steamstatic.com/steam/apps/1190460/library_hero.jpg"
     ],
     "config": {
-      "min": { "os": "Windows 10", "cpu": "Intel Core i5-3470 or AMD Ryzen 3 1200", "ram": "8 GB RAM", "gpu": "GeForce GTX 1050 3 GB or AMD Radeon RX 560 4 GB", "disk": "80 GB 可用空间" },
-      "rec": { "os": "Windows 10", "cpu": "Intel Core i7-3770 or AMD Ryzen 5 1600", "ram": "8 GB RAM", "gpu": "GeForce GTX 1060 6 GB or AMD Radeon RX 590", "disk": "80 GB 可用空间" }
+      "min": { "os": "Windows 10", "cpu": "Intel Core i5-3470", "ram": "8 GB RAM", "gpu": "GeForce GTX 1050 3 GB", "disk": "80 GB 可用空间" },
+      "rec": { "os": "Windows 10", "cpu": "Intel Core i7-3770", "ram": "8 GB RAM", "gpu": "GeForce GTX 1060 6 GB", "disk": "80 GB 可用空间" }
     }
   },
   {
@@ -474,13 +1237,14 @@
     "en_name": "God of War",
     "type": "动作冒险",
     "category": ["单机游戏", "动作射击", "热门大作"],
-    "tags": ["动作", "神话", "剧情神作", "父子"],
+    "tags": ["动作", "神话", "剧情神作", "高画质", "单机", "父子"],
     "cover": "https://cdn.akamai.steamstatic.com/steam/apps/1593500/header.jpg",
     "aliases": ["战神4", "奎爷", "God of War"],
-    "latest": true, "hot": true,
+    "latest": true,
+    "hot": true,
     "steam_appid": "1593500",
     "date_added": "2026-09-10",
-    "guide": "<strong>奎爷指南：</strong><br>1. <strong>盾反与闪避</strong>：这是动作游戏的核心。看准时机格挡，或者用闪避触发“子弹时间”。<br>2. <strong>儿子的箭</strong>：阿特柔斯不是累赘，他的电箭和光箭能帮你控场，记得升级他。<br>3. <strong>女武神</strong>：如果遇到女武神打不过，先去收集苹果和号角，提升血量上限。",
+    "guide": "<strong>奎爷指南：</strong><br>1. 看准时机格挡，或者用闪避触发“子弹时间”。<br>2. 儿子的电箭和光箭能帮你控场，记得升级他。<br>3. 如果遇到女武神打不过，先去收集苹果和号角。",
     "quark_pc": "https://pan.quark.cn/s/da67be5ff8f1",
     "size": "约 45 GB",
     "version": "v1.0.13",
@@ -493,8 +1257,8 @@
       "https://cdn.akamai.steamstatic.com/steam/apps/1593500/library_hero.jpg"
     ],
     "config": {
-      "min": { "os": "Windows 10 64-bit", "cpu": "Intel i5-2500k (3.3GHz) or AMD Ryzen 3 1200 (3.1GHz)", "ram": "8 GB RAM", "gpu": "NVIDIA GTX 960 (4GB) or AMD R9 290X (4GB)", "disk": "70 GB 可用空间" },
-      "rec": { "os": "Windows 10 64-bit", "cpu": "Intel i5-6600k (3.5GHz) or AMD Ryzen 5 2400 G (3.6GHz)", "ram": "8 GB RAM", "gpu": "NVIDIA GTX 1060 (6GB) or AMD RX 570 (4GB)", "disk": "70 GB 可用空间" }
+      "min": { "os": "Windows 10 64-bit", "cpu": "Intel i5-2500k", "ram": "8 GB RAM", "gpu": "NVIDIA GTX 960", "disk": "70 GB 可用空间" },
+      "rec": { "os": "Windows 10 64-bit", "cpu": "Intel i5-6600k", "ram": "8 GB RAM", "gpu": "NVIDIA GTX 1060", "disk": "70 GB 可用空间" }
     }
   },
   {
@@ -503,13 +1267,14 @@
     "en_name": "UNCHARTED: Legacy of Thieves Collection",
     "type": "动作冒险",
     "category": ["单机游戏", "动作射击", "热门大作"],
-    "tags": ["冒险", "寻宝", "剧情神作", "高画质"],
+    "tags": ["冒险", "寻宝", "剧情神作", "高画质", "单机"],
     "cover": "https://cdn.akamai.steamstatic.com/steam/apps/1659420/header.jpg",
     "aliases": ["神秘海域", "盗贼传奇", "神海4"],
-    "latest": true, "hot": true,
+    "latest": true,
+    "hot": true,
     "steam_appid": "1659420",
     "date_added": "2026-09-08",
-    "guide": "<strong>寻宝指南：</strong><br>1. <strong>多观察</strong>：很多宝箱和日记藏在视觉盲区，转动视角，或者留意悬崖边缘。<br>2. <strong>潜行狙击</strong>：利用草丛潜行，标记载具，可以大幅降低战斗难度。<br>3. <strong>攀爬提示</strong>：如果找不到路，按一下方向键，会有提示。",
+    "guide": "<strong>寻宝指南：</strong><br>1. 很多宝箱和日记藏在视觉盲区，转动视角留意悬崖边缘。<br>2. 利用草丛潜行，标记载具，可以大幅降低战斗难度。<br>3. 如果找不到路，按一下方向键，会有提示。",
     "quark_pc": "https://pan.quark.cn/s/7689fabf412d",
     "size": "约 51 GB",
     "version": "v1.4.21058",
@@ -522,8 +1287,8 @@
       "https://cdn.akamai.steamstatic.com/steam/apps/1659420/library_hero.jpg"
     ],
     "config": {
-      "min": { "os": "Windows 10 64-bit", "cpu": "Intel i5-4430, AMD Ryzen 3 1200", "ram": "8 GB RAM", "gpu": "NVIDIA GTX 960 (4 GB), AMD R9 290X (4 GB)", "disk": "126 GB 可用空间" },
-      "rec": { "os": "Windows 10 64-bit", "cpu": "Intel i7-4770, AMD Ryzen 5 1500X", "ram": "16 GB RAM", "gpu": "NVIDIA GTX 1060 (6 GB), AMD RX 570 (4 GB)", "disk": "126 GB 可用空间 (SSD)" }
+      "min": { "os": "Windows 10 64-bit", "cpu": "Intel i5-4430", "ram": "8 GB RAM", "gpu": "NVIDIA GTX 960", "disk": "126 GB 可用空间" },
+      "rec": { "os": "Windows 10 64-bit", "cpu": "Intel i7-4770", "ram": "16 GB RAM", "gpu": "NVIDIA GTX 1060", "disk": "126 GB 可用空间 (SSD)" }
     }
   },
   {
@@ -532,13 +1297,14 @@
     "en_name": "Marvel's Spider-Man: Miles Morales",
     "type": "动作冒险",
     "category": ["单机游戏", "动作射击", "热门大作"],
-    "tags": ["超级英雄", "开放世界", "动作", "高画质"],
+    "tags": ["超级英雄", "开放世界", "动作", "高画质", "单机", "现代"],
     "cover": "https://cdn.akamai.steamstatic.com/steam/apps/1817190/header.jpg",
     "aliases": ["蜘蛛侠迈尔斯", "小黑蛛", "Spider-Man"],
-    "latest": true, "hot": true,
+    "latest": true,
+    "hot": true,
     "steam_appid": "1817190",
     "date_added": "2026-09-05",
-    "guide": "<strong>蛛丝指南：</strong><br>1. <strong>生物电</strong>：小黑蛛的专属能力，积攒能量后可以释放强力电击。<br>2. <strong>隐身</strong>：可以隐身绕过摄像头和敌人，潜行暗杀。<br>3. <strong>荡秋千</strong>：利用高楼和风力，加上蛛丝弹射，可以飞得非常快。",
+    "guide": "<strong>蛛丝指南：</strong><br>1. 小黑蛛的专属能力生物电，积攒能量后可以释放强力电击。<br>2. 隐身可以绕过摄像头和敌人，潜行暗杀。<br>3. 利用高楼和风力，加上蛛丝弹射，可以飞得非常快。",
     "quark_pc": "https://pan.quark.cn/s/32025f396337",
     "size": "约 50 GB",
     "version": "v4.630.0.0",
@@ -551,8 +1317,8 @@
       "https://cdn.akamai.steamstatic.com/steam/apps/1817190/library_hero.jpg"
     ],
     "config": {
-      "min": { "os": "Windows 10 64-bit", "cpu": "Intel Core i3-4160, AMD Ryzen 3 1200", "ram": "8 GB RAM", "gpu": "NVIDIA GTX 950 or AMD Radeon RX 470", "disk": "75 GB 可用空间" },
-      "rec": { "os": "Windows 10 64-bit", "cpu": "Intel Core i5-4670, AMD Ryzen 5 1600", "ram": "16 GB RAM", "gpu": "NVIDIA GTX 1060 6GB or AMD Radeon RX 580 8GB", "disk": "75 GB 可用空间" }
+      "min": { "os": "Windows 10 64-bit", "cpu": "Intel Core i3-4160", "ram": "8 GB RAM", "gpu": "NVIDIA GTX 950", "disk": "75 GB 可用空间" },
+      "rec": { "os": "Windows 10 64-bit", "cpu": "Intel Core i5-4670", "ram": "16 GB RAM", "gpu": "NVIDIA GTX 1060 6GB", "disk": "75 GB 可用空间" }
     }
   },
   {
@@ -561,13 +1327,14 @@
     "en_name": "Horizon Zero Dawn",
     "type": "动作冒险",
     "category": ["单机游戏", "动作射击", "热门大作"],
-    "tags": ["开放世界", "机械兽", "高画质", "科幻"],
+    "tags": ["开放世界", "机械兽", "高画质", "单机", "科幻", "剧情神作"],
     "cover": "https://cdn.akamai.steamstatic.com/steam/apps/1151640/header.jpg",
     "aliases": ["地平线", "零之曙光", "Horizon"],
-    "latest": true, "hot": true,
+    "latest": true,
+    "hot": true,
     "steam_appid": "1151640",
     "date_added": "2026-09-02",
-    "guide": "<strong>狩猎指南：</strong><br>1. <strong>弱点打击</strong>：使用 Focus（聚焦）扫描机械兽，找到发光的弱点（通常是燃料罐或核心），射击造成大伤害。<br>2. <strong>陷阱与绳枪</strong>：遇到大型机械兽，先布置绊线陷阱，把绳索绑住它的腿。<br>3. <strong>劣化箭</strong>：可以让两只机械兽自相残杀。",
+    "guide": "<strong>狩猎指南：</strong><br>1. 使用 Focus 扫描机械兽，找到发光的弱点射击。<br>2. 遇到大型机械兽，先布置绊线陷阱。<br>3. 劣化箭可以让两只机械兽自相残杀。",
     "quark_pc": "https://pan.quark.cn/s/13b3adcf4814",
     "size": "约 88 GB",
     "version": "v1.5.89 重制版",
@@ -580,898 +1347,93 @@
       "https://cdn.akamai.steamstatic.com/steam/apps/1151640/library_hero.jpg"
     ],
     "config": {
-      "min": { "os": "Windows 10 64-bit", "cpu": "Intel Core i5-2500K@3.3GHz or AMD FX 6300@3.5GHz", "ram": "8 GB RAM", "gpu": "Nvidia GeForce GTX 780 (3 GB) or AMD Radeon R9 290 (4GB)", "disk": "100 GB 可用空间" },
-      "rec": { "os": "Windows 10 64-bit", "cpu": "Intel Core i7-4770K@3.5GHz or Ryzen 5 1500X@3.5GHz", "ram": "16 GB RAM", "gpu": "Nvidia GeForce GTX 1060 (6 GB) or AMD Radeon RX 580 (8GB)", "disk": "100 GB 可用空间" }
-    }
-  },
-    {
-    "id": "sekiro",
-    "name": "只狼：影逝二度",
-    "en_name": "Sekiro: Shadows Die Twice",
-    "type": "动作角色扮演",
-    "category": ["单机游戏", "动作射击", "热门大作"],
-    "tags": ["魂类", "高难度", "忍者", "年度游戏"],
-    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/814380/header.jpg",
-    "aliases": ["只狼", "Sekiro", "打铁模拟器"],
-    "latest": true, "hot": true,
-    "steam_appid": "814380",
-    "date_added": "2026-09-01",
-    "guide": "<strong>忍者生存法则：</strong><br>1. <strong>这是音游</strong>：核心是“弹反（打铁）”，不要一直按着格挡键，要在敌人攻击命中的瞬间按下，听声音找节奏。<br>2. <strong>识破</strong>：敌人出现“危”字时，如果是突刺，按前进+闪避可以踩刀（识破），涨大量架势条。<br>3. <strong>别贪刀</strong>：砍两刀就准备防守，贪刀必死。",
-    "quark_pc": "https://pan.quark.cn/s/73240e1d9d5d",
-    "size": "约 15 GB",
-    "version": "v1.06 年度版",
-    "desc": [
-      "《只狼：影逝二度》是由 FromSoftware 开发、动视发行的动作冒险游戏。背景设定在 16 世纪的日本战国时代。",
-      "玩家扮演一名被称为“狼”的独臂忍者，为了救回被掳走的皇子，踏上复仇之路。游戏最大的特色是引入了“架势条”系统和忍义手（假肢）改造系统。",
-      "这是一款极其硬核的游戏，曾获得 TGA 年度最佳游戏。当你终于掌握了完美弹反，听着清脆的“铛铛”声击败强敌时，成就感无与伦比。"
-    ],
-    "screenshots": ["https://cdn.akamai.steamstatic.com/steam/apps/814380/library_hero.jpg"],
-    "config": {
-      "min": { "os": "Windows 7 64-bit | Windows 8.1 64-bit | Windows 10 64-bit", "cpu": "Intel Core i3-2100 | AMD FX-6300", "ram": "4 GB RAM", "gpu": "NVIDIA GeForce GTX 760 | AMD Radeon HD 7950", "disk": "25 GB 可用空间" },
-      "rec": { "os": "Windows 10 64-bit", "cpu": "Intel Core i5-2500K | AMD Ryzen 5 1400", "ram": "8 GB RAM", "gpu": "NVIDIA GeForce GTX 970 | AMD Radeon RX 570", "disk": "25 GB 可用空间" }
+      "min": { "os": "Windows 10 64-bit", "cpu": "Intel Core i5-2500K", "ram": "8 GB RAM", "gpu": "Nvidia GeForce GTX 780", "disk": "100 GB 可用空间" },
+      "rec": { "os": "Windows 10 64-bit", "cpu": "Intel Core i7-4770K", "ram": "16 GB RAM", "gpu": "Nvidia GeForce GTX 1060", "disk": "100 GB 可用空间" }
     }
   },
   {
-    "id": "dark_souls_3",
-    "name": "黑暗之魂3",
-    "en_name": "DARK SOULS III",
-    "type": "动作角色扮演",
-    "category": ["单机游戏", "角色扮演", "热门大作"],
-    "tags": ["魂类", "高难度", "黑暗奇幻", "联机"],
-    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/374320/header.jpg",
-    "aliases": ["黑魂3", "黑暗之魂3", "Dark Souls 3"],
-    "latest": true, "hot": true,
-    "steam_appid": "374320",
-    "date_added": "2026-08-30",
-    "guide": "<strong>不死人指南：</strong><br>1. <strong>翻滚无敌帧</strong>：不要迷信盾牌，看准时机翻滚才是王道。<br>2. <strong>余火状态</strong>：捏余火可以增加血量上限，但会被其他玩家入侵。<br>3. <strong>找太阳骑士</strong>：打不过 Boss 就召唤地上的金色符印，让好哥哥帮你。",
-    "quark_pc": "https://pan.quark.cn/s/351592b59b39",
-    "size": "约 25 GB",
-    "version": "v1.15.2 豪华版 (含全DLC)",
-    "desc": [
-      "《黑暗之魂3》是 FromSoftware 开发的魂系动作 RPG，也是黑魂三部曲的终章。",
-      "游戏拥有极高的难度和极其精妙的地图设计（立体互通）。玩家扮演灰烬，踏上寻找初火，传火的艰难旅程。",
-      "BOSS 战设计堪称业界顶流，无名王者、修女芙莉德、奴隶骑士盖尔等战斗，每一场都让人热血沸腾。"
-    ],
-    "screenshots": ["https://cdn.akamai.steamstatic.com/steam/apps/374320/library_hero.jpg"],
-    "config": {
-      "min": { "os": "Windows 7 SP1 64bit, Windows 8.1 64bit, Windows 10 64bit", "cpu": "Intel Core i3-2100 / AMD FX-6300", "ram": "4 GB RAM", "gpu": "NVIDIA GeForce GTX 750 Ti / ATI Radeon HD 7950", "disk": "25 GB 可用空间" },
-      "rec": { "os": "Windows 7 SP1 64bit, Windows 8.1 64bit, Windows 10 64bit", "cpu": "Intel Core i7-3770 / AMD FX-8350", "ram": "8 GB RAM", "gpu": "NVIDIA GeForce GTX 970 / ATI Radeon R9 series", "disk": "25 GB 可用空间" }
-    }
+    "id": "ksp",
+    "name": "坎巴拉太空计划",
+    "en_name": "Kerbal Space Program",
+    "type": "策略模拟",
+    "category": ["单机游戏", "策略模拟", "热门大作"],
+    "tags": ["沙盒", "航天", "物理", "高难度", "杀时间", "单机"],
+    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/220200/header.jpg",
+    "aliases": ["ksp", "坎巴拉"],
+    "latest": true,
+    "hot": true,
+    "steam_appid": "220200",
+    "date_added": "2026-07-01",
+    "guide": "记得装降落伞，发射时保持重力转向。",
+    "quark_pc": "https://pan.quark.cn/s/8a14bcfd2f1f",
+    "size": "约 2.8 GB",
+    "version": "v1.12.5 全DLC",
+    "desc": ["《坎巴拉太空计划》是一款航天沙盒模拟游戏，拥有真实的物理引擎。"],
+    "screenshots": ["https://cdn.akamai.steamstatic.com/steam/apps/220200/library_hero.jpg"],
+    "config": { "min": { "os": "Windows 7", "cpu": "Core 2 Duo", "ram": "4 GB", "gpu": "DX10", "disk": "3 GB" }, "rec": { "os": "Windows 10", "cpu": "Core i5", "ram": "8 GB", "gpu": "DX10", "disk": "4 GB" } }
   },
   {
-    "id": "ittakestwo",
-    "name": "双人成行",
-    "en_name": "It Takes Two",
-    "type": "合作冒险",
-    "category": ["单机游戏", "休闲独立", "热门大作"],
-    "tags": ["双人", "合作", "解谜", "年度游戏"],
-    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/1426210/header.jpg",
-    "aliases": ["双人成行", "It Takes Two"],
-    "latest": true, "hot": true,
-    "steam_appid": "1426210",
-    "date_added": "2026-08-28",
-    "guide": "<strong>合作指南：</strong><br>1. <strong>必须双人</strong>：这是一个强制双人合作的游戏，一个人买，另一个可以下载好友通行证免费玩。<br>2. <strong>多沟通</strong>：很多关卡需要两人配合，比如一个人拉机关，一个人跳。<br>3. <strong>小游戏</strong>：地图各处隐藏着很多双人小游戏（比如拔河、坦克大战），千万别错过。",
-    "quark_pc": "https://pan.quark.cn/s/02d3b79d875e",
-    "size": "约 50 GB",
-    "version": "v1.0 官方中文版",
-    "desc": [
-      "《双人成行》是由 Hazelight Studios 开发的平台冒险游戏。",
-      "科迪和小梅是一对感情破裂的夫妻，他们被魔法变成了布娃娃。为了恢复原貌，他们必须在一个奇幻的世界中携手合作。",
-      "每一关都有全新的玩法机制，从飞行、射击到魔法。获得 TGA 年度游戏是实至名归，这是近年来最好的双人游戏。"
-    ],
-    "screenshots": ["https://cdn.akamai.steamstatic.com/steam/apps/1426210/library_hero.jpg"],
-    "config": {
-      "min": { "os": "Windows 8.1 64-bit or Windows 10 64-bit", "cpu": "Intel Core i3-2100T @ 2.5GHz or AMD FX 6100", "ram": "8 GB RAM", "gpu": "NVIDIA GeForce GTX 660 or AMD R7 260x", "disk": "50 GB 可用空间" },
-      "rec": { "os": "Windows 8.1 64-bit or Windows 10 64-bit", "cpu": "Intel Core i5 3570K or AMD Ryzen 3 1300x", "ram": "16 GB RAM", "gpu": "NVIDIA GeForce GTX 980 or AMD R9 290X", "disk": "50 GB 可用空间" }
-    }
-  },
-  {
-    "id": "forzahorizon5",
-    "name": "极限竞速：地平线5",
-    "en_name": "Forza Horizon 5",
-    "type": "竞速",
-    "category": ["单机游戏", "休闲独立", "热门大作"],
-    "tags": ["赛车", "开放世界", "高画质", "墨西哥"],
-    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/1551360/header.jpg",
-    "aliases": ["地平线5", "FH5", "Forza"],
-    "latest": true, "hot": true,
-    "steam_appid": "1551360",
-    "date_added": "2026-08-25",
-    "guide": "<strong>车手指南：</strong><br>1. <strong>倒转功能</strong>：如果你错过了检查点或者撞车了，不要慌，按倒转键（默认是 Y）可以时光倒流。<br>2. <strong>调校车辆</strong>：不要用原厂车跑比赛，去调校大厅下载别人的 S2 或 X 级调校。<br>3. <strong>撞碎广告牌</strong>：地图上的经验广告牌撞碎后可以获得大量经验。",
-    "quark_pc": "https://pan.quark.cn/s/f01c6e68016b",
-    "size": "约 110 GB",
-    "version": "v1.688.044 顶级版",
-    "desc": [
-      "《极限竞速：地平线5》是 Playground Games 开发的高评价赛车游戏。",
-      "本作的舞台来到了充满生机的墨西哥。游戏拥有极其出色的光影表现和极其丰富的车辆库，超过 500 辆名车等你收集。",
-      "这是一款对新手极其友好的赛车游戏，哪怕是手残党也能体验到驾驶超跑在火山口狂飙的乐趣。"
-    ],
-    "screenshots": ["https://cdn.akamai.steamstatic.com/steam/apps/1551360/library_hero.jpg"],
-    "config": {
-      "min": { "os": "Windows 10 version 15063.0 or higher", "cpu": "Intel i5-4460 or AMD Ryzen 3 1200", "ram": "8 GB RAM", "gpu": "NVidia GTX 970 OR AMD RX 470", "disk": "110 GB 可用空间" },
-      "rec": { "os": "Windows 10 version 15063.0 or higher", "cpu": "Intel i5-8400 or AMD Ryzen 5 1500X", "ram": "16 GB RAM", "gpu": "Nvidia RTX 1070 OR AMD RX 590", "disk": "110 GB 可用空间 (SSD)" }
-    }
-  },
-  {
-    "id": "daysgone",
-    "name": "往日不再",
-    "en_name": "Days Gone",
-    "type": "动作冒险",
-    "category": ["单机游戏", "动作射击", "热门大作"],
-    "tags": ["开放世界", "丧尸", "摩托", "剧情"],
-    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/1259420/header.jpg",
-    "aliases": ["往日不再", "Days Gone"],
-    "latest": true, "hot": true,
-    "steam_appid": "1259420",
-    "date_added": "2026-08-22",
-    "guide": "<strong>末日骑士指南：</strong><br>1. <strong>油量焦虑</strong>：你的摩托车需要经常加油，去加油站搜刮油桶。<br>2. <strong>暴走潮</strong>：遇到成百上千的丧尸（暴走潮），千万别硬刚，利用地形、炸药和机枪塔。<br>3. <strong>营地信任度</strong>：多做营地任务，信任度高了可以买更好的武器和摩托配件。",
-    "quark_pc": "https://pan.quark.cn/s/46eda1852d52",
-    "size": "约 70 GB",
-    "version": "v1.36.187",
-    "desc": [
-      "《往日不再》是 Bend Studio 开发的一款第三人称丧尸生存游戏。",
-      "主角迪肯是一名飞车党成员，在末日后的美国荒野中求生，同时寻找失踪的妻子。",
-      "虽然刚发售时评价一般，但经过多次优化和更新后，现在的《往日不再》是一款被严重低估的佳作，尤其是成群丧尸涌来的压迫感极强。"
-    ],
-    "screenshots": ["https://cdn.akamai.steamstatic.com/steam/apps/1259420/library_hero.jpg"],
-    "config": {
-      "min": { "os": "Windows 10 64-bits", "cpu": "Intel Core i5-2500K@3.3GHz or AMD FX 6300@3.5GHz", "ram": "8 GB RAM", "gpu": "Nvidia GeForce GTX 780 (3 GB) or AMD Radeon R9 290 (4 GB)", "disk": "70 GB 可用空间" },
-      "rec": { "os": "Windows 10 64-bits", "cpu": "Intel Core i7-4770K@3.5GHz or Ryzen 5 1500X@3.5GHz", "ram": "16 GB RAM", "gpu": "Nvidia GeForce GTX 1060 (6 GB) or AMD Radeon RX 580 (8 GB)", "disk": "70 GB 可用空间" }
-    }
-  },
-  {
-    "id": "deadspace_remake",
-    "name": "死亡空间：重制版",
-    "en_name": "Dead Space",
-    "type": "生存恐怖",
-    "category": ["单机游戏", "动作射击", "热门大作"],
-    "tags": ["恐怖", "科幻", "重制", "太空"],
-    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/1693980/header.jpg",
-    "aliases": ["死亡空间", "Dead Space"],
-    "latest": true, "hot": true,
-    "steam_appid": "1693980",
-    "date_added": "2026-08-20",
-    "guide": "<strong>太空生存指南：</strong><br>1. <strong>断肢战术</strong>：打头没用！必须打怪物的四肢（切断腿让它爬，切断手让它不能攻击）。<br>2. <strong>静态能力</strong>：遇到速度快的怪物，先用静态能力（减速）定住它。<br>3. <strong>搜刮一切</strong>：这游戏极度缺弹药，踩碎所有尸体，打开所有箱子。",
-    "quark_pc": "https://pan.quark.cn/s/e88cf26b2959",
-    "size": "约 50 GB",
-    "version": "v1.0.3.0 官方中文版",
-    "desc": [
-      "《死亡空间：重制版》是 Motive 工作室使用寒霜引擎完全重制的科幻生存恐怖神作。",
-      "玩家扮演工程师艾萨克，登上一艘死寂的采矿飞船“石村号”，面对由尸体变异而成的恐怖外星生物。",
-      "重制版不仅大幅升级了画面，还加入了无缝的飞船探索、全新的剧情对话以及更有压迫感的音效设计。"
-    ],
-    "screenshots": ["https://cdn.akamai.steamstatic.com/steam/apps/1693980/library_hero.jpg"],
-    "config": {
-      "min": { "os": "Window 10 64-bit +", "cpu": "Ryzen 5 2600x, Core i5 8600", "ram": "16 GB RAM", "gpu": "AMD RX 5700, GTX 1070", "disk": "50 GB 可用空间" },
-      "rec": { "os": "Window 10 64-bit +", "cpu": "Ryzen 5 5600X, Core i5 11600K", "ram": "16 GB RAM", "gpu": "Radeon RX 6700 XT, Geforce RTX 2070", "disk": "50 GB 可用空间" }
-    }
-  },
-  {
-    "id": "re_village",
-    "name": "生化危机8：村庄",
-    "en_name": "Resident Evil Village",
-    "type": "生存恐怖",
-    "category": ["单机游戏", "动作射击", "热门大作"],
-    "tags": ["恐怖", "第一人称", "吸血鬼", "高画质"],
-    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/1196590/header.jpg",
-    "aliases": ["生化危机8", "RE8", "生化8"],
-    "latest": true, "hot": true,
-    "steam_appid": "1196590",
-    "date_added": "2026-08-18",
-    "guide": "<strong>村庄生存指南：</strong><br>1. <strong>夫人追击</strong>：在城堡里被吸血鬼夫人追击时，不要回头，疯狂跑就行。<br>2. <strong>合成与升级</strong>：多收集肉类，在公爵那里烹饪可以永久提升属性。<br>3. <strong>武器选择</strong>：马格南左轮是 Boss 杀手，留着打大怪。",
-    "quark_pc": "https://pan.quark.cn/s/b62b9e5cb4f6",
-    "size": "约 35 GB",
-    "version": "v1.0.0",
-    "desc": [
-      "《生化危机8：村庄》是 Capcom 开发的生存恐怖游戏，是《生化危机7》的直接续作。",
-      "伊森·温特斯为了找回被夺走的女儿，来到了一个充满狼人、吸血鬼和邪教的阴森村庄。",
-      "游戏完美结合了 7 代的第一人称恐怖感和 4 代的动作射击元素。吸血鬼夫人（八尺大人）更是火出圈，游戏体验极为丰富。"
-    ],
-    "screenshots": ["https://cdn.akamai.steamstatic.com/steam/apps/1196590/library_hero.jpg"],
-    "config": {
-      "min": { "os": "Windows 10 (64 bit)", "cpu": "AMD Ryzen 3 1200 ／ Intel Core i5-7500", "ram": "8 GB RAM", "gpu": "AMD Radeon RX 560 with 4GB ／ NVIDIA GeForce GTX 1050 Ti with 4GB", "disk": "35 GB 可用空间" },
-      "rec": { "os": "Windows 10 (64 bit)", "cpu": "AMD Ryzen 5 3600 ／ Intel Core i7 8700", "ram": "16 GB RAM", "gpu": "AMD Radeon RX 5700 ／ NVIDIA GeForce GTX 1070", "disk": "35 GB 可用空间" }
-    }
-  },
-  {
-    "id": "re2_remake",
-    "name": "生化危机2：重制版",
-    "en_name": "Resident Evil 2 Remake",
-    "type": "生存恐怖",
-    "category": ["单机游戏", "动作射击", "热门大作"],
-    "tags": ["恐怖", "丧尸", "重制", "解谜"],
-    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/883710/header.jpg",
-    "aliases": ["生化危机2", "RE2"],
-    "latest": true, "hot": true,
-    "steam_appid": "883710",
-    "date_added": "2026-08-15",
-    "guide": "<strong>浣熊市生存指南：</strong><br>1. <strong>暴君（Mr.X）</strong>：听到沉重的脚步声说明暴君来了，赶紧跑。可以打腿让他短暂硬直。<br>2. <strong>火药合成</strong>：火药最好合成散弹枪子弹或马格南子弹，手枪子弹用处不大。<br>3. <strong>安全屋</strong>：打字机房间是安全区，暴君进不来。",
-    "quark_pc": "https://pan.quark.cn/s/30d3f01377ac",
-    "size": "约 26 GB",
-    "version": "v1.05 豪华版",
-    "desc": [
-      "《生化危机2：重制版》是 Capcom 用 RE 引擎彻底重制的经典。",
-      "新人警察里昂和克莱尔在浣熊市遭遇了丧尸危机。游戏分为表关和里关，两名主角的剧情互相交织。",
-      "本作回归了纯粹的生存恐怖，资源极度匮乏，暴君的无情追击更是给玩家带来了极大的心理压力。"
-    ],
-    "screenshots": ["https://cdn.akamai.steamstatic.com/steam/apps/883710/library_hero.jpg"],
-    "config": {
-      "min": { "os": "WINDOWS 7, 8.1, 10 (64-BIT Required)", "cpu": "Intel Core i5-4460, 2.70GHz or AMD FX-6300 or better", "ram": "8 GB RAM", "gpu": "NVIDIA GeForce GTX 760 or AMD Radeon R7 260x with 2GB Video RAM", "disk": "26 GB 可用空间" },
-      "rec": { "os": "WINDOWS 7, 8.1, 10 (64-BIT Required)", "cpu": "Intel Core i7-3770 or AMD FX-9590 or better", "ram": "8 GB RAM", "gpu": "NVIDIA GeForce GTX 1060 or AMD Radeon RX 480 with 3GB VRAM", "disk": "26 GB 可用空间" }
-    }
-  },
-  {
-    "id": "ac_odyssey",
-    "name": "刺客信条：奥德赛",
-    "en_name": "Assassin's Creed Odyssey",
-    "type": "动作角色扮演",
-    "category": ["单机游戏", "角色扮演", "热门大作"],
-    "tags": ["开放世界", "古希腊", "斯巴达", "海战"],
-    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/812140/header.jpg",
-    "aliases": ["刺客信条奥德赛", "奥德赛", "ACO"],
-    "latest": true, "hot": true,
-    "steam_appid": "812140",
-    "date_added": "2026-08-12",
-    "guide": "<strong>斯巴达雇佣兵指南：</strong><br>1. <strong>斯巴达踢</strong>：这是神技！把敌人踹下悬崖或高塔可以直接秒杀。<br>2. <strong>海战</strong>：升级你的船（阿德瑞斯提亚号），招募副手，海战很好玩。<br>3. <strong>雇佣兵系统</strong>：如果你悬赏太高，会有佣兵来追杀你，记得交罚金或者把他们全杀了。",
-    "quark_pc": "https://pan.quark.cn/s/2577de2b5f50",
-    "size": "约 60 GB",
-    "version": "v1.5.3 终极版",
-    "desc": [
-      "《刺客信条：奥德赛》是育碧开发的一款动作 RPG。背景设定在古希腊，正值伯罗奔尼撒战争时期。",
-      "玩家扮演斯巴达血统的雇佣兵，在广阔的希腊世界探索、海战、暗杀，并寻找自己身世的秘密。",
-      "本作是神话三部曲中口碑最好的一作，内容量极其庞大（超过 100 小时），选择系统也影响结局。"
-    ],
-    "screenshots": ["https://cdn.akamai.steamstatic.com/steam/apps/812140/library_hero.jpg"],
-    "config": {
-      "min": { "os": "Windows 7 SP1, Windows 8.1, Windows 10 (64bit versions only)", "cpu": "AMD FX 6300 @ 3.8 GHz, Intel Core i5 2400 @ 3.1 GHz", "ram": "8 GB RAM", "gpu": "AMD Radeon R9 285 (2GB), NVIDIA GeForce GTX 660 (2GB)", "disk": "60 GB 可用空间" },
-      "rec": { "os": "Windows 7 SP1, Windows 8.1, Windows 10 (64bit versions only)", "cpu": "AMD Ryzen 5 1600 @ 3.2 GHz, Intel Core i7-3770 @ 3.4 GHz", "ram": "8 GB RAM", "gpu": "AMD Radeon RX 570 (4GB), NVIDIA GeForce GTX 970 (4GB)", "disk": "60 GB 可用空间" }
-    }
-  },
-  {
-    "id": "far_cry_5",
-    "name": "孤岛惊魂5",
-    "en_name": "Far Cry 5",
-    "type": "第一人称射击",
-    "category": ["单机游戏", "动作射击", "热门大作"],
-    "tags": ["开放世界", "射击", "邪教", "美国"],
-    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/552520/header.jpg",
-    "aliases": ["孤岛惊魂5", "远哭5", "Far Cry 5"],
-    "latest": true, "hot": true,
-    "steam_appid": "552520",
-    "date_added": "2026-08-10",
-    "guide": "<strong>希望郡指南：</strong><br>1. <strong>雇佣兵系统</strong>：带一个好用的雇佣兵（比如狗熊或者狙击手），他们能救你命。<br>2. <strong>解放哨站</strong>：多用望远镜标记敌人，用消音武器潜行暗杀。<br>3. <strong>钓鱼</strong>：这游戏还能钓鱼，放松一下。",
-    "quark_pc": "https://pan.quark.cn/s/c0fcf6dbf6d6",
-    "size": "约 40 GB",
-    "version": "v1.0.11 黄金版",
-    "desc": [
-      "《孤岛惊魂5》是育碧开发的一款开放世界第一人称射击游戏。背景设定在美国蒙大拿州的希望郡。",
-      "玩家扮演一名菜鸟警长，卷入了一个名为“伊甸之门”的末日邪教组织的叛乱。你需要组织反抗军，推翻邪教领袖约瑟夫的统治。",
-      "游戏拥有极高的射击手感和自由度，可以开飞机、开车、甚至召唤动物帮战。"
-    ],
-    "screenshots": ["https://cdn.akamai.steamstatic.com/steam/apps/552520/library_hero.jpg"],
-    "config": {
-      "min": { "os": "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit versions only)", "cpu": "Intel Core i5-2400 @ 3.1 GHz or AMD FX-6300 @ 3.5 GHz", "ram": "8 GB RAM", "gpu": "NVIDIA GeForce GTX 660 or AMD R9 270 (2GB VRAM with Shader Model 5.0)", "disk": "40 GB 可用空间" },
-      "rec": { "os": "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit versions only)", "cpu": "Intel Core i7-4770 @ 3.4 GHz or AMD Ryzen 5 1600 @ 3.2 GHz", "ram": "8 GB RAM", "gpu": "NVIDIA GeForce GTX 970 or AMD R9 290X (4GB VRAM with Shader Model 5.0)", "disk": "40 GB 可用空间" }
-    }
-  },
-  {
-    "id": "monster_hunter_world",
-    "name": "怪物猎人：世界",
-    "en_name": "Monster Hunter: World",
-    "type": "动作角色扮演",
-    "category": ["单机游戏", "角色扮演", "热门大作"],
-    "tags": ["共斗", "狩猎", "联机", "高画质"],
-    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/582010/header.jpg",
-    "aliases": ["怪物猎人", "怪猎世界", "MHW"],
-    "latest": true, "hot": true,
-    "steam_appid": "582010",
-    "date_added": "2026-08-08",
-    "guide": "<strong>苍蓝星指南：</strong><br>1. <strong>选对武器</strong>：14 种武器，总有一款适合你。新手推荐大剑、太刀或双刀。<br>2. <strong>吃饭</strong>：出去打猎前，记得在营地里吃饭，可以加血上限和攻击力。<br>3. <strong>防卫队装备</strong>：游戏为了帮新手直通冰原，送了一套防卫队装备，非常强力。",
-    "quark_pc": "https://pan.quark.cn/s/d2952ffa2feb",
-    "size": "约 90 GB",
-    "version": "v15.21.00 冰原全DLC",
-    "desc": [
-      "《怪物猎人：世界》是 Capcom 开发的硬核动作狩猎游戏。这是该系列首次走向全球的重磅作品。",
-      "玩家扮演一名猎人，加入新大陆调查团，探索充满未知的生态系统，狩猎各种巨大的古龙。",
-      "游戏打击感无敌，每个怪物都有独特的行为模式。冰原 DLC 加入的“飞翔爪”更是让战斗立体化，是共斗游戏的巅峰。"
-    ],
-    "screenshots": ["https://cdn.akamai.steamstatic.com/steam/apps/582010/library_hero.jpg"],
-    "config": {
-      "min": { "os": "WINDOWS 7, 8, 8.1, 10 (64-bit required)", "cpu": "Intel Core i5-4460, 3.20GHz or AMD FX-6300", "ram": "8 GB RAM", "gpu": "NVIDIA GeForce GTX 760 or AMD Radeon R7 260x (2GB VRAM)", "disk": "90 GB 可用空间" },
-      "rec": { "os": "WINDOWS 7, 8, 8.1, 10 (64-bit required)", "cpu": "Intel Core i7 3770 3.4GHz or Intel Core i3 8350 4GHz or AMD Ryzen 5 1500X", "ram": "8 GB RAM", "gpu": "NVIDIA GeForce GTX 1060 (3GB VRAM) or AMD Radeon RX 570X (4GB VRAM)", "disk": "90 GB 可用空间" }
-    }
-  },
-  {
-    "id": "dmc5",
-    "name": "鬼泣5",
-    "en_name": "Devil May Cry 5",
-    "type": "动作",
-    "category": ["单机游戏", "动作射击", "热门大作"],
-    "tags": ["动作", "炫酷", "连招", "恶魔"],
-    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/601150/header.jpg",
-    "aliases": ["鬼泣5", "DMC5", "恶魔五月哭"],
-    "latest": true, "hot": true,
-    "steam_appid": "601150",
-    "date_added": "2026-08-05",
-    "guide": "<strong>恶魔猎人指南：</strong><br>1. <strong>皇牌空战</strong>：不要在地上打，把敌人挑飞到空中，在空中连招。<br>2. <strong>评价系统</strong>：打得越花哨，评价越高（D到SSS）。不要一直重复同一招，会掉评价。<br>3. <strong>尼禄的机械臂</strong>：不要舍不得用，爆了再捡新的。",
-    "quark_pc": "https://pan.quark.cn/s/b78b5bdbd69c",
-    "size": "约 35 GB",
-    "version": "v1.0 全DLC 维吉尔版",
-    "desc": [
-      "《鬼泣5》是 Capcom 开发的经典动作游戏。距离上一代已经过去了 11 年。",
-      "尼禄、但丁以及神秘的新角色 V，三人将共同对抗魔王尤里曾。",
-      "游戏的战斗系统极其深奥，动作极其帅气。只要你愿意练，就能打出像电影一样的华丽连段。"
-    ],
-    "screenshots": ["https://cdn.akamai.steamstatic.com/steam/apps/601150/library_hero.jpg"],
-    "config": {
-      "min": { "os": "WINDOWS 7, 8.1, 10 (64-BIT Required)", "cpu": "Intel Core i5-4460, AMD FX-6300, or better", "ram": "8 GB RAM", "gpu": "NVIDIA GeForce GTX 760 or AMD Radeon R7 260x with 2GB Video RAM", "disk": "35 GB 可用空间" },
-      "rec": { "os": "WINDOWS 7, 8.1, 10 (64-BIT Required)", "cpu": "Intel Core i7-3770, AMD FX-9590, or better", "ram": "8 GB RAM", "gpu": "NVIDIA GeForce GTX 1060 with 6GB VRAM, AMD Radeon RX 480 with 8GB VRAM", "disk": "35 GB 可用空间" }
-    }
-  },
-  {
-    "id": "nier_automata",
-    "name": "尼尔：机械纪元",
-    "en_name": "NieR:Automata",
-    "type": "动作角色扮演",
-    "category": ["单机游戏", "角色扮演", "热门大作"],
-    "tags": ["剧情神作", "2B", "哲学", "动作"],
-    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/524220/header.jpg",
-    "aliases": ["尼尔机械纪元", "2B", "NieR"],
-    "latest": true, "hot": true,
-    "steam_appid": "524220",
-    "date_added": "2026-08-02",
-    "guide": "<strong>人造人指南：</strong><br>1. <strong>芯片系统</strong>：不要乱卖芯片，合理搭配（比如自动回血、增加攻击）。<br>2. <strong>多周目</strong>：通关一周目只是开始，二周目（9S）和三周目（A2）才是剧情的核心。<br>3. <strong>E结局</strong>：务必打到 E 结局，你会体验到游戏史上前无古人的感动。",
-    "quark_pc": "https://pan.quark.cn/s/5733e92c75ad",
-    "size": "约 50 GB",
-    "version": "v1.0.6 年度版 (含DLC)",
-    "desc": [
-      "《尼尔：机械纪元》是由白金工作室开发，Square Enix 发行的动作 RPG。",
-      "在遥远的未来，地球被外星机械生物占领，人类逃往月球。玩家扮演 2B、9S 和 A2 三名仿生人，为了夺回地球而战。",
-      "游戏通过多周目叙事，探讨了生命、存在和情感的意义。2B 的绝美身姿和凄美的剧情，让这款游戏成为神作。"
-    ],
-    "screenshots": ["https://cdn.akamai.steamstatic.com/steam/apps/524220/library_hero.jpg"],
-    "config": {
-      "min": { "os": "Windows 7 / 8.1 / 10 64-bit", "cpu": "Intel Core i3 2100 or AMD A8-6500", "ram": "4 GB RAM", "gpu": "NVIDIA GeForce GTX 770 VRAM 2GB or AMD Radeon R9 270X VRAM 2GB", "disk": "50 GB 可用空间" },
-      "rec": { "os": "Windows 8.1 / 10 64-bit", "cpu": "Intel Core i5 4670 or AMD A10-7850K", "ram": "8 GB RAM", "gpu": "NVIDIA GeForce GTX 980 VRAM 4GB or AMD Radeon R9 380X VRAM 4GB", "disk": "50 GB 可用空间" }
-    }
-  },
-  {
-    "id": "ff7_remake",
-    "name": "最终幻想7：重制版",
-    "en_name": "FINAL FANTASY VII REMAKE INTERGRADE",
-    "type": "动作角色扮演",
-    "category": ["单机游戏", "角色扮演", "热门大作"],
-    "tags": ["JRPG", "重制", "蒂法", "剧情"],
-    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/1462040/header.jpg",
-    "aliases": ["最终幻想7", "FF7", "FFVII"],
-    "latest": true, "hot": true,
-    "steam_appid": "1462040",
-    "date_added": "2026-07-30",
-    "guide": "<strong>神罗战士指南：</strong><br>1. <strong>ATB系统</strong>：这不是纯动作游戏，普通攻击积攒 ATB 槽，然后消耗槽释放技能或魔法。<br>2. <strong>属性克制</strong>：多用弱点魔法打怪，比如机械怪怕雷。<br>3. <strong>尤菲 DLC</strong>：间章（尤菲篇）非常有意思，千万别错过。",
-    "quark_pc": "https://pan.quark.cn/s/892f79f745b4",
-    "size": "约 100 GB",
-    "version": "v1.0 尤菲篇 (Intergrade)",
-    "desc": [
-      "《最终幻想7：重制版》是 Square Enix 经典神作 FF7 的完全重制。",
-      "故事发生在魔晄都市米德加，前神罗战士克劳德加入雪崩组织，对抗压榨星球生命的神罗公司。",
-      "战斗系统完美融合了动作与回合制。画面表现极佳，蒂法、爱丽丝等经典角色的建模更是美轮美奂。"
-    ],
-    "screenshots": ["https://cdn.akamai.steamstatic.com/steam/apps/1462040/library_hero.jpg"],
-    "config": {
-      "min": { "os": "Windows 10 64-bit", "cpu": "Intel Core i5-3330 / AMD FX-8350", "ram": "8 GB RAM", "gpu": "GeForce GTX 780 / Radeon RX 480 (3GB)", "disk": "100 GB 可用空间" },
-      "rec": { "os": "Windows 10 64-bit", "cpu": "Intel Core i7-3770 / AMD Ryzen 3 3100", "ram": "12 GB RAM", "gpu": "GeForce GTX 1080 / Radeon RX 5700", "disk": "100 GB 可用空间" }
-    }
-  },
-  {
-    "id": "detroit_become_human",
-    "name": "底特律：变人",
-    "en_name": "Detroit: Become Human",
-    "type": "交互式电影",
-    "category": ["单机游戏", "角色扮演", "热门大作"],
-    "tags": ["剧情神作", "仿生人", "选择", "高画质"],
-    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/1222140/header.jpg",
-    "aliases": ["底特律变人", "底特律", "Detroit"],
-    "latest": true, "hot": true,
-    "steam_appid": "1222140",
-    "date_added": "2026-07-28",
-    "guide": "<strong>仿生人指南：</strong><br>1. <strong>关键选择</strong>：这游戏有无数个分支和结局，你的每一个选择都很重要。<br>2. <strong>不要死</strong>：主角如果死了，剧情就真的死了，不会复活。<br>3. <strong>多存档</strong>：想看不同结局可以多存档或者通关后重打。",
-    "quark_pc": "https://pan.quark.cn/s/54c98f23b573",
-    "size": "约 60 GB",
-    "version": "v20230928 官方中文版",
-    "desc": [
-      "《底特律：变人》是由 Quantic Dream 开发的一款电影级互动游戏。",
-      "在未来的底特律，仿生人已经成为人类社会的日常。玩家扮演三名不同的仿生人（卡拉、康纳、马库斯），通过他们的视角见证一场关于觉醒和自由的革命。",
-      "画面极其逼真，演员的动捕表演堪称完美。剧情的张力极大，经常让玩家陷入两难的人性抉择。"
-    ],
-    "screenshots": ["https://cdn.akamai.steamstatic.com/steam/apps/1222140/library_hero.jpg"],
-    "config": {
-      "min": { "os": "Windows 10 (64 bit)", "cpu": "Intel Core i5-2400 @ 3.1GHz or AMD FX-8350 @ 4.0GHz", "ram": "8 GB RAM", "gpu": "Nvidia GeForce GTX 660 (2GB) or AMD Radeon HD 7870 (2GB)", "disk": "60 GB 可用空间" },
-      "rec": { "os": "Windows 10 (64 bit)", "cpu": "Intel Core i7-3770 @ 3.4GHz or AMD Ryzen 3 1300X @ 3.4GHz", "ram": "12 GB RAM", "gpu": "Nvidia GeForce GTX 1060 (6GB) or AMD Radeon RX 580 (8GB)", "disk": "60 GB 可用空间" }
-    }
-  },
-  {
-    "id": "metro_exodus",
-    "name": "地铁：离去",
-    "en_name": "Metro Exodus",
-    "type": "第一人称射击",
-    "category": ["单机游戏", "动作射击", "热门大作"],
-    "tags": ["末日", "废土", "剧情", "高画质"],
-    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/412020/header.jpg",
-    "aliases": ["地铁离去", "地铁", "Metro Exodus"],
-    "latest": true, "hot": true,
-    "steam_appid": "412020",
-    "date_added": "2026-07-25",
-    "guide": "<strong>游骑兵指南：</strong><br>1. <strong>保持武器清洁</strong>：在废土中，武器容易卡壳，记得经常清理。<br>2. <strong>潜行</strong>：尽量避开变异兽，节省弹药。<br>3. <strong>道德点</strong>：不杀投降的敌人，可以增加道德点，影响好结局。",
-    "quark_pc": "https://pan.quark.cn/s/b87fc6b8b632",
-    "size": "约 70 GB",
-    "version": "v1.0.0.7 增强版 (支持光追)",
-    "desc": [
-      "《地铁：离去》是 4A Games 开发的一款第一人称射击游戏。",
-      "玩家扮演游骑兵阿尔乔姆，乘坐火车“曙光号”穿越末日后的俄罗斯，寻找新的家园。",
-      "游戏采用了半开放世界设计，结合了极佳的光影效果和压抑的末日氛围。增强版更是加入了全光追，画面至今依然是天花板级别。"
-    ],
-    "screenshots": ["https://cdn.akamai.steamstatic.com/steam/apps/412020/library_hero.jpg"],
-    "config": {
-      "min": { "os": "Windows 7/8/10", "cpu": "Intel Core i5-4440", "ram": "8 GB RAM", "gpu": "GeForce GTX 670 / GeForce GTX 1050 / AMD Radeon HD 7870", "disk": "70 GB 可用空间" },
-      "rec": { "os": "Windows 10", "cpu": "Intel Core i7-4770K", "ram": "8 GB RAM", "gpu": "GeForce GTX 1070 / GeForce RTX 2060 / AMD Radeon RX 5700", "disk": "70 GB 可用空间" }
-    }
-  },
-  {
-    "id": "hitman_3",
-    "name": "杀手3",
-    "en_name": "HITMAN 3",
-    "type": "潜行动作",
-    "category": ["单机游戏", "动作射击", "热门大作"],
-    "tags": ["暗杀", "潜行", "沙盒", "光头"],
-    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/1659040/header.jpg",
-    "aliases": ["杀手3", "刺客47", "Hitman 3"],
-    "latest": true, "hot": true,
-    "steam_appid": "1659040",
-    "date_added": "2026-07-22",
-    "guide": "<strong>杀手47指南：</strong><br>1. <strong>伪装</strong>：击杀守卫或工作人员，换上他们的衣服，可以进入限制区域。<br>2. <strong>意外击杀</strong>：制造意外（吊灯砸死、漏电电死）不会引起怀疑。<br>3. <strong>多路线</strong>：每张地图都有无数种暗杀方式，多探索。",
-    "quark_pc": "https://pan.quark.cn/s/e62b6c54536d",
-    "size": "约 65 GB",
-    "version": "v3.150 豪华版",
-    "desc": [
-      "《杀手3》是 IO Interactive 开发的潜行动作游戏，“暗杀世界”三部曲的最终章。",
-      "杀手47将继续在全球各地执行暗杀任务，从迪拜的摩天大楼到重庆的阴雨街头。",
-      "游戏的沙盒设计达到了巅峰，你可以用各种脑洞大开的方式完成任务，重玩价值极高。"
-    ],
-    "screenshots": ["https://cdn.akamai.steamstatic.com/steam/apps/1659040/library_hero.jpg"],
-    "config": {
-      "min": { "os": "OS 64-bit Windows 10", "cpu": "Intel CPU Core i5-2500K 3.3GHz / AMD CPU Phenom II X4 940", "ram": "8 GB RAM", "gpu": "NVIDIA GeForce GTX 660 / Radeon HD 7870", "disk": "65 GB 可用空间" },
-      "rec": { "os": "OS 64-bit Windows 10", "cpu": "Intel CPU Core i7 4790 4 GHz / AMD Ryzen 5 1600", "ram": "16 GB RAM", "gpu": "Nvidia GPU GeForce GTX 1080 / AMD GPU Radeon RX Vega 64", "disk": "65 GB 可用空间" }
-    }
-  },
-  {
-    "id": "dead_cells",
-    "name": "死亡细胞",
-    "en_name": "Dead Cells",
-    "type": "动作Roguelike",
-    "category": ["单机游戏", "休闲独立", "热门大作"],
-    "tags": ["肉鸽", "像素风", "横版", "高难度"],
-    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/588650/header.jpg",
-    "aliases": ["死亡细胞", "重生细胞", "Dead Cells"],
-    "latest": true, "hot": true,
-    "steam_appid": "588650",
-    "date_added": "2026-07-20",
-    "guide": "<strong>细胞指南：</strong><br>1. <strong>收集图纸</strong>：击杀怪物有几率掉落图纸，千万别漏了。<br>2. <strong>武器搭配</strong>：主武器和副武器要搭配好，比如冰冻加高伤。<br>3. <strong>不要死磕</strong>：打不过 Boss 就去刷细胞，升级永久属性。",
-    "quark_pc": "https://pan.quark.cn/s/0174138fde41",
-    "size": "约 2 GB",
-    "version": "v3.4 全DLC 纯净版",
-    "desc": [
-      "《死亡细胞》是由 Motion Twin 开发的一款将 Roguelike 与银河恶魔城元素结合的横版动作游戏。",
-      "玩家扮演一个可以寄宿在尸体上的细胞，在随机生成的小岛上战斗、死亡、重生。",
-      "动作极其流畅，打击感极强。每一次死亡都会让你变得更强（通过永久解锁武器和技能）。"
-    ],
-    "screenshots": ["https://cdn.akamai.steamstatic.com/steam/apps/588650/library_hero.jpg"],
-    "config": {
-      "min": { "os": "Windows 7+", "cpu": "Intel i5+", "ram": "2 GB RAM", "gpu": "Nvidia 450 GTS / Radeon HD 5750 or better", "disk": "2 GB 可用空间" },
-      "rec": { "os": "Windows 10", "cpu": "Intel i5+", "ram": "4 GB RAM", "gpu": "Nvidia GTX 460 / Radeon HD 7800 or better", "disk": "2 GB 可用空间" }
-    }
-  },
-  {
-    "id": "hades",
-    "name": "哈迪斯",
-    "en_name": "Hades",
-    "type": "动作Roguelike",
-    "category": ["单机游戏", "休闲独立", "热门大作"],
-    "tags": ["肉鸽", "神话", "独立神作", "爽快"],
-    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/1145360/header.jpg",
-    "aliases": ["哈迪斯", "Hades", "黑帝斯"],
-    "latest": true, "hot": true,
-    "steam_appid": "1145360",
-    "date_added": "2026-07-18",
-    "guide": "<strong>冥界王子指南：</strong><br>1. <strong>祝福选择</strong>：奥林匹斯众神的祝福决定了你的流派，比如海神加冲刺，雷神加连击。<br>2. <strong>镜子升级</strong>：每次死亡后，用黑暗水晶在镜子前升级永久属性。<br>3. <strong>送礼</strong>：给 NPC 送蜜露，可以解锁他们的好感剧情和强力饰品。",
-    "quark_pc": "https://pan.quark.cn/s/e8d7cdacc52d",
-    "size": "约 15 GB",
-    "version": "v1.38290 官方中文版",
-    "desc": [
-      "《哈迪斯》是由 Supergiant Games 开发的一款 Roguelike 动作游戏。",
-      "玩家扮演冥王哈迪斯的儿子扎格列欧斯，试图逃离冥界，前往奥林匹斯山寻找母亲。",
-      "游戏将快节奏的战斗与丰富的叙事完美结合。每次死亡后回到冥府，都能与各位神明和 NPC 解锁新的对话和剧情。"
-    ],
-    "screenshots": ["https://cdn.akamai.steamstatic.com/steam/apps/1145360/library_hero.jpg"],
-    "config": {
-      "min": { "os": "Windows 7 SP1", "cpu": "Dual Core 2.4 GHz", "ram": "4 GB RAM", "gpu": "1GB VRAM / DirectX 10+ support", "disk": "15 GB 可用空间" },
-      "rec": { "os": "Windows 10", "cpu": "Quad Core 3.0 GHz+", "ram": "8 GB RAM", "gpu": "2GB VRAM / DirectX 11+ support", "disk": "15 GB 可用空间" }
-    }
-  },
-  {
-    "id": "hollow_knight",
-    "name": "空洞骑士",
-    "en_name": "Hollow Knight",
-    "type": "动作冒险",
-    "category": ["单机游戏", "休闲独立", "热门大作"],
-    "tags": ["银河恶魔城", "高难度", "手绘", "独立神作"],
-    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/367520/header.jpg",
-    "aliases": ["空洞骑士", "Hollow Knight"],
-    "latest": true, "hot": true,
-    "steam_appid": "367520",
-    "date_added": "2026-07-15",
-    "guide": "<strong>圣巢指南：</strong><br>1. <strong>买地图</strong>：一定要买地图和羽毛笔，否则迷路会很痛苦。<br>2. <strong>护符搭配</strong>：不同的护符有不同效果，比如增加攻击距离、快速回血。<br>3. <strong>下劈</strong>：学会下劈（向下攻击）可以跳过很多棘手的陷阱，甚至用来打 Boss。",
-    "quark_pc": "https://pan.quark.cn/s/32a402f78909",
-    "size": "约 9 GB",
-    "version": "v1.5.78.11833 全DLC",
-    "desc": [
-      "《空洞骑士》是 Team Cherry 开发的一款银河恶魔城类动作冒险游戏。",
-      "玩家扮演一名无名的小骑士，在一个名为“圣巢”的地下昆虫王国中探索，揭开王国衰落的真相。",
-      "游戏拥有精美的 2D 手绘风格，庞大且互相连通的地图，以及极具挑战性的 Boss 战。DLC 也是免费更新，良心至极。"
-    ],
-    "screenshots": ["https://cdn.akamai.steamstatic.com/steam/apps/367520/library_hero.jpg"],
-    "config": {
-      "min": { "os": "Windows 7", "cpu": "Intel Core i3", "ram": "4 GB RAM", "gpu": "GeForce GTX 560", "disk": "9 GB 可用空间" },
-      "rec": { "os": "Windows 10", "cpu": "Intel Core i5", "ram": "8 GB RAM", "gpu": "GeForce GTX 960", "disk": "9 GB 可用空间" }
-    }
-  },
-  {
-    "id": "stardew_valley",
-    "name": "星露谷物语",
-    "en_name": "Stardew Valley",
+    "id": "citiesskylines",
+    "name": "城市：天际线",
+    "en_name": "Cities: Skylines",
     "type": "模拟经营",
-    "category": ["单机游戏", "休闲独立", "热门大作"],
-    "tags": ["种田", "像素", "休闲", "联机"],
-    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/413150/header.jpg",
-    "aliases": ["星露谷物语", "星露谷", "SDV"],
-    "latest": true, "hot": true,
-    "steam_appid": "413150",
-    "date_added": "2026-07-12",
-    "guide": "<strong>农场主指南：</strong><br>1. <strong>第一年</strong>：多种防风草和土豆，先攒钱升级工具。<br>2. <strong>送礼</strong>：每天和村民聊天、送他们喜欢的东西（比如花、食物），可以结婚。<br>3. <strong>下雨天</strong>：不用浇水，可以去钓鱼或者下矿洞。",
-    "quark_pc": "https://pan.quark.cn/s/dd291c5dbd96",
-    "size": "约 1 GB",
-    "version": "v1.6.8.2 官方中文版",
-    "desc": [
-      "《星露谷物语》是由 ConcernedApe 独立开发的一款像素风农场模拟游戏。",
-      "玩家继承了爷爷在星露谷的旧农场，带着破旧的工具和几枚硬币，开始了新的生活。",
-      "游戏内容极其丰富，包含了种田、养畜、钓鱼、采矿、战斗、烹饪、甚至谈恋爱结婚。这是一款能让你放松身心，沉浸在田园生活中的神作。"
-    ],
-    "screenshots": ["https://cdn.akamai.steamstatic.com/steam/apps/413150/library_hero.jpg"],
-    "config": {
-      "min": { "os": "Windows Vista or greater", "cpu": "2 Ghz", "ram": "2 GB RAM", "gpu": "256 mb video memory, shader model 3.0+", "disk": "1 GB 可用空间" },
-      "rec": { "os": "Windows 10", "cpu": "3 Ghz", "ram": "4 GB RAM", "gpu": "512 mb video memory, shader model 3.0+", "disk": "1 GB 可用空间" }
-    }
+    "category": ["单机游戏", "策略模拟", "热门大作"],
+    "tags": ["城市建造", "模拟", "经营", "杀时间", "打mod", "单机"],
+    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/255710/header.jpg",
+    "aliases": ["城市天际线"],
+    "latest": true,
+    "hot": true,
+    "steam_appid": "255710",
+    "date_added": "2026-07-01",
+    "guide": "先建低密度住宅，注意排污口和抽水站距离。",
+    "quark_pc": "https://pan.quark.cn/s/35af58e1182c",
+    "size": "约 9 GB",
+    "version": "v1.21.1-f5 全DLC",
+    "desc": ["《城市：天际线》是一款城市建造与模拟经营游戏。"],
+    "screenshots": ["https://cdn.akamai.steamstatic.com/steam/apps/255710/library_hero.jpg"],
+    "config": { "min": { "os": "Windows 10", "cpu": "Intel Core i7-930", "ram": "8 GB", "gpu": "GTX 260", "disk": "4 GB" }, "rec": { "os": "Windows 10", "cpu": "Intel Core i5-3470", "ram": "16 GB", "gpu": "GTX 660", "disk": "4 GB" } }
   },
   {
-    "id": "terraria",
-    "name": "泰拉瑞亚",
-    "en_name": "Terraria",
-    "type": "沙盒生存",
-    "category": ["单机游戏", "休闲独立", "热门大作"],
-    "tags": ["沙盒", "像素", "建造", "冒险"],
-    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/105600/header.jpg",
-    "aliases": ["泰拉瑞亚", "Terraria"],
-    "latest": true, "hot": true,
-    "steam_appid": "105600",
-    "date_added": "2026-07-10",
-    "guide": "<strong>泰拉瑞亚指南：</strong><br>1. <strong>建房子</strong>：第一天先用木头建房子，让 NPC（向导）住进去，其他 NPC 也会陆续入住。<br>2. <strong>挖矿</strong>：往下挖，寻找宝箱和矿石，这是变强的关键。<br>3. <strong>打 Boss</strong>：用召唤物（比如史莱姆王冠）召唤 Boss，打败他们可以掉落好装备。",
-    "quark_pc": "https://pan.quark.cn/s/b08e2e914a91",
-    "size": "约 500 MB",
-    "version": "v1.4.4.9 官方中文版",
-    "desc": [
-      "《泰拉瑞亚》是由 Re-Logic 开发的一款 2D 沙盒冒险游戏。",
-      "在这个随机生成的像素世界里，你可以探索地下洞穴、建造宏伟的城堡、收集各种奇特的武器和装备。",
-      "游戏内容量极其恐怖，拥有几十个 Boss、上百种怪物和数千种物品。被誉为 2D 版的《我的世界》，但战斗和探索元素更丰富。"
-    ],
-    "screenshots": ["https://cdn.akamai.steamstatic.com/steam/apps/105600/library_hero.jpg"],
-    "config": {
-      "min": { "os": "Windows Xp, Vista, 7, 8/8.1, 10", "cpu": "2.0 Ghz", "ram": "2.5 GB RAM", "gpu": "128mb Video Memory, capable of Shader Model 2.0+", "disk": "500 MB 可用空间" },
-      "rec": { "os": "Windows 10", "cpu": "Dual Core 3.0 Ghz", "ram": "4 GB RAM", "gpu": "256mb Video Memory, capable of Shader Model 2.0+", "disk": "500 MB 可用空间" }
-    }
+    "id": "changed",
+    "name": "兽化实验室",
+    "en_name": "Changed",
+    "type": "解谜RPG",
+    "category": ["单机游戏", "休闲独立"],
+    "tags": ["解谜", "Furry", "剧情", "像素风", "单机"],
+    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/814540/header.jpg",
+    "aliases": ["changed", "兽化"],
+    "latest": true,
+    "hot": false,
+    "steam_appid": "814540",
+    "date_added": "2026-07-01",
+    "guide": "被追逐时利用地形绕圈，多存档。",
+    "quark_pc": "https://pan.quark.cn/s/你的兽化实验室PC链接",
+    "quark_mobile": "https://pan.quark.cn/s/你的手机链接",
+    "size": "约 220 MB",
+    "version": "Build.24728890",
+    "desc": ["你在一座陌生的研究所中苏醒，这里充满了创造出的“胶兽”生物。"],
+    "screenshots": ["https://cdn.akamai.steamstatic.com/steam/apps/814540/library_hero.jpg"],
+    "config": { "min": { "os": "Windows 7", "cpu": "Intel Core i5-6400", "ram": "8 GB", "gpu": "GTX 960", "disk": "2 GB" }, "rec": { "os": "Windows 10", "cpu": "Intel Core i7-7700", "ram": "16 GB", "gpu": "GTX 1060", "disk": "4 GB" } }
   },
   {
-    "id": "l4d2",
-    "name": "求生之路2",
-    "en_name": "Left 4 Dead 2",
-    "type": "第一人称射击",
-    "category": ["单机游戏", "动作射击", "热门大作"],
-    "tags": ["丧尸", "联机", "经典", "合作"],
-    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/550/header.jpg",
-    "aliases": ["求生之路2", "L4D2", "生存之旅"],
-    "latest": true, "hot": true,
-    "steam_appid": "550",
-    "date_added": "2026-07-08",
-    "guide": "<strong>幸存者指南：</strong><br>1. <strong>背靠背</strong>：不要一个人乱跑，跟紧队友。<br>2. <strong>特感</strong>：听到特殊感染者的声音（比如女巫的哭声、Smoker 的咳嗽），立刻准备应对。<br>3. <strong>不要打队友</strong>：误伤队友是很不礼貌的（除非是故意黑枪）。",
-    "quark_pc": "https://pan.quark.cn/s/42430e2e1e9e",
-    "size": "约 20 GB",
-    "version": "v2.2.3.2 官方中文版",
-    "desc": [
-      "《求生之路2》是由 Valve 开发的一款丧尸合作射击游戏，是同类游戏中的绝对标杆。",
-      "玩家将扮演四名幸存者，在美国南部的城市、沼泽、嘉年华等场景中，杀出一条血路。",
-      "游戏拥有极高的 AI 导演系统，会根据玩家的状态动态调整丧尸的数量和物资。它支持海量创意工坊 MOD，至今依然有极高的在线人数。"
-    ],
-    "screenshots": ["https://cdn.akamai.steamstatic.com/steam/apps/550/library_hero.jpg"],
-    "config": {
-      "min": { "os": "Windows 7 32/64-bit / Vista 32/64 / XP", "cpu": "Pentium 4 3.0GHz", "ram": "2 GB RAM", "gpu": "Video card with 128 MB, Shader model 2.0", "disk": "20 GB 可用空间" },
-      "rec": { "os": "Windows 7 64-bit", "cpu": "Intel core 2 duo 2.4GHz", "ram": "4 GB RAM", "gpu": "Video Card Shader model 3.0", "disk": "20 GB 可用空间" }
-    }
-  },
-  {
-    "id": "the_forest",
-    "name": "森林",
-    "en_name": "The Forest",
-    "type": "生存恐怖",
-    "category": ["单机游戏", "动作射击", "热门大作"],
-    "tags": ["生存", "建造", "食人族", "恐怖"],
-    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/242760/header.jpg",
-    "aliases": ["森林", "迷失森林", "The Forest"],
-    "latest": true, "hot": true,
-    "steam_appid": "242760",
-    "date_added": "2026-07-05",
-    "guide": "<strong>荒岛生存指南：</strong><br>1. <strong>砍树建营地</strong>：第一天赶紧砍树，建一个庇护所，天黑后食人族会出来。<br>2. <strong>不要吃野人</strong>：吃了会掉理智值，虽然能填饱肚子。<br>3. <strong>找儿子</strong>：主线是找失踪的儿子，去洞穴探索一定要带火把和武器。",
-    "quark_pc": "https://pan.quark.cn/s/69869a9f8eb5",
-    "size": "约 5 GB",
-    "version": "v1.12 官方中文版",
-    "desc": [
-      "《森林》是由 Endnight Games 开发的一款第一人称恐怖生存游戏。",
-      "玩家乘坐的客机坠毁在一座孤岛上，儿子被食人族抓走。为了生存并找回儿子，你需要砍树建房子、打猎、制作武器，并深入地下洞穴。",
-      "游戏的建造系统非常自由，你可以建树屋、陷阱，而食人族的 AI 也极其聪明，会观察你的行为并做出反应。"
-    ],
-    "screenshots": ["https://cdn.akamai.steamstatic.com/steam/apps/242760/library_hero.jpg"],
-    "config": {
-      "min": { "os": "Windows 7", "cpu": "Intel Dual-Core 2.4 GHz", "ram": "4 GB RAM", "gpu": "NVIDIA GeForce 8800GT", "disk": "5 GB 可用空间" },
-      "rec": { "os": "Windows 7", "cpu": "Quad Core Processor", "ram": "4 GB RAM", "gpu": "NVIDIA GeForce GTX 560", "disk": "5 GB 可用空间" }
-    }
-  },
-  {
-    "id": "no_mans_sky",
-    "name": "无人深空",
-    "en_name": "No Man's Sky",
-    "type": "太空探索",
-    "category": ["单机游戏", "休闲独立", "热门大作"],
-    "tags": ["宇宙", "探索", "沙盒", "建造"],
-    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/275850/header.jpg",
-    "aliases": ["无人深空", "No Man's Sky", "NMS"],
-    "latest": true, "hot": true,
-    "steam_appid": "275850",
-    "date_added": "2026-07-02",
-    "guide": "<strong>星际旅行者指南：</strong><br>1. <strong>修好飞船</strong>：开局先收集碳和铁，修好飞船起飞。<br>2. <strong>建基地</strong>：找个风景好的星球，建一个自己的基地。<br>3. <strong>探索</strong>：这个游戏有 18 亿亿颗星球，永远探索不完。",
-    "quark_pc": "https://pan.quark.cn/s/c5b0c1e1e88e",
-    "size": "约 15 GB",
-    "version": "v4.5 星际远征版",
-    "desc": [
-      "《无人深空》是由 Hello Games 开发的一款太空探索沙盒游戏。",
-      "玩家可以自由穿梭在广袤的宇宙中，探索未知的星球，采集资源，建造基地，甚至与其他玩家联机。",
-      "游戏经历了口碑逆转，如今内容极其丰富，拥有舰队、生物捕捉、机甲等多种玩法，是太空迷的必玩之作。"
-    ],
-    "screenshots": ["https://cdn.akamai.steamstatic.com/steam/apps/275850/library_hero.jpg"],
-    "config": {
-      "min": { "os": "Windows 10 (64-bit versions only)", "cpu": "Intel Core i3-2120 / AMD FX-4100", "ram": "8 GB RAM", "gpu": "NVIDIA GTX 660 2GB / AMD HD 7870 2GB", "disk": "15 GB 可用空间" },
-      "rec": { "os": "Windows 10 (64-bit versions only)", "cpu": "Intel Core i5-2500K / AMD Ryzen 5 1600", "ram": "8 GB RAM", "gpu": "NVIDIA GTX 1060 3GB / AMD RX 480 4GB", "disk": "15 GB 可用空间" }
-    }
-  },
-  {
-    "id": "riders_republic",
-    "name": "极限国度",
-    "en_name": "Riders Republic",
-    "type": "极限运动",
-    "category": ["单机游戏", "休闲独立", "热门大作"],
-    "tags": ["极限运动", "开放世界", "联机", "滑雪"],
-    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/2290180/header.jpg",
-    "aliases": ["极限国度", "Riders Republic"],
-    "latest": true, "hot": true,
-    "steam_appid": "2290180",
-    "date_added": "2026-06-28",
-    "guide": "<strong>极限运动员指南：</strong><br>1. <strong>切换职业</strong>：你可以随时切换自行车、滑雪板、飞鼠装等职业，适应不同的地形。<br>2. <strong>特技赛</strong>：多在空中做特技动作，可以拿到高分。<br>3. <strong>大乱斗</strong>：50 名玩家同时在赛道上狂飙，非常刺激。",
-    "quark_pc": "https://pan.quark.cn/s/90c1f8e0e8da",
-    "size": "约 40 GB",
-    "version": "v1.0.2 终极版",
-    "desc": [
-      "《极限国度》是育碧开发的一款大型多人极限运动游戏。",
-      "在美国标志性的国家公园里，你可以骑着自行车、滑雪板、甚至穿着飞鼠装，进行各种疯狂的极限挑战。",
-      "游戏氛围非常轻松欢乐，支持 50 人同场竞技，是放松解压的好选择。"
-    ],
-    "screenshots": ["https://cdn.akamai.steamstatic.com/steam/apps/2290180/library_hero.jpg"],
-    "config": {
-      "min": { "os": "Windows 10 (64-bit versions only)", "cpu": "AMD Ryzen 3 1200 @ 3.1 GHz / Intel Core i5-4460 @ 3.2 GHz", "ram": "8 GB RAM", "gpu": "AMD Radeon RX 470 (4 GB) / NVIDIA GeForce GTX 970 (4 GB)", "disk": "40 GB 可用空间" },
-      "rec": { "os": "Windows 10 (64-bit versions only)", "cpu": "AMD Ryzen 5 2600X @ 3.6 GHz / Intel Core i7-6700K @ 4.0 GHz", "ram": "8 GB RAM", "gpu": "AMD Radeon RX 5700 XT (8 GB) / NVIDIA GeForce GTX 1080 (8 GB)", "disk": "40 GB 可用空间" }
-    }
-  },
-  {
-    "id": "nfs_unbound",
-    "name": "极品飞车：不羁",
-    "en_name": "Need for Speed Unbound",
-    "type": "竞速",
-    "category": ["单机游戏", "休闲独立", "热门大作"],
-    "tags": ["赛车", "街头", "涂鸦", "联机"],
-    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/1846380/header.jpg",
-    "aliases": ["极品飞车", "NFS", "不羁"],
-    "latest": true, "hot": true,
-    "steam_appid": "1846380",
-    "date_added": "2026-06-25",
-    "guide": "<strong>街头车手指南：</strong><br>1. <strong>收集车辆</strong>：多参加比赛赢取奖金，去车行买新车。<br>2. <strong>改装</strong>：本作改装系统非常丰富，不仅能改性能，还能改外观（包括特效涂鸦）。<br>3. <strong>逃脱警察</strong>：被警察追捕时，利用小巷和跳跃点甩掉他们。",
-    "quark_pc": "https://pan.quark.cn/s/4a4f6b5c8a5a",
-    "size": "约 50 GB",
-    "version": "v1.1.3  Palace版",
-    "desc": [
-      "《极品飞车：不羁》是 Criterion Games 开发的一款街头赛车游戏。",
-      "游戏采用了独特的涂鸦视觉风格，将写实的车辆与动漫风格的特效结合在一起。",
-      "玩家需要在比赛中赚取足够的钱，参加最终的 Grand 赛事。同时还要躲避警察的追捕。"
-    ],
-    "screenshots": ["https://cdn.akamai.steamstatic.com/steam/apps/1846380/library_hero.jpg"],
-    "config": {
-      "min": { "os": "Windows 10 64-bit", "cpu": "Ryzen 5 2600 / Core i5-8600K", "ram": "8 GB RAM", "gpu": "Radeon RX 570 / GeForce GTX 1050 Ti", "disk": "50 GB 可用空间" },
-      "rec": { "os": "Windows 10 64-bit", "cpu": "Ryzen 5 3600 / Core i7-8700", "ram": "16 GB RAM", "gpu": "Radeon RX 5700 / GeForce RTX 2070", "disk": "50 GB 可用空间" }
-    }
-  },
-  {
-  "id": "ksp",
-  "name": "坎巴拉太空计划",
-  "en_name": "Kerbal Space Program",
-  "type": "策略模拟",
-  "category": ["单机游戏", "策略模拟", "热门大作"],
-  "tags": ["航天", "沙盒", "物理"],
-  "cover": "https://cdn.akamai.steamstatic.com/steam/apps/220200/header.jpg",
-  "aliases": ["ksp", "坎巴拉"],
-  "latest": true, "hot": true,
-  "steam_appid": "220200",
-  "date_added": "2026-07-01",
-  "guide": "<strong>火箭发射技巧：</strong><br>1. 记得装降落伞，不然小绿人回不来。<br>2. 发射时保持“重力转向”，在 10km 高度开始慢慢向东倾斜。",
-  "quark_pc": "https://pan.quark.cn/s/a631ced79658#/list/share",
-  "size": "约 2870 MB",
-  "version": "v1.12.5 全DLC",
-  "desc": ["《坎巴拉太空计划》是一款航天沙盒模拟游戏，拥有真实的物理引擎。"],
-  "screenshots": ["https://cdn.akamai.steamstatic.com/steam/apps/220200/library_hero.jpg"],
-  "config": {
-    "min": { "os": "Windows 7", "cpu": "Core 2 Duo", "ram": "4 GB", "gpu": "DX10", "disk": "3 GB" },
-    "rec": { "os": "Windows 10", "cpu": "Core i5", "ram": "8 GB", "gpu": "DX10", "disk": "4 GB" }
+    "id": "us",
+    "name": "宇宙沙盒",
+    "en_name": "Universe Sandbox",
+    "type": "模拟沙盒",
+    "category": ["单机游戏", "策略模拟", "热门大作"],
+    "tags": ["宇宙", "物理", "科普", "沙盒", "单机"],
+    "cover": "https://cdn.akamai.steamstatic.com/steam/apps/230290/header.jpg",
+    "aliases": ["宇宙沙盘"],
+    "latest": true,
+    "hot": true,
+    "steam_appid": "230290",
+    "date_added": "2026-07-01",
+    "guide": "先玩太阳系预设场景，可以试试把月球推向地球。",
+    "quark_pc": "https://pan.quark.cn/s/4b0d3561f1b3",
+    "size": "约 2.9 GB",
+    "version": "v36.3 官方中文版",
+    "desc": ["《宇宙沙盒》是一款基于真实物理定律的宇宙模拟沙盒游戏。"],
+    "screenshots": ["https://cdn.akamai.steamstatic.com/steam/apps/230290/library_hero.jpg"],
+    "config": { "min": { "os": "Windows 7", "cpu": "1.6GHz 双核", "ram": "4 GB", "gpu": "512MB", "disk": "2 GB" }, "rec": { "os": "Windows 10", "cpu": "3.0GHz 四核", "ram": "8 GB", "gpu": "2GB", "disk": "2 GB" } }
   }
-},
-{
-  "id": "us",
-  "name": "宇宙沙盒",
-  "en_name": "Universe Sandbox",
-  "type": "模拟沙盒",
-  "category": ["单机游戏", "策略模拟", "热门大作"],
-  "tags": ["宇宙", "物理", "科普"],
-  "cover": "https://cdn.akamai.steamstatic.com/steam/apps/230290/header.jpg",
-  "aliases": ["宇宙沙盘"],
-  "latest": true, "hot": true,
-  "steam_appid": "230290",
-  "date_added": "2026-07-01",
-  "guide": "<strong>玩法建议：</strong><br>1. 先玩“太阳系”预设场景。<br>2. 试试把月球推向地球，看看会发生什么。",
-  "quark_pc": "https://pan.quark.cn/s/4b0d3561f1b3",
-  "size": "约 2980 MB",
-  "version": "v36.3 官方中文版",
-  "desc": ["《宇宙沙盒》是一款基于真实物理定律的宇宙模拟沙盒游戏。"],
-  "screenshots": ["https://cdn.akamai.steamstatic.com/steam/apps/230290/library_hero.jpg"],
-  "config": {
-    "min": { "os": "Windows 7", "cpu": "1.6GHz 双核", "ram": "4 GB", "gpu": "512MB / DX11", "disk": "2 GB" },
-    "rec": { "os": "Windows 10", "cpu": "3.0GHz 四核", "ram": "8 GB", "gpu": "2GB / DX11", "disk": "2 GB" }
-  }
-},
-{
-  "id": "citiesskylines",
-  "name": "城市：天际线",
-  "en_name": "Cities: Skylines",
-  "type": "模拟经营",
-  "category": ["单机游戏", "策略模拟", "热门大作"],
-  "tags": ["城市建造", "模拟", "经营"],
-  "cover": "https://cdn.akamai.steamstatic.com/steam/apps/255710/header.jpg",
-  "aliases": ["城市天际线"],
-  "latest": true, "hot": true,
-  "steam_appid": "255710",
-  "date_added": "2026-07-01",
-  "guide": "<strong>市长手册：</strong><br>1. 一开始先建低密度住宅。<br>2. 注意排污口和抽水站的距离。",
-  "quark_pc": "https://pan.quark.cn/s/35af58e1182c",
-  "size": "约 9 GB",
-  "version": "v1.21.1-f5 全DLC",
-  "desc": ["《城市：天际线》是一款城市建造与模拟经营游戏。"],
-  "screenshots": ["https://cdn.akamai.steamstatic.com/steam/apps/255710/library_hero.jpg"],
-  "config": {
-    "min": { "os": "Windows 10", "cpu": "Intel Core i7-930", "ram": "8 GB", "gpu": "GTX 260", "disk": "4 GB" },
-    "rec": { "os": "Windows 10", "cpu": "Intel Core i5-3470", "ram": "16 GB", "gpu": "GTX 660", "disk": "4 GB" }
-  }
-},
-{
-  "id": "heartsofiron4",
-  "name": "钢铁雄心4",
-  "en_name": "Hearts of Iron IV",
-  "type": "大战略",
-  "category": ["单机游戏", "策略模拟"],
-  "tags": ["二战", "战略", "历史"],
-  "cover": "https://cdn.akamai.steamstatic.com/steam/apps/394360/header.jpg",
-  "aliases": ["hoi4"],
-  "latest": true, "hot": true,
-  "steam_appid": "394360",
-  "date_added": "2026-07-01",
-  "guide": "<strong>填线宝宝忠告：</strong><br>1. 画好前线，记得留预备队。<br>2. 优先发展工业和科研。",
-  "quark_pc": "https://pan.quark.cn/s/744da24d5a37",
-  "size": "约 5 GB",
-  "version": "v1.16.1 全DLC",
-  "desc": ["《钢铁雄心4》是一款以二战为背景的大战略游戏。"],
-  "screenshots": ["https://cdn.akamai.steamstatic.com/steam/apps/394360/library_hero.jpg"],
-  "config": {
-    "min": { "os": "Windows 10", "cpu": "Intel Core i5-750", "ram": "4 GB", "gpu": "GTX 470", "disk": "2 GB" },
-    "rec": { "os": "Windows 10", "cpu": "Intel Core i5-2500K", "ram": "8 GB", "gpu": "GTX 660", "disk": "2 GB" }
-  }
-},
-{
-  "id": "changed",
-  "name": "兽化实验室",
-  "en_name": "Changed",
-  "type": "解谜RPG",
-  "category": ["单机游戏", "休闲独立"],
-  "tags": ["解谜", "Furry", "剧情"],
-  "cover": "https://cdn.akamai.steamstatic.com/steam/apps/814540/header.jpg",
-  "aliases": ["changed", "兽化"],
-  "latest": true, "hot": false,
-  "steam_appid": "814540",
-  "date_added": "2026-07-01",
-  "guide": "<strong>逃生提示：</strong><br>1. 被追逐时不要慌。<br>2. 多存档，因为有多种结局。",
-  "quark_pc": "https://pan.quark.cn/s/你的兽化实验室PC链接",
-  "quark_mobile": "https://pan.quark.cn/s/你的兽化实验室手机链接",
-  "size": "约 220 MB",
-  "version": "Build.24728890",
-  "desc": ["你在一座陌生的研究所中苏醒，这里充满了通过基因实验创造出的“胶兽”生物。"],
-  "screenshots": ["https://cdn.akamai.steamstatic.com/steam/apps/814540/library_hero.jpg"],
-  "config": {
-    "min": { "os": "Windows 7", "cpu": "Intel Core i5-6400", "ram": "8 GB", "gpu": "GTX 960", "disk": "2 GB" },
-    "rec": { "os": "Windows 10", "cpu": "Intel Core i7-7700", "ram": "16 GB", "gpu": "GTX 1060", "disk": "4 GB" }
-  }
-},
-{
-  "id": "warthunder",
-  "name": "战争雷霆",
-  "en_name": "War Thunder",
-  "type": "载具射击",
-  "category": ["网络游戏", "动作射击", "热门大作"],
-  "tags": ["载具", "军事", "免费"],
-  "cover": "https://cdn.akamai.steamstatic.com/steam/apps/236390/header.jpg",
-  "aliases": ["wt", "战争雷霆"],
-  "latest": true, "hot": true,
-  "steam_appid": "236390",
-  "official": "https://warthunder.com/zh",
-  "date_added": "2026-11-03",
-  "guide": "<strong>萌新避坑：</strong><br>1. 别急着买高级金币车。<br>2. 历史模式收益高。",
-  "size": "约 95 GB",
-  "version": "官方最新版",
-  "desc": ["《战争雷霆》是一款以二战和冷战为背景的大型多人在线载具射击游戏。"],
-  "screenshots": ["https://cdn.akamai.steamstatic.com/steam/apps/236390/library_hero.jpg"],
-  "config": {
-    "min": { "os": "Windows 7/8/10", "cpu": "Dual-Core", "ram": "4 GB", "gpu": "Intel HD 4000", "disk": "95 GB" },
-    "rec": { "os": "Windows 10", "cpu": "Intel Core i5", "ram": "16 GB", "gpu": "GTX 1060", "disk": "95 GB" }
-  }
-},
-{
-  "id": "minecraft",
-  "name": "我的世界",
-  "en_name": "Minecraft",
-  "type": "沙盒生存",
-  "category": ["单机游戏", "休闲独立", "热门大作"],
-  "tags": ["沙盒", "像素", "创造"],
-  "cover": "https://images.unsplash.com/photo-1607513746994-51f730a44832?q=80&w=800&auto=format&fit=crop",
-  "aliases": ["mc"],
-  "latest": true, "hot": true,
-  "official": "https://www.minecraft.net/zh-hans",
-  "date_added": "2026-07-01",
-  "guide": "<strong>MC 生存第一天：</strong><br>1. 徒手撸树，做工作台。<br>2. 天黑前一定要挖个洞把自己埋起来。",
-  "size": "约 1 GB",
-  "version": "官方最新版",
-  "desc": ["《我的世界》是一款风靡全球的沙盒建造游戏。"],
-  "screenshots": ["https://images.unsplash.com/photo-1607513746994-51f730a44832?q=80&w=1200&auto=format&fit=crop"],
-  "config": {
-    "min": { "os": "Windows 10", "cpu": "Intel Core i3", "ram": "4 GB", "gpu": "Intel HD 4000", "disk": "1 GB" },
-    "rec": { "os": "Windows 10", "cpu": "Intel Core i5", "ram": "8 GB", "gpu": "GTX 700 series", "disk": "4 GB" }
-  }
-}
 ]
