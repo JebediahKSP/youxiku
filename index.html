@@ -64,7 +64,12 @@
     </div>
 
     <div class="main-box">
-      <div class="tag-cloud" id="tagCloud"></div>
+      <!-- 支持横向滑动与多选的标签云 -->
+      <div class="tag-cloud-wrapper">
+        <button class="clear-tags" id="clearTagsBtn" onclick="clearAllTags()">清除筛选 ✕</button>
+        <div class="tag-cloud" id="tagCloud"></div>
+      </div>
+
       <div class="filter-pills" id="filterPills">
         <button class="pill active" data-filter="首页">全部游戏</button>
         <button class="pill" id="randomBtn">🎲 命运盲盒</button>
