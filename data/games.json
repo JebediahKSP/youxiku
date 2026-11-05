@@ -1312,8 +1312,7 @@
       "min": { "os": "Windows 10 64-bit", "cpu": "Ryzen 5 2600 / Core i5-8600K", "ram": "8 GB RAM", "gpu": "Radeon RX 570 / GeForce GTX 1050 Ti", "disk": "50 GB 可用空间" },
       "rec": { "os": "Windows 10 64-bit", "cpu": "Ryzen 5 3600 / Core i7-8700", "ram": "16 GB RAM", "gpu": "Radeon RX 5700 / GeForce RTX 2070", "disk": "50 GB 可用空间" }
     }
-  }
-,
+  },
   {
   "id": "ksp",
   "name": "坎巴拉太空计划",
@@ -1327,7 +1326,7 @@
   "steam_appid": "220200",
   "date_added": "2026-07-01",
   "guide": "<strong>火箭发射技巧：</strong><br>1. 记得装降落伞，不然小绿人回不来。<br>2. 发射时保持“重力转向”，在 10km 高度开始慢慢向东倾斜。",
-  "quark_pc": "https://pan.quark.cn/s/8a14bcfd2f1f",
+  "quark_pc": "https://pan.quark.cn/s/a631ced79658#/list/share",
   "size": "约 2870 MB",
   "version": "v1.12.5 全DLC",
   "desc": ["《坎巴拉太空计划》是一款航天沙盒模拟游戏，拥有真实的物理引擎。"],
