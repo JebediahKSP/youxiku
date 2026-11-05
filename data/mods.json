@@ -1,0 +1,87 @@
+[
+  {
+    "id": "ksp",
+    "name": "坎巴拉太空计划",
+    "en_name": "Kerbal Space Program",
+    "cover": "https://images.weserv.nl/?url=cdn.akamai.steamstatic.com/steam/apps/220200/header.jpg&w=400&output=webp",
+    "mod_count": 142,
+    "official_mod_url": "https://spacedock.info/kerbal-space-program",
+    "mods": [
+      { 
+        "name": "MechJeb2 自动导航", 
+        "desc": "KSP 最著名的自动驾驶 MOD。一键自动入轨、自动对接、自动驾驶，极大降低游戏上手门槛。", 
+        "tags": ["工具", "自动驾驶", "萌新必备"], 
+        "links": [
+          { "name": "🚀 GitHub 官方发布页", "url": "https://github.com/MuMech/MechJeb2/releases" },
+          { "name": "📦 SpaceDock 下载站", "url": "https://spacedock.info/mod/1241/MechJeb2" }
+        ]
+      },
+      { 
+        "name": "Scatterer 画质增强", 
+        "desc": "加入真实的大气散射、云层和海洋渲染，是提升 KSP 画质最核心的 MOD 之一。", 
+        "tags": ["画质", "环境"], 
+        "links": [
+          { "name": "📦 SpaceDock 下载站", "url": "https://spacedock.info/mod/141/scatterer" }
+        ]
+      },
+      { 
+        "name": "KSP Community Fixes", 
+        "desc": "极其重要的底层修复 MOD。修复大量原版 Bug，优化加载时间，是所有 MOD 列表的基石。", 
+        "tags": ["必备", "工具", "修复"], 
+        "links": [
+          { "name": "🚀 GitHub 官方发布页", "url": "https://github.com/KSPModdingLibs/KSPCommunityFixes" }
+        ]
+      },
+      { 
+        "name": "Kerbal Engineer Redux (KER)", 
+        "desc": "提供极其详细的飞船数据（Delta-V、推重比等），是设计火箭的必备信息面板。", 
+        "tags": ["必备", "工具", "数据"], 
+        "links": [
+          { "name": "🚀 GitHub 官方发布页", "url": "https://github.com/jrbudda/KerbalEngineer" }
+        ]
+      },
+      { 
+        "name": "Restock 零件重制", 
+        "desc": "对原版零件进行高精度重做，优化模型和材质，不改变原版平衡性。", 
+        "tags": ["美化", "零件"], 
+        "links": [
+          { "name": "🚀 GitHub 官方发布页", "url": "https://github.com/PorktoberRevolution/ReStock" }
+        ]
+      },
+      { 
+        "name": "Waterfall 引擎尾焰", 
+        "desc": "彻底取代原版塑料质感的尾焰。提供极其逼真的喷气、尾焰和激波视觉效果。", 
+        "tags": ["画质", "特效"], 
+        "links": [
+          { "name": "📦 SpaceDock 下载站", "url": "https://spacedock.info/mod/2413/Waterfall" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "citiesskylines",
+    "name": "城市：天际线",
+    "en_name": "Cities: Skylines",
+    "cover": "https://images.weserv.nl/?url=cdn.akamai.steamstatic.com/steam/apps/255710/header.jpg&w=400&output=webp",
+    "mod_count": 89,
+    "official_mod_url": "https://steamcommunity.com/app/255710/workshop/",
+    "mods": [
+      { 
+        "name": "Move It", 
+        "desc": "天际线绝对必备！可以随意移动、旋转、复制游戏中的任何物体，甚至道路和建筑。", 
+        "tags": ["工具", "建造"], 
+        "links": [
+          { "name": "🎮 Steam 创意工坊", "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1619685021" }
+        ]
+      },
+      { 
+        "name": "TM:PE (Traffic Manager)", 
+        "desc": "最强大的交通管理 MOD，可以自定义红绿灯、车道转向，彻底解决堵车问题。", 
+        "tags": ["工具", "交通"], 
+        "links": [
+          { "name": "🎮 Steam 创意工坊", "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1637663252" }
+        ]
+      }
+    ]
+  }
+]

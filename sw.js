@@ -1,4 +1,4 @@
-const CACHE_NAME = 'game-hub-v27';
+const CACHE_NAME = 'game-hub-cache';
 const ASSETS = [
   '/', '/index.html', '/404.html', '/manifest.json',
   '/pages/mods.html', '/pages/game.html', '/admin.html',
@@ -20,6 +20,8 @@ self.addEventListener('activate', (e) => {
 self.addEventListener('fetch', (e) => {
   if (e.request.method !== 'GET') return;
   if (!e.request.url.startsWith(self.location.origin)) return;
+
+  // 核心逻辑：网络优先。只要联网，永远拿最新代码。
   e.respondWith(
     fetch(e.request).then(response => {
       if (!response || response.status !== 200 || response.type !== 'basic') return response;

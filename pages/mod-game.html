@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MOD中心 - 极速游戏库</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23ff6600'/%3E%3Ctext x='32' y='45' font-family='Arial' font-size='36' font-weight='bold' fill='%23fff' text-anchor='middle'%3EJ%3C/text%3E%3C/svg%3E">
+<link rel="manifest" href="../manifest.json">
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/home.css">
+<style>
+  .mod-header-area { background: var(--glass-bg); backdrop-filter: var(--glass-blur); padding: 30px; border-radius: 16px; margin-bottom: 24px; border: 1px solid var(--glass-border); box-shadow: var(--glass-shadow); }
+  .mod-header-area h1 { font-size: 28px; font-weight: 800; margin-bottom: 8px; }
+  .mod-header-area p { color: var(--text-dim); font-size: 15px; }
+  
+  .mod-search-bar { display: flex; gap: 12px; margin-bottom: 24px; }
+  .mod-search-input { flex: 1; padding: 14px 20px; border-radius: 12px; border: 1px solid var(--glass-border); background: rgba(255,255,255,0.7); font-size: 16px; outline: none; transition: all .2s; box-shadow: 0 2px 8px rgba(0,0,0,0.02); }
+  .mod-search-input:focus { border-color: var(--brand); background: #fff; box-shadow: 0 0 0 4px rgba(255,102,0,0.1); }
+  
+  .mod-tags-filter { display: flex; gap: 10px; margin-bottom: 24px; flex-wrap: wrap; }
+  .mod-tag-btn { padding: 6px 16px; border-radius: 20px; background: rgba(255,255,255,0.5); border: 1px solid var(--glass-border); color: var(--text); font-weight: 600; cursor: pointer; transition: all .2s; }
+  .mod-tag-btn.active { background: var(--brand); color: #fff; border-color: var(--brand); }
+
+  .mod-list { display: flex; flex-direction: column; gap: 16px; }
+  .mod-item { background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 12px; padding: 20px; display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; transition: transform .2s, box-shadow .2s; }
+  .mod-item:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.06); }
+  .mod-info { flex: 1; }
+  .mod-title { font-size: 18px; font-weight: 700; color: var(--text); margin-bottom: 8px; }
+  .mod-desc { font-size: 14px; color: var(--text-dim); line-height: 1.6; margin-bottom: 12px; }
+  .mod-tags { display: flex; gap: 8px; }
+  .mod-tag { font-size: 12px; background: rgba(255,102,0,0.1); color: var(--brand); padding: 2px 10px; border-radius: 4px; font-weight: 600; }
+  
+  .mod-download-btn { padding: 10px 24px; background: var(--brand); color: #fff; border: 0; border-radius: 8px; font-weight: 700; white-space: nowrap; transition: all .2s; box-shadow: 0 4px 12px rgba(255,102,0,0.3); cursor: pointer; }
+  .mod-download-btn:hover { background: var(--brand-deep); transform: translateY(-2px); }
+
+  /* 去官方下载的横幅 */
+  .official-banner { 
+    margin-top: 30px; padding: 30px; border-radius: 16px; text-align: center;
+    background: linear-gradient(135deg, rgba(255,102,0,0.1), rgba(255,149,0,0.2));
+    border: 2px dashed var(--brand);
+  }
+  .official-banner h3 { font-size: 20px; font-weight: 800; color: var(--text); margin-bottom: 10px; }
+  .official-banner p { font-size: 14px; color: var(--text-dim); margin-bottom: 20px; }
+  .official-btn { 
+    display: inline-block; padding: 14px 32px; background: var(--brand); color: #fff; 
+    font-size: 16px; font-weight: 700; border-radius: 12px; text-decoration: none;
+    box-shadow: 0 6px 20px rgba(255,102,0,0.4); transition: transform .2s;
+  }
+  .official-btn:hover { transform: translateY(-3px); }
+
+  /* 底部下载源选择弹窗 (Action Sheet) */
+  .action-sheet-overlay { position: fixed; inset: 0; z-index: 9999; background: rgba(0,0,0,0.4); backdrop-filter: blur(4px); display: flex; align-items: flex-end; justify-content: center; opacity: 0; pointer-events: none; transition: opacity .3s; }
+  .action-sheet-overlay.show { opacity: 1; pointer-events: auto; }
+  .action-sheet { background: #f5f5f7; width: 100%; max-width: 500px; border-radius: 20px 20px 0 0; padding: 20px; transform: translateY(100%); transition: transform .3s cubic-bezier(0.175, 0.885, 0.32, 1.275); padding-bottom: max(20px, env(safe-area-inset-bottom)); }
+  .action-sheet-overlay.show .action-sheet { transform: translateY(0); }
+  .action-sheet-title { font-size: 14px; color: var(--text-dim); text-align: center; margin-bottom: 16px; font-weight: 600; }
+  .action-sheet-btn { display: block; width: 100%; padding: 16px; background: #fff; border: 0; border-radius: 12px; font-size: 16px; font-weight: 700; color: var(--text); margin-bottom: 10px; text-align: center; text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,0.02); transition: background .2s; }
+  .action-sheet-btn:hover { background: #f0f0f5; }
+  .action-sheet-btn.primary { color: var(--brand); }
+  .action-sheet-cancel { display: block; width: 100%; padding: 16px; background: #fff; border: 0; border-radius: 12px; font-size: 16px; font-weight: 700; color: var(--text-dim); margin-top: 8px; text-align: center; cursor: pointer; }
+
+  @media(max-width: 768px) {
+    .mod-item { flex-direction: column; }
+    .mod-download-btn { width: 100%; text-align: center; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="top-bar">
+    <div class="header-left">
+      <div class="logo"><a href="../index.html">极速游戏库</a></div>
+    </div>
+    <div class="search-container">
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="搜索游戏或MOD..." autocomplete="off">
+        <button id="searchBtn" type="button">搜索</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="nav">
+  <div class="mobile-nav-wrapper">
+    <select class="mobile-nav-select" id="mobileNavSelect">
+      <option value="../index.html">🏠 首页</option>
+      <option value="mods.html" selected>补丁MOD</option>
+    </select>
+  </div>
+  <div class="nav-inner" id="navBar">
+    <a href="../index.html">首页</a>
+    <a href="javascript:void(0)" data-category="单机游戏">单机游戏</a>
+    <a href="javascript:void(0)" data-category="热门大作">热门大作</a>
+    <a href="mods.html" class="active">补丁MOD</a>
+  </div>
+</div>
+
+<div class="container">
+  <div class="main">
+    <div class="breadcrumb" style="margin-bottom:16px; font-size:14px; color:var(--text-dim);">
+      <a href="mods.html" style="text-decoration:none; color:var(--brand);">← 返回 MOD 游戏库</a>
+    </div>
+
+    <div class="mod-header-area" id="modHeaderArea">
+      <h1 id="gameTitle">加载中...</h1>
+      <p>为你精选的最常用、最稳定的模组。</p>
+    </div>
+
+    <input type="text" id="modSearchInput" class="mod-search-input" placeholder="🔍 搜索本站已收录的 MOD...">
+    <div class="mod-tags-filter" id="modTagsFilter"></div>
+    
+    <!-- 本站收录的 MOD 列表 -->
+    <div class="mod-list" id="modList"></div>
+
+    <!-- 前往官方的大横幅 -->
+    <div class="official-banner" id="officialBanner" style="display: none;">
+      <h3>没有找到想要的 MOD？</h3>
+      <p>本站只收录了部分精品。想要下载更多、更全的模组，请前往官方社区！</p>
+      <a href="#" id="officialLink" target="_blank" class="official-btn">🌐 前往官方网站获取全部 MOD</a>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-col"><h4>关于极速游戏库</h4><p>一个纯粹、极简、无广告的单机游戏分享站。</p></div>
+    <div class="footer-col"><h4>快捷链接</h4><ul><li><a href="../index.html">返回首页</a></li><li><a href="mods.html">MOD专区</a></li></ul></div>
+  </div>
+  <div class="footer-bottom">© 2026 极速游戏库</div>
+</footer>
+
+<!-- 下载源选择弹窗 -->
+<div class="action-sheet-overlay" id="downloadSheet" onclick="closeSheet(event)">
+  <div class="action-sheet" id="downloadSheetContent">
+    <div class="action-sheet-title" id="sheetTitle">选择下载源</div>
+    <div id="sheetLinks"></div>
+    <button class="action-sheet-cancel" onclick="closeSheet()">取消</button>
+  </div>
+</div>
+
+<script src="../js/common.js"></script>
+<script>
+  var allMods = [];
+  var currentTag = '全部';
+  var filteredMods = [];
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var urlParams = new URLSearchParams(window.location.search);
+    var gameId = urlParams.get('id') || 'ksp';
+    
+    fetch('../data/mods.json')
+      .then(res => res.json())
+      .then(data => {
+        var game = data.find(g => g.id === gameId);
+        if (!game) return;
+        
+        document.title = `${game.name} MOD中心 - 极速游戏库`;
+        document.getElementById('gameTitle').textContent = `${game.name} MOD 中心`;
+        allMods = game.mods;
+
+        // 渲染前往官网的按钮
+        if (game.official_mod_url) {
+          document.getElementById('officialBanner').style.display = 'block';
+          document.getElementById('officialLink').href = game.official_mod_url;
+        }
+
+        // 渲染标签
+        var tags = new Set(['全部']);
+        allMods.forEach(m => {
+          if (m.tags) m.tags.forEach(t => tags.add(t));
+        });
+        document.getElementById('modTagsFilter').innerHTML = Array.from(tags).map(t => 
+          `<button class="mod-tag-btn ${t === '全部' ? 'active' : ''}" onclick="filterByTag('${t}')">${t}</button>`
+        ).join('');
+
+        applyFilters();
+
+        // 搜索监听
+        document.getElementById('modSearchInput').addEventListener('input', function() {
+          applyFilters();
+        });
+      });
+
+    window.filterByTag = function(tag) {
+      currentTag = tag;
+      document.querySelectorAll('.mod-tag-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.textContent === tag);
+      });
+      applyFilters();
+    };
+
+    function applyFilters() {
+      var keyword = document.getElementById('modSearchInput').value.trim().toLowerCase();
+      
+      filteredMods = allMods.filter(m => {
+        var matchTag = (currentTag === '全部') || (m.tags && m.tags.includes(currentTag));
+        var matchKw = !keyword || m.name.toLowerCase().includes(keyword) || (m.desc && m.desc.toLowerCase().includes(keyword));
+        return matchTag && matchKw;
+      });
+
+      renderMods();
+    }
+
+    function renderMods() {
+      var listEl = document.getElementById('modList');
+      
+      if (filteredMods.length === 0) {
+        listEl.innerHTML = '<div style="text-align:center; padding:30px; color:var(--text-dim);">本站暂未收录相关 MOD，请前往官方获取。</div>';
+        return;
+      }
+
+      listEl.innerHTML = filteredMods.map((m, index) => {
+        var hasLinks = m.links && m.links.length > 0;
+        var hasLink = m.link;
+        
+        var btnHtml = '';
+        if (hasLinks || hasLink) {
+          btnHtml = `<button class="mod-download-btn" onclick="openSheet(${index})">获取下载 ⬇</button>`;
+        } else {
+          btnHtml = `<button class="mod-download-btn" style="background:#ccc; box-shadow:none;">暂无链接</button>`;
+        }
+
+        return `
+        <div class="mod-item">
+          <div class="mod-info">
+            <div class="mod-title">${m.name}</div>
+            <div class="mod-desc">${m.desc || '暂无简介'}</div>
+            <div class="mod-tags">${(m.tags || []).map(t => `<span class="mod-tag">${t}</span>`).join('')}</div>
+          </div>
+          ${btnHtml}
+        </div>
+      `}).join('');
+    }
+
+    // ========== 下载源弹窗逻辑 ==========
+    window.openSheet = function(index) {
+      var m = filteredMods[index];
+      var links = m.links || (m.link ? [{name: '前往下载页面', url: m.link}] : []);
+      
+      document.getElementById('sheetTitle').textContent = `下载 ${m.name}`;
+      var linksHtml = links.map(l => 
+        `<a href="${l.url}" target="_blank" class="action-sheet-btn primary">${l.name}</a>`
+      ).join('');
+      
+      document.getElementById('sheetLinks').innerHTML = linksHtml;
+      document.getElementById('downloadSheet').classList.add('show');
+    };
+
+    window.closeSheet = function(e) {
+      if (!e || e.target.id === 'downloadSheet' || e.target.classList.contains('action-sheet-cancel')) {
+        document.getElementById('downloadSheet').classList.remove('show');
+      }
+    };
+  });
+</script>
+</body>
+</html>

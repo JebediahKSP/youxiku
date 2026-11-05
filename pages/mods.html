@@ -3,26 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>补丁MOD专区 - 极速游戏库</title>
+<title>MOD专区 - 极速游戏库</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23ff6600'/%3E%3Ctext x='32' y='45' font-family='Arial' font-size='36' font-weight='bold' fill='%23fff' text-anchor='middle'%3EJ%3C/text%3E%3C/svg%3E">
 <link rel="manifest" href="../manifest.json">
-<link rel="preconnect" href="https://cdn.akamai.steamstatic.com" crossorigin>
-<link rel="dns-prefetch" href="https://cdn.akamai.steamstatic.com">
 <link rel="stylesheet" href="../css/common.css">
 <link rel="stylesheet" href="../css/home.css">
-<style>
-  .mod-card { display:flex; background:var(--card-bg); border:1px solid var(--border); border-radius:12px; padding:20px; margin-bottom:20px; gap:20px; box-shadow: var(--shadow); transition:transform .2s; }
-  .mod-card:hover { transform:translateY(-2px); }
-  .mod-icon { width:80px; height:80px; border-radius:12px; background:#f5f5f7; display:flex; align-items:center; justify-content:center; font-size:36px; flex-shrink:0; }
-  .mod-info h3 { font-size:18px; font-weight:700; color:var(--text); margin-bottom:8px; }
-  .mod-info p { font-size:14px; color:var(--text-dim); margin-bottom:16px; line-height:1.6; }
-  .mod-info .btn { display:inline-block; padding:8px 20px; background:var(--text); color:#fff; font-weight:600; text-decoration:none; border-radius:8px; font-size:14px; transition:opacity .2s; }
-  .mod-info .btn:hover { opacity:0.8; }
-  @media(max-width: 600px) {
-    .mod-card { flex-direction: column; gap: 12px; padding: 16px; }
-    .mod-icon { width: 60px; height: 60px; font-size: 28px; }
-  }
-</style>
 </head>
 <body>
 <header>
@@ -32,29 +17,22 @@
     </div>
     <div class="search-container">
       <div class="search-box">
-        <input type="text" id="searchInput" placeholder="搜索游戏名称 / 别名" autocomplete="off">
-        <button id="searchBtn" type="button" onclick="location.href='../index.html?kw='+encodeURIComponent(document.getElementById('searchInput').value)">搜索</button>
+        <input type="text" id="searchInput" placeholder="搜索游戏名称，寻找MOD..." autocomplete="off">
+        <button id="searchBtn" type="button">搜索</button>
       </div>
     </div>
   </div>
 </header>
 
 <div class="nav">
-  <!-- 手机端下拉菜单 -->
   <div class="mobile-nav-wrapper">
     <select class="mobile-nav-select" id="mobileNavSelect">
       <option value="../index.html">🏠 首页</option>
       <option value="../index.html?cat=单机游戏">单机游戏</option>
       <option value="../index.html?cat=热门大作">热门大作</option>
-      <option value="../index.html?cat=角色扮演">角色扮演</option>
-      <option value="../index.html?cat=动作射击">动作射击</option>
-      <option value="../index.html?cat=策略模拟">策略模拟</option>
-      <option value="../index.html?cat=休闲独立">休闲独立</option>
       <option value="mods.html" selected>补丁MOD</option>
     </select>
   </div>
-
-  <!-- 电脑端横排导航 -->
   <div class="nav-inner" id="navBar">
     <a href="../index.html">首页</a>
     <a href="javascript:void(0)" data-category="单机游戏">单机游戏</a>
@@ -70,53 +48,16 @@
 <div class="container">
   <div class="main">
     <div class="main-box">
-      <div class="section-title">热门工具与补丁</div>
-      
-      <div class="mod-card">
-        <div class="mod-icon">🚀</div>
-        <div class="mod-info">
-          <h3>KSP: MechJeb 自动导航 MOD</h3>
-          <p>坎巴拉太空计划必备神器，一键自动入轨、自动对接、自动驾驶，解放你的双手。</p>
-          <a href="https://github.com/MuMech/MechJeb2/releases" target="_blank" class="btn">前往下载</a>
-        </div>
-      </div>
-      
-      <div class="mod-card">
-        <div class="mod-icon">🎨</div>
-        <div class="mod-info">
-          <h3>KSP: Scatterer 画质增强补丁</h3>
-          <p>为坎巴拉太空计划加入真实的大气散射、云层和海洋渲染，让你的显卡燃烧起来！</p>
-          <a href="https://spacedock.info/mod/141/scatterer" target="_blank" class="btn">前往下载</a>
-        </div>
-      </div>
-      
-      <div class="mod-card">
-        <div class="mod-icon">🛠️</div>
-        <div class="mod-info">
-          <h3>通用运行库修复工具 (DirectX/VC++)</h3>
-          <p>打不开游戏？提示缺少 d3d11.dll 或 msvcp140.dll？下载这个一键修复所有运行库。</p>
-          <a href="https://www.zysoftware.com/" target="_blank" class="btn">前往下载</a>
-        </div>
-      </div>
-      
+      <div class="section-title">🎮 请选择游戏进入 MOD 中心</div>
+      <div id="modGameList" class="game-grid"></div>
     </div>
   </div>
-  
   <div class="sidebar">
     <div class="side-box">
-      <div class="side-title">MOD 安装说明</div>
-      <div class="help-list" style="font-size:14px; color:var(--text-dim); line-height:1.8;">
-        1. 大部分 MOD 解压后放入游戏的 <code>GameData</code> 文件夹<br>
-        2. 运行库工具需右键“以管理员身份运行”<br>
-        3. 如果游戏崩溃，请检查 MOD 版本是否与游戏本体匹配
-      </div>
-    </div>
-    <div class="side-box">
-      <div class="side-title">📢 建站公告</div>
+      <div class="side-title">💡 关于 MOD</div>
       <div style="font-size:14px; color:var(--text-dim); line-height:1.8;">
-        1. 本站资源主打<strong>夸克网盘</strong>，无解压密码。<br>
-        2. 链接失效或文件被吞，请加群联系群主补档。<br>
-        3. 欢迎加入赛博精神病收容所一起摸鱼！
+        点击上面的游戏，即可进入该游戏专属的 MOD 列表。<br>
+        我们整理了各类必备工具、画质补丁和扩展内容，并提供官方或最稳定的下载源。
       </div>
     </div>
   </div>
@@ -124,25 +65,31 @@
 
 <footer>
   <div class="footer-grid">
-    <div class="footer-col"><h4>关于极速游戏库</h4><p>一个纯粹、极简、无广告的单机游戏分享站。本站资源均来自网络，仅供学习交流，请于下载后24小时内删除。</p></div>
-    <div class="footer-col"><h4>快捷链接</h4><ul><li><a href="../index.html">返回首页</a></li><li><a href="mods.html">MOD专区</a></li><li><a href="javascript:void(0)" onclick="openModal('notice')">免责声明</a></li><li><a href="javascript:void(0)" onclick="openModal('support')">赞赏支持</a></li></ul></div>
-    <div class="footer-col"><h4>站点数据</h4>
-      <p>📅 稳定运行：约 365 天</p>
-      <p>🎮 已收录：61 款精选游戏</p>
-      <div style="margin-top: 10px; font-size: 14px; color: var(--text-dim);">
-        <span id="busuanzi_container_site_pv">总访问量 <span id="busuanzi_value_site_pv" style="color:var(--brand);font-weight:bold;">...</span> 次</span><br>
-        <span id="busuanzi_container_site_uv">今日访客 <span id="busuanzi_value_site_uv" style="color:var(--brand);font-weight:bold;">...</span> 人</span>
-      </div>
-    </div>
+    <div class="footer-col"><h4>关于极速游戏库</h4><p>一个纯粹、极简、无广告的单机游戏分享站。</p></div>
+    <div class="footer-col"><h4>快捷链接</h4><ul><li><a href="../index.html">返回首页</a></li><li><a href="mods.html">MOD专区</a></li></ul></div>
   </div>
-  <div class="footer-bottom">© 2026 极速游戏库 | 单机游戏资源下载平台</div>
+  <div class="footer-bottom">© 2026 极速游戏库</div>
 </footer>
+
 <script src="../js/common.js"></script>
-<script async src="https://busuanzi.ibruce.info/busuanzi/2.6/busuanzi.pure.mini.js"></script>
 <script>
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => { navigator.serviceWorker.register('../sw.js').catch(err => console.log('PWA 注册失败:', err)); });
-  }
+  document.addEventListener('DOMContentLoaded', function() {
+    fetch('../data/mods.json')
+      .then(res => res.json())
+      .then(data => {
+        var container = document.getElementById('modGameList');
+        var html = data.map(game => `
+          <a href="mod-game.html?id=${game.id}" class="game-card">
+            <img src="${game.cover}" alt="${game.name}" loading="lazy">
+            <div class="game-card-info">
+              <h4>${game.name}</h4>
+              <p>收录 ${game.mod_count} 个 MOD</p>
+            </div>
+          </a>
+        `).join('');
+        container.innerHTML = html;
+      });
+  });
 </script>
 </body>
 </html>

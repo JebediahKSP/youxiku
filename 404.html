@@ -4,56 +4,67 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>404 - 星区迷失 | 极速游戏库</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23ff7a18'/%3E%3Ctext x='32' y='45' font-family='Arial' font-size='36' font-weight='bold' fill='%23fff' text-anchor='middle'%3EJ%3C/text%3E%3C/svg%3E">
-<link rel="stylesheet" href="css/common.css">
+<link rel="icon" href="/images/logo.png" onerror="this.href='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 64 64\'%3E%3Crect width=\'64\' height=\'64\' rx=\'12\' fill=\'%23ff6600\'/%3E%3Ctext x=\'32\' y=\'45\' font-family=\'Arial\' font-size=\'36\' font-weight=\'bold\' fill=\'%23fff\' text-anchor=\'middle\'%3EJ%3C/text%3E%3C/svg%3E'">
+<!-- 绝对路径引入 CSS，保证 404 页面样式不丢 -->
+<link rel="stylesheet" href="/css/common.css">
 <style>
   .error-container { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 80vh; text-align: center; padding: 20px; animation: fadeUp 0.6s ease; }
-  .error-code { font-size: 120px; font-weight: 900; line-height: 1; background: linear-gradient(135deg, var(--brand), var(--accent)); -webkit-background-clip: text; background-clip: text; color: transparent; margin-bottom: 20px; letter-spacing: -5px; text-shadow: 0 10px 30px rgba(255, 122, 24, 0.2); }
-  .error-title { font-size: 24px; color: var(--text); margin-bottom: 12px; font-weight: 600; }
-  .error-desc { font-size: 14px; color: var(--text-dim); max-width: 400px; line-height: 1.8; margin-bottom: 30px; }
+  .error-code { font-size: 130px; font-weight: 900; line-height: 1; background: linear-gradient(135deg, var(--brand), #ffb347); -webkit-background-clip: text; background-clip: text; color: transparent; margin-bottom: 20px; letter-spacing: -5px; text-shadow: 0 10px 30px rgba(255, 102, 0, 0.2); }
+  .error-title { font-size: 24px; color: var(--text); margin-bottom: 12px; font-weight: 800; }
+  .error-desc { font-size: 15px; color: var(--text-dim); max-width: 400px; line-height: 1.8; margin-bottom: 30px; }
   .btn-group { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
-  .error-btn { padding: 12px 28px; border-radius: 8px; font-size: 14px; font-weight: bold; text-decoration: none; cursor: pointer; transition: all 0.3s ease; border: 1px solid var(--border); }
-  .btn-home { background: var(--text); color: var(--bg); }
-  .btn-home:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
-  .btn-random { background: transparent; color: var(--brand); border-color: var(--brand); }
-  .btn-random:hover { background: rgba(255, 122, 24, 0.1); transform: translateY(-2px); box-shadow: 0 10px 20px rgba(255, 122, 24, 0.2); }
+  .error-btn { padding: 14px 32px; border-radius: 12px; font-size: 15px; font-weight: 700; text-decoration: none; cursor: pointer; transition: all 0.3s ease; border: 1px solid var(--glass-border); backdrop-filter: var(--glass-blur); }
+  .btn-home { background: var(--text); color: #fff; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+  .btn-home:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,0.2); }
+  .btn-random { background: rgba(255,255,255,0.6); color: var(--brand); border-color: var(--brand); }
+  .btn-random:hover { background: #fff; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(255,102,0,0.15); }
+  @media (max-width: 480px) { .error-code { font-size: 100px; } .btn-group { flex-direction: column; width: 100%; max-width: 250px; } .error-btn { width: 100%; } }
 </style>
 </head>
 <body>
+
 <header>
   <div class="top-bar">
     <div class="header-left">
-      <div class="logo"><a href="index.html">极速游戏库</a></div>
-      <button class="theme-toggle" id="themeToggle" title="切换主题">🌙</button>
+      <!-- 绝对路径返回首页 -->
+      <div class="logo"><a href="/index.html">极速游戏库</a></div>
     </div>
   </div>
 </header>
+
 <div class="error-container">
   <div class="error-code">404</div>
   <div class="error-title">报告舰长，该星区不存在</div>
   <div class="error-desc">你访问的页面可能已经被外星人劫持，或者原本就不存在。<br>请检查网址是否输入正确，或者通过下方的传送门回到安全区域。</div>
+  
   <div class="btn-group">
-    <a href="index.html" class="error-btn btn-home">🏠 返回基地首页</a>
+    <a href="/index.html" class="error-btn btn-home">🏠 返回基地首页</a>
     <button id="randomGameBtn" class="error-btn btn-random">🎲 命运盲盒</button>
   </div>
 </div>
-<script src="js/common.js"></script>
+
+<!-- 绝对路径引入 JS，保证弹窗功能正常 -->
+<script src="/js/common.js"></script>
 <script>
   document.getElementById('randomGameBtn').addEventListener('click', function() {
     var btn = this;
     btn.textContent = '🚀 跃迁中...';
     btn.style.pointerEvents = 'none';
-    fetch('data/games.json')
+    
+    fetch('/data/games.json')
       .then(res => res.json())
       .then(data => {
         if(data && data.length > 0) {
           var randomGame = data[Math.floor(Math.random() * data.length)];
-          location.href = 'pages/game.html?id=' + randomGame.id;
+          // 绝对路径跳转到详情页
+          location.href = '/pages/game.html?id=' + randomGame.id;
         } else {
-          location.href = 'index.html';
+          location.href = '/index.html';
         }
       })
-      .catch(() => { location.href = 'index.html'; });
+      .catch(() => {
+        location.href = '/index.html';
+      });
   });
 </script>
 </body>

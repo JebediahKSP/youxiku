@@ -2,14 +2,20 @@
   'use strict';
 
   var gameData = [];
-  var MAX_HOT_SLOTS = 4;
   var currentCategory = '首页';
+  var TOP_FEATURED_IDS = ['ksp', 'citiesskylines', 'changed', 'us'];
 
   var quotes = [
     "不要相信光圈科技。——光圈实验室", "快去发射火箭吧，坎巴拉人！——KSP",
     "物理定律永远是对的，错的是你的推力不够。——宇宙沙盒", "今天你兽化了吗？——Changed",
     "下载千万条，安全第一条，解压不规范，亲人两行泪。", "如果找不到路，就跟着星星走。——极速游戏库"
   ];
+
+  function proxyImg(url) {
+    if (!url) return '';
+    if (url.includes('images.weserv.nl')) return url;
+    return 'https://images.weserv.nl/?url=' + encodeURIComponent(url.replace('https://', '')) + '&w=400&output=webp';
+  }
 
   function getFavs() {
     try { return JSON.parse(localStorage.getItem('favorites') || '[]'); } catch(e) { return []; }
@@ -34,7 +40,7 @@
   }
   window.toggleFav = toggleFav;
 
-  function cardHTML(g, i) {
+  function cardHTML(g, i, isCarousel) {
     var isFav = getFavs().includes(g.id);
     var isNew = false;
     if (g.date_added) {
@@ -43,11 +49,23 @@
       if ((now - addTime) / (1000 * 3600 * 24) <= 7) isNew = true;
     }
     var newTag = isNew ? '<span class="new-tag">NEW</span>' : '';
+    var imgSrc = proxyImg(g.cover);
+
+    if (isCarousel) {
+      return `<a class="carousel-item" href="pages/game.html?id=${g.id}">
+        ${newTag}
+        <img src="${imgSrc}" alt="${g.name}" loading="lazy" onerror="this.style.visibility='hidden'">
+        <div class="info">
+          <h4>${g.name}</h4>
+          <p>${g.type}</p>
+        </div>
+      </a>`;
+    }
 
     return `<a class="game-card reveal" style="--i:${i}" href="pages/game.html?id=${g.id}">
       ${newTag}
       <button class="card-fav-btn ${isFav ? 'active' : ''}" data-id="${g.id}" onclick="toggleFav('${g.id}', event)" title="收藏">❤</button>
-      <img src="${g.cover}" class="img-blur" alt="${g.name}" loading="lazy" referrerpolicy="no-referrer" onload="this.classList.remove('img-blur'); this.classList.add('img-loaded');">
+      <img src="${imgSrc}" class="img-blur" alt="${g.name}" loading="lazy" onload="this.classList.remove('img-blur'); this.classList.add('img-loaded');">
       <div class="game-card-info"><h4>${g.name}</h4><p>${g.type}</p></div>
     </a>`;
   }
@@ -60,31 +78,32 @@
     return false;
   }
 
-  function fillPlaceholder(id, total) {
-    var box = document.getElementById(id);
-    if (!box) return;
-    var have = box.querySelectorAll('.game-card').length;
-    var need = Math.max(0, total - have);
-    for (var i = 0; i < need; i++) {
-      var d = document.createElement('div');
-      d.className = 'game-card placeholder reveal';
-      d.style.setProperty('--i', have + i);
-      d.textContent = '更多游戏更新中';
-      box.appendChild(d);
-    }
-  }
-
-  function enhanceCards(root) {
-    (root || document).querySelectorAll('.game-card:not(.placeholder):not(.skeleton)').forEach(c => {
-      if (window.bindCardSpotlight) window.bindCardSpotlight(c);
+  function renderTags() {
+    var tagCloud = document.getElementById('tagCloud');
+    if(!tagCloud) return;
+    var allTags = new Set();
+    gameData.forEach(g => {
+      if(g.tags) g.tags.forEach(t => allTags.add(t));
     });
-    if (window.observeReveal) window.observeReveal(root);
+    // 标签直接变成链接，利于SEO
+    tagCloud.innerHTML = Array.from(allTags).map(t => 
+      `<a href="?tag=${encodeURIComponent(t)}" class="tag-item" style="text-decoration:none;"># ${t}</a>`
+    ).join('');
   }
 
-  function renderSkeleton() {
-    var skel = '<div class="game-card skeleton"></div><div class="game-card skeleton"></div><div class="game-card skeleton"></div><div class="game-card skeleton"></div>';
-    if (document.getElementById('gameList')) document.getElementById('gameList').innerHTML = skel;
-    if (document.getElementById('hotList')) document.getElementById('hotList').innerHTML = skel;
+  function renderRecent() {
+    var recentList = document.getElementById('recentList');
+    if(!recentList) return;
+    var recent = JSON.parse(localStorage.getItem('recent_views') || '[]');
+    if(recent.length === 0){
+      recentList.innerHTML = '<li style="padding:10px;color:var(--text-dim);text-align:center;">暂无浏览记录</li>';
+      return;
+    }
+    recentList.innerHTML = recent.map(id => {
+      var g = gameData.find(item => item.id === id);
+      if(!g) return '';
+      return `<li><a href="pages/game.html?id=${g.id}">· ${g.name}</a></li>`;
+    }).join('');
   }
 
   function render(keyword) {
@@ -92,13 +111,18 @@
     var latestList = document.getElementById('gameList');
     var latestTitle = document.getElementById('latestTitle');
     var hotSection = document.getElementById('hotSection');
-    var hotList = document.getElementById('hotList');
+    var topFeaturedBox = document.getElementById('topFeaturedBox');
+
+    if (topFeaturedBox) {
+      if (kw || currentCategory !== '首页' || new URLSearchParams(window.location.search).get('tag')) topFeaturedBox.style.display = 'none';
+      else topFeaturedBox.style.display = 'block';
+    }
 
     if (kw) {
       var res = gameData.filter(g => matchGame(g, kw));
-      latestTitle.innerHTML = `<span>搜索结果（${res.length}）</span>`;
-      hotSection.hidden = true;
-      latestList.innerHTML = res.length ? res.map(cardHTML).join('') : '<div class="empty-state"><div class="empty-icon">🔍</div><p>没有找到匹配的游戏，换个词试试吧。</p></div>';
+      latestTitle.innerHTML = `搜索结果（${res.length}）`;
+      if(hotSection) hotSection.hidden = true;
+      latestList.innerHTML = res.length ? res.map(cardHTML).join('') : '<div class="empty-state"><div class="empty-icon">🔍</div><p>没有找到匹配的游戏。</p></div>';
       enhanceCards(latestList);
       return;
     }
@@ -106,8 +130,8 @@
     if (currentCategory === '我的收藏') {
       var favs = getFavs();
       var favRes = gameData.filter(g => favs.includes(g.id));
-      latestTitle.innerHTML = `<span>我的收藏（${favRes.length}）</span>`;
-      hotSection.hidden = true;
+      latestTitle.innerHTML = `我的收藏（${favRes.length}）`;
+      if(hotSection) hotSection.hidden = true;
       latestList.innerHTML = favRes.length ? favRes.map(cardHTML).join('') : '<div class="empty-state"><div class="empty-icon">❤️</div><p>你还没有收藏任何游戏哦~</p></div>';
       enhanceCards(latestList);
       return;
@@ -115,20 +139,52 @@
 
     if (currentCategory !== '首页') {
       var catRes = gameData.filter(g => g.category && g.category.includes(currentCategory));
-      latestTitle.innerHTML = `<span>${currentCategory}（${catRes.length}）</span>`;
-      hotSection.hidden = true;
-      latestList.innerHTML = catRes.length ? catRes.map(cardHTML).join('') : '<div class="empty-state"><div class="empty-icon">🛸</div><p>该星区正在跃迁中，敬请期待...</p></div>';
+      latestTitle.innerHTML = `${currentCategory}（${catRes.length}）`;
+      if(hotSection) hotSection.hidden = true;
+      latestList.innerHTML = catRes.length ? catRes.map(cardHTML).join('') : '<div class="empty-state"><div class="empty-icon">🛸</div><p>该分类下暂无游戏</p></div>';
       enhanceCards(latestList);
       return;
     }
 
-    latestTitle.innerHTML = '<span>最新资源</span>';
-    hotSection.hidden = false;
-    latestList.innerHTML = gameData.filter(g => g.latest !== false).map(cardHTML).join('');
-    hotList.innerHTML = gameData.filter(g => g.hot).map(cardHTML).join('');
-    fillPlaceholder('hotList', MAX_HOT_SLOTS);
+    latestTitle.innerHTML = '✨ 发现好游戏';
+    if(hotSection) hotSection.hidden = true;
+    var shuffledGames = [...gameData].sort(() => 0.5 - Math.random());
+    var displayGames = shuffledGames.slice(0, 16);
+    latestList.innerHTML = displayGames.map(cardHTML).join('');
     enhanceCards(latestList);
-    enhanceCards(hotList);
+  }
+
+  // 标签点击过滤（兼容旧逻辑）
+  window.filterByTag = function(tag) {
+    var latestList = document.getElementById('gameList');
+    var latestTitle = document.getElementById('latestTitle');
+    var hotSection = document.getElementById('hotSection');
+    var topFeaturedBox = document.getElementById('topFeaturedBox');
+    
+    var res = gameData.filter(g => g.tags && g.tags.includes(tag));
+    latestTitle.innerHTML = `标签：${tag}（${res.length}）`;
+    if (hotSection) hotSection.hidden = true;
+    if (topFeaturedBox) topFeaturedBox.style.display = 'none';
+    latestList.innerHTML = res.length ? res.map(cardHTML).join('') : '<div class="empty-state"><div class="empty-icon">🏷️</div><p>该标签下暂无游戏</p></div>';
+    enhanceCards(latestList);
+  };
+
+  function renderCarousel() {
+    var track = document.getElementById('featuredList');
+    if (!track) return;
+    var featuredGames = TOP_FEATURED_IDS.map(id => gameData.find(g => g.id === id)).filter(Boolean);
+    if (featuredGames.length < 5) {
+      var hotGames = gameData.filter(g => g.hot && !featuredGames.includes(g)).slice(0, 5);
+      featuredGames = featuredGames.concat(hotGames);
+    }
+    track.innerHTML = featuredGames.map(g => cardHTML(g, 0, true)).join('');
+  }
+
+  function enhanceCards(root) {
+    (root || document).querySelectorAll('.game-card:not(.placeholder):not(.skeleton)').forEach(c => {
+      if (window.bindCardSpotlight) window.bindCardSpotlight(c);
+    });
+    if (window.observeReveal) window.observeReveal(root);
   }
 
   function switchCategory(cat) {
@@ -140,10 +196,7 @@
     if (navBar) {
       navBar.querySelectorAll('a').forEach(a => a.classList.remove('active'));
       var navMatch = navBar.querySelector(`a[data-category="${cat}"]`);
-      if (navMatch) {
-        navMatch.classList.add('active');
-        if (window.moveNavIndicator) window.moveNavIndicator(navMatch);
-      }
+      if (navMatch) navMatch.classList.add('active');
     }
     if (pills) {
       pills.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
@@ -166,7 +219,6 @@
 
     var qEl = document.getElementById('dailyQuote');
     if (qEl) qEl.textContent = quotes[Math.floor(Math.random() * quotes.length)];
-    renderSkeleton();
 
     if (btn) btn.addEventListener('click', window.searchGame);
     if (input) {
@@ -185,7 +237,7 @@
         if (matches.length > 0) {
           suggestBox.innerHTML = matches.map(g => 
             `<div class="suggestion-item" onclick="location.href='pages/game.html?id=${g.id}'">
-               <img src="${g.cover}" referrerpolicy="no-referrer" alt=""><span>${g.name}</span>
+               <img src="${proxyImg(g.cover)}" referrerpolicy="no-referrer" alt=""><span>${g.name}</span>
              </div>`
           ).join('');
           suggestBox.classList.add('show');
@@ -230,13 +282,30 @@
       });
     }
 
+    var btnPrev = document.getElementById('btnPrev');
+    var btnNext = document.getElementById('btnNext');
+    var track = document.getElementById('featuredList');
+    if(btnPrev && btnNext && track) {
+      btnPrev.addEventListener('click', () => track.scrollBy({ left: -260, behavior: 'smooth' }));
+      btnNext.addEventListener('click', () => track.scrollBy({ left: 260, behavior: 'smooth' }));
+    }
+
     fetch('data/games.json')
       .then(res => res.json())
       .then(data => {
         gameData = data;
+        
+        var countEl = document.getElementById('gameCount');
+        if (countEl) countEl.textContent = data.length;
+
+        renderTags();
+        renderRecent();
+        renderCarousel();
+        
         var urlParams = new URLSearchParams(window.location.search);
         var kwParam = urlParams.get('kw');
         var catParam = urlParams.get('cat');
+        var tagParam = urlParams.get('tag'); // 读取标签参数
         
         if (kwParam) {
           if(input) input.value = kwParam;
@@ -245,6 +314,9 @@
         } else if (catParam) {
           switchCategory(catParam);
           render('');
+        } else if (tagParam) {
+          switchCategory('首页');
+          window.filterByTag(tagParam); // 如果是标签跳转，执行标签过滤
         } else {
           render('');
         }
